@@ -411,6 +411,9 @@ section {
 .intro .ttl_box .txt {
     text-align: center;
     color: #bbb;
+    padding: 0px 20px;
+    word-break: keep-all;
+    font-size: 11px;
 }
 .intro .menu_box {
 
