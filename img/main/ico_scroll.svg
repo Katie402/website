@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="86" viewBox="0 0 48 86">
+  <g id="scroll" transform="translate(-930 -913)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(930 913)" fill="none" stroke="#fff" stroke-width="3">
+      <rect width="48" height="86" rx="24" stroke="none"/>
+      <rect x="1.5" y="1.5" width="45" height="83" rx="22.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="8" height="18" rx="4" transform="translate(950 930)" fill="#fff"/>
+  </g>
+</svg>
