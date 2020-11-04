@@ -1,0 +1,972 @@
+ <html lang="ko"><head>
+	<meta charset="utf-8">
+	<title>Nayoung Park</title>
+	   	<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" media="all" href="css/reset.css"> 
+		<link rel="stylesheet" media="all" href="css/style.css" /> 
+        <link rel="stylesheet" media="all" href="css/slick.css" /> 
+        <link rel="stylesheet" media="all" href="css/jquery.mCustomScrollbar.min.css" />
+		<meta name="description" content="front-end, webpublisher 프론트앤드, 포트폴리오, 웹퍼블리셔">
+		<meta http-equiv="Content-Script-Types" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<!-- meta og 태그 -->
+	    <meta property="og:title" content="Nayoung Park | Portfolio">
+	    <meta property="og:image" content="http://park402.dothome.co.kr/img/img_kakao.jpg">
+	    <meta property="og:description" content="나영이의 포트폴리오">	    
+	    <meta property="og:url" content="http://park402.dothome.co.kr">
+	    <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Nayoung Park | Portfolio">      
+</head>
+<style>
+
+#progress {
+	height:1%;
+	background:#ffc045;
+	bottom:0;
+	left: 0;
+	z-index:200;
+	position: fixed;
+}
+</style>
+<body>   
+    <!-- progress bar -->
+    <div id="progress" data-0="width:0%;" data-end="width:100%;"></div>
+    <!-- //progress bar -->
+
+    <!-- scrolled info -->
+    <div id="info">0</div>
+    <!-- //scrolled info -->
+
+     <!-- intro -->
+     <div class="intro">
+        <div class="mobile">
+            <div class="mob_content">
+                <div class="ttl_box">
+                    <span class="pre_ttl">Welcome to the</span>
+                    <h1 class="ttl">NY's portfolio</h1>
+                    <div class="index_imgbox">
+                        <div class="first clearfix">
+                            <div class="col"><a href=""></a></div>
+                            <div class="col"><a href=""></a></div>
+                            <div class="col"><a href=""></a></div>                            
+                        </div>
+                        <div class="second clearfix">
+                            <div class="col"><a href=""></a></div>
+                            <div class="col"><a href=""></a></div>
+                            <div class="col"><a href=""></a></div>                            
+                        </div>
+                    </div>
+                    <!-- <img class="img_index only_mo" src="img/index/m_img_index.jpg" alt=""> -->
+                    <!-- <img class="img_index only_web" src="img/index/w_img_index.jpg" alt=""> -->
+                    <p class="copyright">© 2020 park402.dothome.co.kr All Rights Reserved</p>                    
+                    <p class="txt">이 사이트는 크롬에 최적화되었습니다.</p>                    
+                </div>
+                <ul class="menu_box">
+                    <li class="menus first">
+                        <div>
+                            <div class="tab">
+                                <svg class="img_tab01" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z" fill="#333"></path></svg>
+                                <svg class="img_tab02 icon-animated" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z" fill="#333"></path></svg>
+                                <svg class="btn_closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" width="28px" height="28px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                            </div>
+                            <div class="tab_box">
+                                <div class="in_tab_box">
+                                    <strong>About me</strong>
+                                    <span>안녕하세요.</span>  
+                                    <span>최고보다는 최선을 다하며 즐겁게 코딩하는 박나영입니다.</span>  
+                                    <button class="intro_btn intro_btn_go">누군지 더 알아보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menus second">
+                        <div>
+                            <div class="tab">
+                                <svg class="img_tab01" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" fill="#fff"></path></svg>
+                                <svg class="img_tab02 icon-animated" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z" fill="#fff"></path></svg>
+                                <svg class="btn_closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFF" width="28px" height="28px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                            </div>
+                            <div class="tab_box">
+                                <div class="in_tab_box">
+                                    <strong>Portfolio</strong>
+                                    <span>직접 코딩한 사이트들입니다.</span>  
+                                    <button class="intro_btn intro_btn_go">사이트 보러가기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menus third">
+                        <div>
+                            <div class="tab">
+                                <svg class="img_tab01" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><circle cx="4.5" cy="9.5" r="2.5" fill="#2e84a0"/><circle cx="9" cy="5.5" r="2.5" fill="#2e84a0"/><circle cx="15" cy="5.5" r="2.5" fill="#2e84a0"/><circle cx="19.5" cy="9.5" r="2.5" fill="#2e84a0"/><path d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z" fill="#2e84a0"/></svg>
+                                <svg class="img_tab02 icon-animated" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><circle cx="4.5" cy="9.5" r="2.5" fill="#2e84a0"/><circle cx="9" cy="5.5" r="2.5" fill="#2e84a0"/><circle cx="15" cy="5.5" r="2.5" fill="#2e84a0"/><circle cx="19.5" cy="9.5" r="2.5" fill="#2e84a0"/><path d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z" fill="#2e84a0"/></svg> 
+                                <svg class="btn_closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2e84a0" width="28px" height="28px"><path d="M0 0s4v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                            </div>
+                            <div class="tab_box">
+                                <div class="in_tab_box">
+                                    <strong>Study hard</strong>
+                                    <span>스크립트 공부 중입니다.</span>  
+                                   <button onclick="window.open('http://park402.dothome.co.kr/katie/index.html')" class="intro_btn intro_btn_study">공부노트 보러가기</button>
+                                   <button onclick="window.open('https://codepen.io/KatiePark')" class="intro_btn">codepen 보러가기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //intro -->   
+    
+    <!-- wrapper -->
+    <div class="wrapper" id="skrollr-body">
+
+        <a href="index.html" class="btn_home">
+            <img src="img/btn/btn_home2.png" alt="홈으로 가기"/>
+            <strong>back</strong>  
+        </a>  
+        
+        <!-- secion01 -->
+        <section id="sec01" data-start="transform: translate3d(0px, 0%, 0px)">
+            <div id="fog"></div>
+            <div id="sky" class="firefly_box">
+                <div class="bg_cloud bg_cloud01"></div>
+                <div class="bg_cloud bg_cloud02"></div>
+                <div class="bg_cloud bg_cloud03"></div>
+                <div class="main_visual">
+                    <div class="moon"></div>
+                    <div class="cloud cloud01"></div>
+                    <div class="cloud cloud02"></div>
+                    <div class="balloon"></div>    
+                </div>      
+            </div>
+            <div class="txt_box">
+                <h2 class="main_ttl">
+                    <strong class="txt_yellow" data-0="transform:translate3d(0%,0%,0); opacity:1"  data-1000="transform:translate3d(-100%,0%,0); opacity:0">NaYoung' s</strong>
+                    <strong data-0="transform:translate3d(0%,0%,0); opacity:1"  data-1000="transform:translate3d(100%,0%,0); opacity:0">Coding</strong>                           
+                    <strong data-0="transform:translate3d(0%,0%,0); opacity:1"  data-1000="transform:translate3d(100%,0%,0); opacity:0">Expedition</strong>                           
+                </h2>
+                <strong class="sec_ttl">Web Publisher <i class="txt_yellow">x</i> Love to Code</strong>
+            </div>
+            <div class="down_scroll">
+                <img src="img/btn/btn_next_arrow.png" alt="">
+                <img src="img/btn/btn_next_arrow.png" alt="">
+                <img src="img/btn/btn_next_arrow.png" alt="">
+            </div>
+        </section>
+        <!-- //section01 -->
+
+        <!-- secion02 -->
+        <section id="sec02" data-start="transform: translate3d(0px, 100%, 0px)" data-500="transform: translate3d(0px, 0%, 0px)">
+            <div class="inner clearfix">
+                <div class="sec_con clearfix">
+                    <h3 class="col_ttl"><i></i>Team Project</h3>
+                    <strong class="col_sub_ttl txt_pink">실무 프로젝트</strong>
+                    <div class="col_box clearfix">
+                        <span class="note">
+                            실무 프로젝트 중 직접 하드코딩한
+                            <i class="txt_yellow"></i>
+                            개의 사이트입니다.
+                        </span>                        
+                        <div class="col_slider">
+
+                            <!-- 피자에땅웹 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/pizzaetang_mainpage.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC Web 적응형</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>6일 <small>(2020/07)</small></em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>php, css, jQuery, 카카오맵 api 커스텀</em></span>                     
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        피자에땅 리뉴얼 사이트 작업<br />
+                                                        (현재 오픈 전 사이트입니다)
+                                                    </span>   
+                                                </div>                   
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">피자에땅</span>
+                                        <span class="type">PC Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="https://pizzaetang01.cafe24.com" target="_blank">Go to site</a>
+                                </div>
+                            </div>
+                            <!-- //피자에땅웹 -->
+                            
+                            <!-- 지르텍 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/zyrtec_mainpage.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>4일 <small>(2020/08~09)</small></em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>html, css, jquery, [Aos.js]</em></span>                                                        
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        전체 웹사이트 하드코딩<br />
+                                                        플러그인 애니메이션 효과
+                                                    </span>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">지르텍: 유한양행</span>
+                                        <span class="type">Responsive Web</span>                                
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="zyrtec/index.html" target="_blank">Go to Link</a>
+                                </div>
+                            </div>
+                            <!-- //지르텍 -->
+
+                            <!-- 오빠닭 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/opd_brandstory.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>3일 (2019/11)</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>html, css, jQuery, [slick.js]</em></span>                                                     
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        브랜드스토리 랜딩페이지<br />
+                                                        스크립트 애니메이션 효과<br />
+                                                        slick slider 커스텀
+                                                    </span>     
+                                                </div>                 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">오븐에빠진닭</span>
+                                        <span class="type">Responsive Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="opd/brand_story/index.html" target="_blank">Go to page</a>
+                                </div>
+                            </div>
+                            <!-- //오빠닭 -->
+                                                        
+                            <!-- 아이큰 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/ikeun_mainpage.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>2일 <small>(2020/06)</small></em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>html, css, jQuery</em></span> 
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        랜딩 페이지 하드코딩<br />
+                                                        이미지 반응형 코딩
+                                                    </span>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">랜딩페이지</span>
+                                        <span class="type">Responsive Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="http://ikeun.kfscommerce.com/" target="_blank">Go to site</a>
+                                </div>
+                            </div>
+                            <!-- //아이큰 -->
+
+                            <!-- 아그작 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/agzac_mainpage.jpg');"></span> 
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>12일 <small>(2019/12)</small></em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>php, css, jQuery, [masonry.js, slick.js]</em></span>  
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        전체 사이트 하드코딩<br />
+                                                    </span>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">미대생아트갤러리</span>
+                                        <span class="type">Responsive Web</span>                                
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="https://agzac.com/" target="_blank">Go to site</a>
+                                </div>
+                            </div>
+                            <!-- //아그작 -->
+
+                            <!-- 몬스타그램 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/monstagram_mainpage.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>3일</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>php, css, jQuery</em></span>                                                       
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        랜딩 페이지 하드코딩<br />
+                                                        스크립트 애니메이션 효과
+                                                    </span>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">마케팅업체 : 랜딩페이지</span>
+                                        <span class="type">Responsive Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="https://www.monstagram.kr/" target="_blank">Go to site</a>
+                                </div>
+                            </div>
+                            <!-- //몬스타그램 -->
+
+                            <!-- 스피킷 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/speakit_mainpage.jpg');"></span> 
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        작업 기간 : 3일</span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>php, css, jquery, [bootstrap]</em></span>                                                      
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        업체 요청으로 부트스트랩 활용하여 레이아웃 설계 후 코딩</span>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">영어교육사이트</span>
+                                        <span class="type">Responsive Web</span>                                
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="http://speakitvr.com/" target="_blank">Go to site</a>
+                                </div>
+                            </div>
+                            <!-- //스피킷 -->
+                            
+                            <!-- 피자에땅모바일 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/pizzaetang_mobile.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>Mobile Web 적응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>5일 <small>(2020/07)</small></em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>php, css, jQuery, 카카오맵 api 커스텀</em></span>                                      
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        피자에땅 리뉴얼 사이트 작업<br /> 
+                                                        (현재 오픈 전 사이트입니다)
+                                                    </span>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">  
+                                        <span class="ttl">피자에땅</span>
+                                        <span class="type">Mobile Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="http://pizzaetang01.cafe24.com/mobile/main/main.php" target="_blank">Go to site</a>
+                                </div>
+                            </div>
+                            <!-- //피자에땅모바일 -->
+
+                            <!-- 더웨이브마케팅 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/thewave_mainpage.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>5일</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>php, css, jQuery, [slick.js]</em></span>                                                      
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        스크립트로 실행되는 애니메이션 효과</span>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">네이버 공식광고 대행사</span>
+                                        <span class="type">Responsive Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="http://thewavemkt.co.kr/" target="_blank">Go to site</a>
+                                </div>
+                            </div>
+                            <!-- //더웨이브마케팅 -->
+
+                            <!-- 한국농어촌네트워크 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/network_mainpage.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>6일 (2020/08)</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>php, css, jQuery, [slick.js]</em></span>                                                      
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        전체 사이트 제작 (모바일의 햄버거 버튼 메뉴 제외)<br />
+                                                        slick slider 커스텀
+                                                    </span>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">강원도 여행예약 사이트</span>
+                                        <span class="type">Responsive Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="https://kffvnetwork.cafe24.com" target="_blank">Go to site</a>
+                                </div>
+                            </div>
+                            <!-- //한국농어촌네트워크 -->
+
+                            <!-- 아림티엔씨 -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/arimtnc_mainpage.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>5일</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>php, css, jQuery, [slick.js]</em></span>                                                      
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        전체 사이트 제작<br />
+                                                        slick slider 커스텀
+                                                    </span>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">일반기업 사이트</span>
+                                        <span class="type">Responsive Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="arimtnc/main/main.html" target="_blank">Go to site</a>
+                                </div>
+                            </div>
+                            <!-- //아림티엔씨 -->
+
+                            <!-- 이츠보나 -->
+                            <!-- <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/itsbona_mainpage.jpg');"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>1일 반 (2020/06)</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC / Tablet / Moible 반응형</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>php, css, jQuery</em></span>                                                      
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        가상화폐 랜딩페이지 하드코딩</span>     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">가상화폐 사이트</span>
+                                        <span class="type">Responsive Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="https://bonacoin.io/" target="_blank">Go to page</a>
+                                </div>
+                            </div> -->
+                            <!-- //이츠보나 -->
+
+                            <!-- 아림티엔씨 ERP -->
+                            <div class="col">
+                                <a href="#">
+                                    <div class="dim_box">
+                                        <span class="col_img" style="background-image:url('img/main/arimerp_mainpage.jpg'); background-position:left center;"></span>  
+                                        <div class="info">
+                                            <div class="info_txt">
+                                                <div>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        <em>PC Web 적응형</em></span>                                                    
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        내 작업 기간 : <em>3일</em></span>
+                                                    <span class="txt">
+                                                        <i class="dots"></i>
+                                                        skill : <em>html, css, jQuery</em></span>                                                    
+                                                </div>
+                                                <div class="info_desc">
+                                                    <span class="txt">
+                                                        ERP 통합관리 시스템을 위한 레이아웃 설계</span>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="ttl">기업 ERP</span>
+                                        <span class="type">PC Web</span>         
+                                    </div>
+                                </a>
+                                <div class="btn_box">
+                                    <a class="btn" href="arimerp/index.html"  target="_blank">Go to page</a>
+                                </div>
+                            </div>
+                            <!-- //아림티엔씨 ERP-->
+
+                        </div>
+                        <div class="controls">
+                            <div class="slick-prev"></div>                        
+                            <div class="slick-next"></div>                        
+                        </div> 
+                        <div class="visual_navi clearfix">
+                            <p class="visual_count">
+                              <span class="current txt_yellow"></span><small>/</small><span class="total"></span>
+                            </p>
+                        </div>                             
+                    </div>
+                </div>
+                <svg class="ico_wheel" xmlns="http://www.w3.org/2000/svg" width="24" height="43" viewBox="0 0 48 86">
+                    <g id="scroll" transform="translate(-930 -913)">
+                      <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(930 913)" fill="none" stroke="#fff" stroke-width="3">
+                        <rect width="48" height="86" rx="24" stroke="none"/>
+                        <rect x="1.5" y="1.5" width="45" height="83" rx="22.5" fill="none"/>
+                      </g>
+                      <rect id="Rectangle_2" data-name="Rectangle 2" width="8" height="18" rx="4" transform="translate(950 930)" fill="#fff"/>
+                    </g>
+                  </svg>
+            </div>            
+        </section>
+        <!-- //section02 -->    
+
+        <!-- section03 -->        
+        <section id="sec03" data-start="left:-250vw" data-750="transform: translate3d(100%, 0%, 0px)" data-2000="transform: translate3d(0%, 0%, 0px)">
+            <div class="inner clearfix">
+                <div class="sec_con clearfix">
+                    <h3 class="col_ttl"><i></i>Individual Work</h3>
+                    <strong class="col_sub_ttl txt_yellow">
+                        개인 프로젝트 
+                    </strong>
+                    <div class="right_scroll">
+                        <img src="img/btn/btn_next_arrow.png" alt="">
+                        <img src="img/btn/btn_next_arrow.png" alt="">                       
+                    </div>
+                    <div class="col_box clearfix">
+                        <div class="col">
+                            <div class="col_left fl">
+                                <div class="img_box">
+                                    <img src="img/main/starbucks_mainpage.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                    <span class="ttl">스타벅스</span>
+                                    <span class="type">Responsive Web</span>         
+                                </div>
+                                <div class="btn_box">
+                                    <a class="btn" href="starbucks/starbucks.html" target="_blank">Go to Link</a>
+                                </div>
+                            </div>
+                            <div class="info kfl">
+                                <div class="info_txt">
+                                    <div>
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            <em>PC / Tablet / Moible 반응형</em></span>            
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            내 작업 기간 : <em>2주</em></span>
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            skill : <em>html, css, Javascript, bxslider</em></span>                     
+                                    </div>
+                                    <div class="info_desc">
+                                        <span class="txt">
+                                            메인 페이지 코딩<br />
+                                            자바스크립트로 모든 기능 구현
+                                        </span>     
+                                    </div>
+                                </div>
+                            </div>                                
+                        </div>
+                        <div class="col">
+                            <div class="col_left fl">
+                                <div class="img_box">
+                                    <img src="img/main/Hausbrandt_mainpage.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                    <span class="ttl">해외 사이트</span>
+                                    <span class="type">Responsive Web</span>         
+                                </div>
+                                <div class="btn_box">
+                                    <a class="btn" href="HAUSBRANDT/Responsive Web_HAUSBRANDT.html" target="_blank">Go to Link</a>
+                                </div>
+                            </div>
+                            <div class="info fl">
+                                <div class="info_txt">
+                                    <div>
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            <em>PC / Tablet / Moible 반응형</em></span>                
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            내 작업 기간 : <em>2주</em></span>
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            skill : <em>php, css, Javascript</em></span>                      
+                                    </div>
+                                    <div class="info_desc">
+                                        <span class="txt">
+                                            메인 페이지 코딩<br />
+                                            자바스크립트로 모든 기능 구현
+                                        </span>        
+                                    </div>
+                                </div>
+                            </div>                                
+                        </div>
+                        <div class="col">
+                            <div class="col_left fl">
+                                <div class="img_box">
+                                    <img src="img/main/tworld_mainpage.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                    <span class="ttl">Tworld 메인페이지</span>
+                                    <span class="type">PC Web</span>         
+                                </div>
+                                <div class="btn_box">
+                                    <a class="btn" href="tworld/tworld.html" target="_blank">Go to Link</a>
+                                </div>
+                            </div>
+                            <div class="info fl">
+                                <div class="info_txt">
+                                    <div>
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            <em>PC Web 적응형</em></span>                                                    
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            내 작업 기간 : <em>3주</em></span>
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            skill : <em>html, css, Javascript, bxslider</em></span>                                                       
+                                    </div>
+                                    <div class="info_desc">
+                                        <span class="txt">
+                                            메인 페이지 코딩<br />
+                                            자바스크립트로 모든 기능 구현
+                                        </span>    
+                                    </div>
+                                </div>
+                            </div>                                
+                        </div>
+                        <div class="col">
+                            <div class="col_left fl">
+                                <div class="img_box">
+                                    <img src="img/main/tworld_subpage.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                    <span class="ttl">Tworld 서브페이지</span>
+                                    <span class="type">PC Web</span>         
+                                </div>
+                                <div class="btn_box">
+                                    <a class="btn" href="tworld/sub_tworld.html" target="_blank">Go to Link</a>
+                                </div>
+                            </div>
+                            <div class="info fl">
+                                <div class="info_txt">
+                                    <div>
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            <em>PC Web 적응형</em></span>                                                    
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            내 작업 기간 : <em>2주</em></span>
+                                        <span class="txt">
+                                            <i class="dots"></i>
+                                            skill : <em>html, css, Javascript, bxslider</em></span>                                                       
+                                    </div>
+                                    <div class="info_desc">
+                                        <span class="txt">
+                                            서브 페이지 코딩<br />
+                                            자바스크립트로 모든 기능 구현
+                                        </span>  
+                                    </div>
+                                </div>
+                            </div>                                
+                        </div>
+                    </div>
+                    <div class="down_scroll">
+                        <img src="img/btn/btn_next_arrow.png" alt="">
+                        <img src="img/btn/btn_next_arrow.png" alt="">
+                        <img src="img/btn/btn_next_arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section03 -->  
+        
+        <!-- section04 -->       
+        <section id="sec04" data-start="transform: translate3d(0px, 100%, 0px)" data-2000="transform: translate3d(0px, 100%, 0px)" data-3000="transform: translate3d(0px, 0%, 0px)">
+            <div class="palm01"></div>
+            <div class="inner clearfix">
+                <div class="sec_con clearfix">
+                    <h2 class="sec_ttl">About me</h2>
+                    <div class="col_box">
+                        <div class="col col_fl">
+                            <div class="img_slider">
+                                <div style="background-image:url('img/main/me00.jpg');"></div>
+                                <div style="background-image:url('img/main/me01.jpg');"></div>
+                            </div>
+                        </div>
+                        <div class="col col_fr">
+                            <div class="txt_effect">
+                                <p class="me">'박나영' 
+                                    <em>은 </em>
+                                </p>
+                                <p class="me_desc">
+                                    <span class="word yellow">노력합니다.</span>
+                                    <span class="word pink">도전합니다.</span>
+                                    <span class="word red">협업합니다.</span>
+                                    <span class="word green">소통합니다.</span>
+                                </p>                                    
+                            </div>
+                            <div class="txt_box">
+                                <span class="txt">안녕하세요!</span>
+                                <span class="txt">즐겁게 코딩하는 <b>웹 퍼블리셔 박나영</b>입니다. <i class="gg-smile"></i></span>
+                                <span class="txt"><b>실무 프로젝트</b>는 실무에서 작업한 프로젝트이고,<br />
+                                    <b>개인 프로젝트</b>는 따로 공부하여 작업한 프로젝트입니다.</span>
+                                <span class="txt">최고보다는 최선을 위해 항상 공부하고 있습니다.</span>
+                                <div class="work_ex">
+                                    <span class="txt ttl">Work Experience</span>
+                                    <span class="txt">
+                                        <em class="date">2019.10 ~ 2020.10</em>
+                                        <em class="company">· (주)유월커뮤니케이션</em>
+                                        <em class="details">· 웹에이전시 사이트 제작</em> 
+                                        <em class="lang">· 사용언어 : html, php, css, javascript, jquery, 플러그인 사용 등</em> 
+                                    </span>                                  
+                                    <span class="txt">   
+                                        <em class="date">2019.07 ~ 2019.10</em>
+                                        <em class="company">· (주)마블러스</em>
+                                        <em class="details">· 외국어교육컨텐츠 SPEAKIT 앱 개발 시 UI 제작 참여</em>
+                                        <em class="lang">· 사용언어 :  unity UI, react native UI 사용 등</em>                               
+                                    </span>                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>  
+        <!-- //section04 -->       
+
+    </div> 
+    <!-- //wrapper -->
+    
+    <div class="top_btn">
+        <a href="#!" class="txt_top">
+            <i class="gg-smile"></i>
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="js/skrollr.js"></script>          
+    <script src="js/slick.min.js"></script>
+    <script src="js/ui.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/js/skrollr.ie.min.js"></script>
+    <![endif]-->
+
+
+
+    <!-- <script src="js/jquery.mCustomScrollbar.min.js"></script> -->
+    <!-- <script src="js/jquery.mousewheel.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script> -->
+    <!-- <script src="js/rellax.min.js"></script> -->
+
+
+    <script>
+
+
+    (function($){
+        //mCustomScrollbar.js
+        // $(window).on("load",function(){
+        //     $("#sec02 .col_box").mCustomScrollbar({
+        //         axis:"y",
+        //         setHeight: "auto",
+        //         setWidth: "auto",
+        //         theme:"rounded",
+        //     }); 
+        // });
+
+        //link 끄기
+        $('a[href="#"]').click(function(e) {
+            e.preventDefault();
+        });
+
+        //slider number 구하기
+        var $index = $('.col_slider .col').length;
+        // console.log($index);
+        $('.note > i').text($index);
+
+    })(jQuery);
+
+
+    // var rellax = new Rellax('.rellax', {
+    //     speed: -2,
+    //     center: true,
+    //     wrapper: null,
+    //     round: true,
+    //     vertical: true,
+    //     horizontal: false,
+    // });
+    // rellax.refresh();
+
+    
+    </script>
+</body>
+
+
