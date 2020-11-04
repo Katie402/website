@@ -411,9 +411,6 @@ section {
 .intro .ttl_box .txt {
     text-align: center;
     color: #bbb;
-    padding: 0px 20px;
-    word-break: keep-all;
-    font-size: 11px;
 }
 .intro .menu_box {
 
@@ -1451,20 +1448,21 @@ section .inner {
     font-style:normal;
 }
 #sec04 .txt_effect p.me {
-    font-family: 'ubuntu';
     font-weight: 500;
     margin-right:10px;
     margin-top:10px;
 }
 #sec04 .txt_effect p.me_desc {
+    position:absolute;
     font-size: 40px;
     margin-right: 10px;
 }
 #sec04 .txt_effect .word {
-    position: absolute;
-    opacity: 1;
+    /* position: absolute;
+    opacity: 1; */
+    text-align: left !important;
 }
-#sec04 .txt_effect .letter {
+/*#sec04 .txt_effect .letter {
     display: inline-block;
     position: relative;
     float: left;
@@ -1481,7 +1479,7 @@ section .inner {
 #sec04 .txt_effect .letter.in {
     transform: rotateX(0deg);
     transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+} */
 #sec04 .txt_effect .yellow {
     color: #ffc045;
 }
