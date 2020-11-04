@@ -1,0 +1,32 @@
+/*reset css*/
+@charset "utf-8";
+
+/*나눔고딕웹폰트로드(폰트 사용할곳에font-family:'Nanum Gothic', '나눔고딕', '굴림', 'Gulim', 'sans-serif', 'Tahoma';추가)*/
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*나눔명조웹폰트로드(폰트 사용할곳에font-family: 'Nanum Myeongjo', serif;추가)*/
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);*/
+
+
+
+*{margin: 0;padding: 0;border: 0;outline: 0;vertical-align: top;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,nav, section{display: block;}
+ul, ol, dl{list-style: none;}
+img, video{max-width: 100%;}
+a{text-decoration: none;color: #000;}
+table{border-collapse: collapse; border-spacing: 0; table-layout:fixed;}
+input, select{vertical-align: middle;}
+body{background: #323532;font-family: 'Nanum Gothic','돋움';font-size: 100%;line-height: 1;}
+label{cursor: pointer;}
+.blind,legend,ht,caption{display: block;overflow: hidden;position: absolute;top: 0;left: -1000em;}
+i,em,address{font-style: normal;font-weight: normal;}
+
+/* float */
+
+.clearfix{*zoom: 1;}
+.clearfix:after{content:'';display:block;clear:both;}
+
+/* Common */
+
+.skip a{display:block;position:absolute;left:0;top:-9999em;width:100%;background-color:#272727;color:#aaa;font: bold 12px/3.4 arial,sans-serif;text-align:center;z-index: 99999;}
+.skip a:hover,.skip a:active,.skip a:focus{top:0}

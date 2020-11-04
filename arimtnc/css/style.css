@@ -1,0 +1,44 @@
+/* Kurien / Kurien's Blog / http://blog.kurien.co.kr */
+/* 주석만 제거하지 않는다면, 어떤 용도로 사용하셔도 좋습니다. */
+
+
+
+#kCalendar2 {width:100%; box-sizing:border-box;}
+#kCalendar2 .cal_header{text-align:center; line-height:40px; height:40px; background:#353535;}
+#kCalendar2 .cal_header:after{clear:both; content:""; display:block;}
+#kCalendar2 .cal_header .left{float:left; width:1.875%; margin-left:12.812%;}
+#kCalendar2 .cal_header .right{float:right; width:1.875%; margin-right:12.812%;}
+#kCalendar2 .cal_header .left img{vertical-align:middle;}
+#kCalendar2 .cal_header .right img{vertical-align:middle;}
+#kCalendar2 .cal_header .date{font-weight:bold; font-size:0.75em; color:#fff;}
+#kCalendar2 .cal_table{}
+#kCalendar2 .cal_table table{width:100%;}
+#kCalendar2 .cal_table table thead{}
+#kCalendar2 .cal_table table thead tr{}
+#kCalendar2 .cal_table table thead tr th{font-size:0.875em; color:#fff; font-weight:bold; line-height:39px;}
+#kCalendar2 .cal_table table tbody{}
+#kCalendar2 .cal_table table tbody tr{}
+#kCalendar2 .cal_table table tbody tr td{position:relative; height:78px; border:1px solid #686868; background:#353535;}
+#kCalendar2 .cal_table table tbody tr td a{color:#747474;}
+#kCalendar2 .cal_table table tbody tr td a .cal_txt{padding-top:22px; text-align:center;}
+#kCalendar2 .cal_table table tbody tr td a .cal_txt p{font-size:0.688em; color:#fff; line-height:15px;}
+#kCalendar2 .cal_table table tbody tr td a p.tri{font-size:0.75em; position:absolute; left:0; padding-top:2px; padding-left:2%; right:21.17%; top:0 ; bottom:59.6%; background:url('/img/sub/cal_bg01.png') left top no-repeat; background-size:contain;}
+#kCalendar2 .cal_table table tbody tr td a p.tri.on{background:url('/img/sub/cal_bg02.png') left top no-repeat; background-size:contain; color:#fff;}
+
+
+#kCalendar2 #header {height: 50px; line-height: 50px; text-align: center; font-size: 18px; font-weight: bold}
+
+#kCalendar2 .button {color: #000; text-decoration: none;}
+
+#kCalendar2 table {width: 250px; height: 200px;}
+#kCalendar2 caption {display: none;}
+
+#kCalendar2 .sun {}
+#kCalendar2 .mon {}
+#kCalendar2 .tue {}
+#kCalendar2 .wed {}
+#kCalendar2 .thu {}
+#kCalendar2 .fri {}
+#kCalendar2 .sat {}
+
+
