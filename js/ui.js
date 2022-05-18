@@ -136,7 +136,27 @@ $(function(){
           
                 if (isMobile()) {
                     // 모바일이면 실행될 코드 들어가는 곳
+                    sec01Work(); //section01
+                    conslog.log('test1');
+
+                    setTimeout(function(){ 
+                        $bgCloud.stop().animate({ 
+                            top: '0',
+                        }, 1500, 'easeInOutCubic' );                    
+                        $intro.stop().animate({ 
+                            top: '-105%',
+                        }, 1000, 'easeInExpo' );
+                        $mainVisual.addClass('shown');
+                    }, 200); 
+
+                    conslog.log('test2');
                     
+                    // if( $(window).width() > 640 ){
+           
+                        fireFlies(); //fireFlies effect 
+                    // }
+                    conslog.log('test3');
+
                 } else {
                     // 모바일이 아니면 실행될 코드 들어가는 곳
                     sec01Work(); //section01
