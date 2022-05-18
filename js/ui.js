@@ -122,30 +122,17 @@ $(function(){
             var $sec01Ttl = $('#sec01 .sec_ttl');
             var $info = $('#info');
             var $progress = $('#progress');
-
-            // 모바일 기기 체크하기
-            function isMobile() {
-                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-            }
-
-            if (isMobile()) {
-                // 모바일이면 실행될 코드 들어가는 곳
-                $info.hide();
-                $progress.hide();
-
-            } else {
-                // 모바일이 아니면 실행될 코드 들어가는 곳
-                fireFlies(); //fireFlies effect 
-            }
                 
             //when click the button of mobile,
             $introBtn.on('click', function(e){
+                sec01Work();
                 // sec02Work(); //section02  
 
                 // $wrapper.addClass('unfixed');
                 $mobile.slideUp(500); //hidden mobile
                 $wrapper.show(1000);//shown wrapper
                 
+
                 setTimeout(function(){ 
                     $bgCloud.stop().animate({ 
                         top: '0',
@@ -156,6 +143,20 @@ $(function(){
                     $mainVisual.addClass('shown');
                 }, 200); 
 
+                // 모바일 기기 체크하기
+                function isMobile() {
+                    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                }
+
+                if (isMobile()) {
+                    // 모바일이면 실행될 코드 들어가는 곳
+                    $info.hide();
+                    $progress.hide();
+
+                } else {
+                    // 모바일이 아니면 실행될 코드 들어가는 곳
+                    fireFlies(); //fireFlies effect 
+                }
             
                 //section01
                 function sec01Work(){                
