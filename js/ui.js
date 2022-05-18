@@ -124,7 +124,18 @@ $(function(){
             //when click the button of mobile,
             $introBtn.on('click', function(e){
 
-                sec01Work(); //section01
+                function isMobile() {
+                    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera
+                    Mini/i.test(navigator.userAgent);
+                }
+          
+                if (isMobile()) {
+                    // 모바일이면 실행될 코드 들어가는 곳
+                } else {
+                    // 모바일이 아니면 실행될 코드 들어가는 곳
+                    sec01Work(); //section01
+                }
+                
                 // sec02Work(); //section02  
 
                 // $wrapper.addClass('unfixed');
