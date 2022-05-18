@@ -122,16 +122,36 @@ $(function(){
             var $sec01Ttl = $('#sec01 .sec_ttl');
             var $info = $('#info');
             var $progress = $('#progress');
+            var $skrollrBody = $('#skrollr-body');
                 
+
+            // 모바일 기기 체크하기
+            function isMobile() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+
+            if (isMobile()) {
+                // 모바일이면 실행될 코드 들어가는 곳
+                $info.removeAttr('id');
+                $progress.removeAttr('id');
+                $skrollrBody.removeAttr('id');
+                $('section').removeAttr('data-start');
+                $('div').removeAttr('data-0');
+                $('section').removeAttr('data-500');
+                $('section').removeAttr('data-750');
+                $('section').removeAttr('data-2000');
+                $('section').removeAttr('data-3000');
+                $('div').removeAttr('data-end');
+
+            } else {
+                // 모바일이 아니면 실행될 코드 들어가는 곳
+                fireFlies(); //fireFlies effect 
+            }
+
             //when click the button of mobile,
             $introBtn.on('click', function(e){
-                sec01Work();
+                sec01Work(); //section01
                 // sec02Work(); //section02  
-
-                // $wrapper.addClass('unfixed');
-                $mobile.slideUp(500); //hidden mobile
-                $wrapper.show(1000);//shown wrapper
-                
 
                 setTimeout(function(){ 
                     $bgCloud.stop().animate({ 
@@ -143,20 +163,9 @@ $(function(){
                     $mainVisual.addClass('shown');
                 }, 200); 
 
-                // 모바일 기기 체크하기
-                function isMobile() {
-                    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-                }
-
-                if (isMobile()) {
-                    // 모바일이면 실행될 코드 들어가는 곳
-                    $info.hide();
-                    $progress.hide();
-
-                } else {
-                    // 모바일이 아니면 실행될 코드 들어가는 곳
-                    fireFlies(); //fireFlies effect 
-                }
+                // $wrapper.addClass('unfixed');
+                $mobile.slideUp(500); //hidden mobile
+                $wrapper.show(1000);//shown wrapper
             
                 //section01
                 function sec01Work(){                
