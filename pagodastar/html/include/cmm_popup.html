@@ -1,0 +1,995 @@
+<!-- 시작일 설정 팝업 -->
+<div class="layer_area pop_myclass" id="pop_start">
+	<div class="pop_top">
+		<h2>수강 시작일 설정</h2>
+	</div>
+	<div class="pop_cont">
+		<!-- 수강 시작일 설정 전 -->
+		<div class="pop_cont_top">
+			<dl class="start_day">
+				<dt>■ 수강시작일 설정기간 : </dt>
+				<dd>#### - ## - ##까지 (결제 후 7일 이내)</dd>
+				<dt>■ 수강시작일 선택기간 :</dt>
+				<dd>#### - ## - ## ~ #### - ## - ##까지 (결제 후 30일 이내)</dd>
+			</dl>
+			<p class="txt_day">*시작일 이후에는 취소 요청이 불가합니다</p>
+		</div>
+		<div class="pop_box">
+			<p class="tit_txt">수강시작일 선택</p>
+			<a href="javascript:void(0);" class="btn_start_day">2022-02-28</a>
+		</div>
+		<div class="pop_box">
+			<p class="tit_txt">알림 메시지 받기</p>
+			<span class="tel_input">
+				<input type="text" name="" value="010"> - <input type="text" name="" value="0000"> - <input type="text" name="" value="0000">
+			</span>
+			<a href="javascript:void(0);" class="btn_mem_edit">회원정보 수정</a>
+		</div>
+		<!-- 230829 pny 삭제
+		<div class="pop_btn_c">
+			<a href="javascript:void(0);" class="btn_cancel">취소</a>
+			<a href="javascript:void(0);" class="btn_ok">확인</a>
+		</div>
+		//-->
+		<!-- 230829 pny 추가 -->
+		<div class="btn_pop">
+			<a href="javascript:void(0);" class="btn_cancel">취소</a>
+			<a href="javascript:void(0);" class="btn_confirm">확인</a>
+		</div>
+		<!-- //230829 pny 추가 -->
+		<!-- //수강 시작일 설정 전 -->
+
+		<!-- 수강 시작일 설정 완료 -->
+		<p class="tit_com">수강 시작일 설정이 완료되었습니다.</p>
+		<!-- 230829 pny 삭제
+		<div class="pop_btn_c">
+			<a href="javascript:void(0);" class="btn_ok">확인</a>
+		</div>
+		//-->
+		<!-- 230829 pny 추가 -->
+		<div class="btn_pop">
+			<a href="javascript:" class="btn_confirm">확인</a>
+		</div>
+		<!-- //230829 pny 추가 -->
+		<!-- //수강 시작일 설정 완료 -->
+	</div>
+	<a href="javascript:void(0);" class="btn_ly_close" onclick="$('#pop_start, .modal').hide();">팝업닫기</a>
+</div>
+<!-- //시작일 설정 팝업 -->
+
+<!-- 수강 연장 팝업 -->
+<div class="layer_area pop_myclass" id="pop_delay">
+	<div class="pop_top">
+		<h2>수강 연장</h2>
+	</div>
+	<div class="pop_cont">
+		<div class="pop_cont_top">
+			<p class="pop_stit">■ 수강기간 연장 신청</p>
+			<ul class="info_list">
+				<li>수강기간 내 학습을 마치지 못 했을 경우 혹은 복습을 원하실 경우 활용할 수 있습니다.</li>
+				<li>연장 가능 기간(수강시작일~수강종료 후 7일 이내) 내 동일한 강의의 수강이력이 있는 유료회원이라면<br />이용할 수 있습니다.</li>
+				<li>수강기간 연장 서비스가 가능한 상품은 유료결제(카드, 무통장, 계좌이체)를 한 단일강의와 패키지/슈퍼패스<br />  강의 입니다. (중국어/일본어 외 타 과목 슈퍼패스, 학원연계강의, 쿠폰 혹은 이벤트 신청 강의 연장 불가)</li>
+				<li>단, 강의에 포함된 첨삭 등 기타 서비스의 경우 수강 연장과 관계없이 지원되지 않습니다.</li>
+				<li>수강기간 연장 서비스가 반영된 강의는 구매 즉시, 결제일로부터 강의가 바로 시작됩니다.(별도 수강시작일 지정없음)</li>
+				<li>수강연장은 강의 별로 1회에 한하여 가능하며 연장신청 시 환불 불가 합니다.</li>
+				<li>(단, 오픽과 토스 과목의 30일, 14일 강의 상품은 최대 2회까지 수강연장이 가능합니다.)</li>
+			</ul>
+		</div>
+		<div class="pop_box">
+			<dl class="class_info">
+				<dt>강의명</dt>
+				<dd>라쌤토익 파트7 2주 독해 급상승</dd>
+				<dt>수강자</dt>
+				<dd>홍길동</dd>
+				<dt>수강기간</dt>
+				<dd>2021-11-08 ~ 2021-12-27</dd>
+				<dt>정가</dt>
+				<dd>69,000원</dd>
+			</dl>
+		</div>
+		<dl class="class_sel">
+			<dt>50일 연장</dt>
+			<dd><input type="radio" name="" id="classPrice" checked><label for="classPrice">34,000원</label></dd>
+		</dl>
+		<!-- 230829 pny 삭제
+		<div class="pop_btn_c">
+			<a href="javascript:void(0);" class="btn_cancel">취소</a>
+			<a href="javascript:void(0);" class="btn_ok">확인</a>
+		</div>
+		// -->
+		<!-- 230829 pny 추가 -->
+		<div class="btn_pop">
+			<a href="javascript:void(0);" class="btn_cancel">취소</a>
+			<a href="javascript:void(0);" class="btn_confirm">확인</a>
+		</div>
+		<!-- //230829 pny 추가 -->
+	</div>
+	<a href="javascript:void(0);" class="btn_ly_close" onclick="$('#pop_delay, .modal').hide();">팝업닫기</a>
+</div>
+<!-- //수강 연장 팝업 -->
+
+<!-- 일시 정지 팝업 -->
+<div class="layer_area pop_myclass" id="pop_pause">
+	<div class="pop_top">
+		<h2>일시 정지</h2>
+	</div>
+	<div class="pop_cont">
+		<!-- step1 -->
+		<div>
+			<div class="pop_cont_top">
+				<p class="pop_stit">해당 강의를 일시 정지 하시겠습니까?</p>
+				<p class="pop_stxt">일시정지는 각 강의당 수강 기간 내에 단 1회만 가능합니다.</p>
+			</div>
+			<div class="pop_box">
+				<dl class="class_info">
+					<dt>강의명</dt>
+					<dd>라쌤토익 파트7 2주 독해 급상승</dd>
+					<dt>수강기간</dt>
+					<dd>2021-11-08 ~ 2021-12-27</dd>
+				</dl>
+			</div>
+			<div class="pop_box">
+				<dl class="class_info type2">
+					<dt>일시정지 시작일 선택</dt>
+					<dd><a href="javascript:void(0);" class="btn_start_day">2022-02-28</a></dd>
+					<dt>일시정지 기간 선택</dt>
+					<dd>
+						<select name="">
+							<option>선택</option>
+						</select>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!-- //step1 -->
+
+		<!-- step2 -->
+		<div>
+			<div class="pop_cont_top">
+				<p class="pop_stit">해당 강의를 일시 정지 하시겠습니까?</p>
+				<p class="pop_stxt">일시정지는 각 강의당 수강 기간 내에 단 1회만 가능합니다.</p>
+			</div>
+			<div class="pop_box">
+				<dl class="class_info">
+					<dt>강의명</dt>
+					<dd>라쌤토익 파트7 2주 독해 급상승</dd>
+					<dt>최초수강기간</dt>
+					<dd>2021-##-## ~ 2021-##-##</dd>
+					<dt>정지기간</dt>
+					<dd>2021-##-## ~ 2021-##-## (##일간)</dd>
+					<dt>수강재시작일</dt>
+					<dd>2021-##-##</dd>
+					<dt>최종수강기간</dt>
+					<dd>2021-##-## ~ 2021-##-##</dd>
+				</dl>
+			</div>
+			<div class="pop_box">
+				<p class="tit_txt">알림 메시지 받기</p>
+				<span class="tel_input">
+					<input type="text" name="" value="010"> - <input type="text" name="" value="0000"> - <input type="text" name="" value="0000">
+				</span>
+				<a href="javascript:void(0);" class="btn_mem_edit">회원정보 수정</a>
+			</div>
+		</div>
+		<!-- //step2 -->
+
+		<!-- step3 -->
+		<div>
+			<div class="pop_cont_top txt_c">
+				<p class="pop_stit">일시 정지가 완료되었습니다.</p>
+				<p class="pop_stxt">정지된 기간 중에는 언제든지 해제 할 수 있습니다.</p>
+			</div>
+			<div class="pop_box">
+				<dl class="class_info">
+					<dt>강의명</dt>
+					<dd>라쌤토익 파트7 2주 독해 급상승</dd>
+					<dt>최초수강기간</dt>
+					<dd>2021-##-## ~ 2021-##-##</dd>
+					<dt>정지기간</dt>
+					<dd>2021-##-## ~ 2021-##-## (##일간)</dd>
+					<dt>수강재시작일</dt>
+					<dd>2021-##-##</dd>
+					<dt>최종수강기간</dt>
+					<dd>2021-##-## ~ 2021-##-##</dd>
+				</dl>
+			</div>
+		</div>
+		<!-- //step3 -->
+
+		<!-- 230829 pny 삭제
+			<div class="pop_btn_c">
+			<a href="javascript:void(0);" class="btn_cancel">취소</a>
+			<a href="javascript:void(0);" class="btn_ok">확인</a>
+		</div> //-->
+		<!-- 230829 pny 추가 -->
+		<div class="btn_pop">
+			<a href="javascript:void(0);" class="btn_cancel">취소</a>
+			<a href="javascript:void(0);" class="btn_confirm">확인</a>
+		</div>
+		<!-- //230829 pny 추가 -->
+	</div>
+	<a href="javascript:void(0);" class="btn_ly_close" onclick="$('#pop_pause, .modal').hide();">팝업닫기</a>
+</div>
+<!-- //일시 정지 팝업 -->
+
+<!-- 라이브 강의 일정 보기 팝업 -->
+<div class="layer_area pop_myclass" id="pop_live_schedule">
+	<div class="pop_top">
+		<h2>라이브 강의 일정 보기</h2>
+	</div>
+	<div class="pop_cont">
+		<div class="list_tbl">
+			<table>
+				<colgroup>
+					<col style="width:73px;">
+					<col style="width:px;">
+					<col style="width:414px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>회차</th>
+						<th>일정</th>
+						<th>강의주제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1회차</td>
+						<td>20##-##-## 19:00</td>
+						<td>[1 주차] 숙박 예약을 해 보자 - 날짜/요일/인원수 말하기, 허가와 요구 표현</td>
+					</tr>
+					<tr>
+						<td>2회차</td>
+						<td>20##-##-## 19:00</td>
+						<td>[1 주차] 숙박 예약을 해 보자 - 날짜/요일/인원수 말하기, 허가와 요구 표현</td>
+					</tr>
+					<tr>
+						<td>3회차</td>
+						<td>20##-##-## 19:00</td>
+						<td>[1 주차] 숙박 예약을 해 보자 - 날짜/요일/인원수 말하기, 허가와 요구 표현</td>
+					</tr>
+					<tr>
+						<td>4회차</td>
+						<td>20##-##-## 19:00</td>
+						<td>[1 주차] 숙박 예약을 해 보자 - 날짜/요일/인원수 말하기, 허가와 요구 표현</td>
+					</tr>
+					<tr>
+						<td>5회차</td>
+						<td>20##-##-## 19:00</td>
+						<td>[1 주차] 숙박 예약을 해 보자 - 날짜/요일/인원수 말하기, 허가와 요구 표현</td>
+					</tr>
+					<tr>
+						<td>6회차</td>
+						<td>20##-##-## 19:00</td>
+						<td>[1 주차] 숙박 예약을 해 보자 - 날짜/요일/인원수 말하기, 허가와 요구 표현</td>
+					</tr>
+					<tr>
+						<td>7회차</td>
+						<td>20##-##-## 19:00</td>
+						<td>[1 주차] 숙박 예약을 해 보자 - 날짜/요일/인원수 말하기, 허가와 요구 표현</td>
+					</tr>
+					<tr>
+						<td>8회차</td>
+						<td>20##-##-## 19:00</td>
+						<td>[1 주차] 숙박 예약을 해 보자 - 날짜/요일/인원수 말하기, 허가와 요구 표현</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<a href="javascript:void(0);" class="btn_ly_close" onclick="$('#pop_live_schedule, .modal').hide();">팝업닫기</a>
+</div>
+<!-- //라이브 강의 일정 보기 팝업 -->
+
+<!-- 일시 정지 해제 팝업 -->
+<div class="layer_area pop_myclass" id="pop_stop_end">
+	<div class="pop_top">
+		<h2>일시 정지 해제</h2>
+	</div>
+	<div class="pop_cont">
+		<div class="pop_cont_top txt_c">
+			<p class="pop_stit">해당 강의의 일시 정지를 해제 하시겠습니까?</p>
+			<p class="pop_stxt">일시정지는 각 강의당 수강 기간 내에 단 1회만 가능합니다.</p>
+		</div>
+		<div class="pop_box">
+			<dl class="class_info">
+				<dt>강의명</dt>
+				<dd>라쌤토익 파트7 2주 독해 급상승</dd>
+				<dt>최초수강기간</dt>
+				<dd>2021-##-## ~ 2021-##-##</dd>
+				<dt>정지기간</dt>
+				<dd>2021-##-## ~ 2021-##-## (##일간)</dd>
+				<dt>수강재시작일</dt>
+				<dd>2021-##-##</dd>
+				<dt>최종수강기간</dt>
+				<dd>2021-##-## ~ 2021-##-##</dd>
+			</dl>
+		</div>
+		<!-- 230829 pny 삭제
+		<div class="pop_btn_c">
+			<a href="javascript:;" class="btn_cancel">취소</a>
+			<a href="javascript:;" class="btn_ok">확인</a>
+		</div>
+		//-->
+		<!-- 230829 pny 추가 -->
+		<div class="btn_pop">
+			<a href="javascript:void(0);" class="btn_cancel">취소</a>
+			<a href="javascript:void(0);" class="btn_confirm">확인</a>
+		</div>
+		<!-- //230829 pny 추가 -->
+	</div>
+	<a href="javascript:void(0);" class="btn_ly_close" onclick="$('#pop_stop_end, .modal').hide();">팝업닫기</a>
+</div>
+<!-- //일시 정지 해제 팝업 -->
+
+<!-- 예약 정책 팝업 -->
+<div class="layer_area pop_myclass" id="pop_reserve01">
+	<div class="pop_top">
+		<h2>예약 정책</h2>
+	</div>
+	<div class="pop_cont">
+		<p class="pop_stit1">예약 정책</p>
+		<p class="pop_stit">[예약 안내 및 유의사항]</p>
+		<ul class="info_list">
+			<li>설정한 수강 시작일부터 수강기간이 적용됩니다.</li>
+			<li>수강시작일은 결제 후 7일 동안 30일 이내까지 설정할 수 있습니다.</li>
+			<li><span class="txt_point1">예약 신청은 수강기간 내에만 가능하며, 수강 일시정지/연장은 불가합니다.</span></li>
+			<li>예약 신청은 [예약신청>] 버튼을 통해 잔여 횟수만큼만 가능하며, <span class="txt_point1">신청일 기준 익일 일정부터 선택 가능합니다.</span></li>
+			<li><span class="txt_point1">예약 취소는 예약일 하루 전까지만 가능합니다.</span> 예약일 당일은 이미 수업 준비가 된 상태이기 때문에,취소가 불가한 점<br />  양해 바랍니다.</li>
+			<li>예약 변경은 예약 취소 후, 재 예약 신청 해주시면 됩니다.</li>
+			<li>예약 완료/취소 시 잔여 횟수에 반영됩니다.</li>
+		</ul>
+		<p class="pop_stit">[환불 안내]</p>
+		<ul class="info_list">
+			<li>예약제 상품은 결제 후 7일 미만, 모든 회차 진행 상태가 ‘예약 전’인 경우에만 전액 환불 가능합니다.</li>
+			<li><span class="txt_point1">결제 후 7일 경과, 진행 상태가 ‘예약완료’ 및 ‘진행완료’인 회차가 있을 경우, 해당 회차 개수만큼 학습수수료 및 위약금을<br /> 차감한 뒤 환불됩니다.</span><br />
+			*환불금 : 결제금액 – 학습수수료 – 위약금(10%)<br />
+			*학습수수료 : (정가/총 회차 개수) * ‘예약완료’ 및 ‘진행완료’인 회차 개수<br />
+			*위약금은 결제금액에서 학습수수료를 차감한 금액의 10%입니다.</li>
+			<li><span class="txt_point1">예약일에 출석하지 않았거나 예약 취소 기한이 경과된 경우, ‘진행완료’로 간주되오니 이 점 유의 바랍니다.</span></li>
+			<li><span class="txt_point1">수강기간이 종료된 경우, 진행 상태와 관계 없이 환불 불가합니다. </span></li>
+		</ul>
+		<!--<div class="info_txt">
+			*환불금 : 결제금액 – 학습수수료(사용 횟수) – 위약금(10%)<br />
+			*위약금은 결제금액에서 학습수수료를 차감한 금액의 10%입니다.<br />
+			예약 신청하신 수업의 예약취소 기한이 경과된 경우, 사용한 횟수로 간주하오니 이 점 유의 바랍니다.<br />
+			수강기간이 종료된 경우, 예약 여부와 관계 없이 환불 불가합니다.
+		</div>-->
+	</div>
+	<a href="javascript:void(0);" class="btn_ly_close" onclick="$('#pop_reserve01, .modal').hide();">팝업닫기</a>
+</div>
+<!-- //예약 정책 팝업 -->
+
+<!-- 예약 확인 팝업 -->
+<div class="layer_area pop_myclass" id="pop_reserve02">
+	<div class="pop_top">
+		<h2>예약 확인</h2>
+	</div>
+	<div class="pop_cont">
+		<div class="pop_cont_top">
+			<ul class="info_list">
+				<li>안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트</li>
+				<li>안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트</li>
+				<li>안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트 안내 텍스트</li>
+			</ul>
+		</div>
+		<div class="list_tbl">
+			<table>
+				<colgroup>
+					<col style="width:73px;">
+					<col style="width:px;">
+					<col style="width:96px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>회차</th>
+						<th>예약시간</th>
+						<th>진행</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1회차</td>
+						<td>2021년 ##월 ##일  ##시 ##분</td>
+						<td>완료</td>
+					</tr>
+					<tr>
+						<td>2회차</td>
+						<td>2021년 ##월 ##일  ##시 ##분</td>
+						<td>완료</td>
+					</tr>
+					<tr>
+						<td>3회차</td>
+						<td>2021년 ##월 ##일  ##시 ##분</td>
+						<td>시작 전</td>
+					</tr>
+					<tr>
+						<td>4회차</td>
+						<td>-</td>
+						<td>예약 전</td>
+					</tr>
+					<tr>
+						<td>5회차</td>
+						<td>-</td>
+						<td>예약 전</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 230829 pny 삭제
+		<div class="pop_btn_c">
+			<a href="javascript:void(0);" class="btn_ok">확인</a>
+		</div>
+		//-->
+		<!-- 230829 pny 수정 -->
+		<div class="btn_pop">
+			<a href="javascript:void(0);" class="btn_confirm">확인</a>
+		</div>
+		<!-- //230829 pny 수정 -->
+	</div>
+	<a href="javascript:void(0);" class="btn_ly_close" onclick="$('#pop_reserve02, .modal').hide();">팝업닫기</a>
+</div>
+<!-- //예약 확인 팝업 -->
+
+<!-- 예약 취소 팝업 -->
+<div class="layer_area pop_myclass" id="pop_reserve03">
+	<div class="pop_top">
+		<h2>예약 취소</h2>
+	</div>
+	<div class="pop_cont">
+		<div>
+			<div class="pop_cont_top">
+				<p class="pop_stit">예약 취소를 원하는 차시를 선택하세요.</p>
+				<ul class="info_list">
+					<li>예약 신청은 [예약신청] 버튼을 통해 잔여 횟수만큼만 가능하며, 신청일 기준 익일 일정부터 선택 가능합니다.</li>
+					<li>예약 취소는 예약 신청하신 수업 일자 하루 전까지만 가능합니다. 이미 수업 준비가 된 상태이기 때문에, 시작 <br />직전 취소가 불가한 점 양해 바랍니다.</li>
+					<li>예약 완료/취소 시 잔여 횟수에 반영됩니다.</li>
+				</ul>
+			</div>
+			<div class="pop_box">
+				<dl class="class_info type3">
+					<dt>취소 차시</dt>
+					<dd>
+						<select name="">
+							<option>#차</option>
+						</select>
+					</dd>
+					<dt>선택 일정</dt>
+					<dd>2021-##-## ##:##</dd>
+					<!--<dt>변경 일정</dt>
+					<dd>
+						<select name="">
+							<option>날짜</option>
+						</select>
+						<select name="">
+							<option>시간</option>
+						</select>
+					</dd>-->
+				</dl>
+			</div>
+		</div>
+		<!-- 230829 pny 삭제 -->
+		<!-- <div class="pop_btn_c"> -->
+			<!--<a href="javascript:void(0);" class="btn_cancel">취소</a>-->
+			<!-- <a href="javascript:void(0);" class="btn_ok">확인</a>
+			<a href="javascript:void(0);" class="btn_cancel2">예약취소</a> -->
+		<!-- </div>
+		//-->
+		<!-- 230829 pny 추가 -->
+		<div class="btn_pop">
+			<a href="javascript:void(0);" class="btn_confirm">확인</a>
+			<a href="javascript:void(0);" class="btn_cancel">예약취소</a>
+		</div>
+		<!-- //230829 pny 추가 -->
+	</div>
+	<a href="javascript:void(0);" class="btn_ly_close" onclick="$('#pop_reserve03, .modal').hide();">팝업닫기</a>
+</div>
+<!-- //예약 취소 팝업 -->
+
+<!-- 예약 신청 팝업 -->
+<div class="layer_area pop_myclass" id="pop_reserve04">
+	<div class="pop_top">
+		<h2>예약 신청</h2>
+	</div>
+	<div class="pop_cont">
+		<div>
+			<div class="pop_cont_top">
+				<p class="pop_stit">예약 하실 날짜와 시간을 선택하세요.</p>
+				<ul class="info_list">
+					<li>예약 신청은 [예약신청] 버튼을 통해 잔여 횟수만큼만 가능하며, 신청일 기준 익일 일정부터 선택 가능합니다.</li>
+					<li>예약 취소는 예약 신청하신 수업 일자 하루 전까지만 가능합니다. 이미 수업 준비가 된 상태이기 때문에, 시작 <br />직전 취소가 불가한 점 양해 바랍니다.</li>
+					<li>예약 완료/취소 시 잔여 횟수에 반영됩니다.</li>
+				</ul>
+			</div>
+			<div class="attd_calendar">
+				<div class="attd_top">
+					<a href="javascript:void(0);" class="month_p"></a>
+					2022.04
+					<a href="javascript:void(0);" class="month_n"></a>
+				</div>
+				<!--캘린더-->
+				<div class="cals_area">
+					<table>
+						<tr>
+							<th>SUN</th>
+							<th>MON</th>
+							<th>TUE</th>
+							<th>WED</th>
+							<th>THUR</th>
+							<th>FRI</th>
+							<th>SAT</th>
+						</tr>
+						<tr>
+							<td class="none"><div></div></td>
+							<td class="none"><div></div></td>
+							<td class="none"><div></div></td>
+							<td class="past">
+								<div>1</div>
+							</td>
+							<td class="past">
+								<div>2</div>
+							</td>
+							<td class="past">
+								<div>3</div>
+							</td>
+							<td class="past">
+								<div>4</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="past">
+								<div>5</div>
+							</td>
+							<td class="today">
+								<div>6</div>
+							</td>
+							<td>
+								<div>7</div>
+							</td>
+							<td>
+								<div>8</div>
+							</td>
+							<!-- 클릭시 활성화 220602 syh -->
+							<td class="on">
+								<div>9</div>
+							</td>
+							<!-- //클릭시 활성화 -->
+							<td>
+								<div>10</div>
+							</td>
+							<td>
+								<div>11</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>12</div>
+							</td>
+							<td>
+								<div>13</div>
+							</td>
+							<td>
+								<div>14</div>
+							</td>
+							<td>
+								<div>15</div>
+							</td>
+							<td>
+								<div>16</div>
+							</td>
+							<td>
+								<div>17</div>
+							</td>
+							<td>
+								<div>18</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>19</div>
+							</td>
+							<td>
+								<div>20</div>
+							</td>
+							<td>
+								<div>21</div>
+							</td>
+							<td>
+								<div>22</div>
+							</td>
+							<td>
+								<div>23</div>
+							</td>
+							<td>
+								<div>24</div>
+							</td>
+							<td>
+								<div>25</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>26</div>
+							</td>
+							<td>
+								<div>27</div>
+							</td>
+							<td>
+								<div>28</div>
+							</td>
+							<td>
+								<div>29</div>
+							</td>
+							<td>
+								<div>30</div>
+							</td>
+							<td>
+								<div>31</div>
+							</td>
+							<td><div></div></td>
+						</tr>
+					</table>
+				</div>
+				<!--//캘린더-->
+			</div>
+			<div class="pop_box">
+				<dl class="class_info type4">
+					<dt>수강 기간</dt>
+					<dd>2022-##-##~2022-##-## (##일)</dd>
+					<dt>잔여 횟수</dt>
+					<dd>#/5</dd>
+					<dt>예약 가능 시간</dt>
+					<dd>
+						<select name="">
+							<option>시간</option>
+						</select>
+					</dd>
+					<dt class="time_list">예약 시간</dt>
+					<dd>
+						<span>2022-##-## ##:## <a href="javascript:void(0);" class="btn_del">삭제</a></span>
+						<span>2022-##-## ##:## <a href="javascript:void(0);" class="btn_del">삭제</a></span>
+						<span>2022-##-## ##:## <a href="javascript:void(0);" class="btn_del">삭제</a></span>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!-- 230829 pny 삭제
+			<div class="pop_btn_c">
+			<a href="javascript:void(0);" class="btn_cancel">취소</a>
+			<a href="javascript:void(0);" class="btn_ok">확인</a>
+		</div> //-->
+		<!-- 230829 pny 추가 -->
+		<div class="btn_pop">
+			<a href="javascript:void(0);" class="btn_cancel">취소</a>
+			<a href="javascript:void(0);" class="btn_confirm">확인</a>
+		</div>
+		<!-- //230829 pny 수정 추가-->
+	</div>
+	<a href="javascript:void(0);" class="btn_ly_close" onclick="$('#pop_reserve04, .modal').hide();">팝업닫기</a>
+</div>
+<!-- //예약 신청 팝업 -->
+
+<!-- 출석 체크 팝업 -->
+<div class="layer_area wd700 pop_myclass_chk" id="pop_attendance"> <!-- 출석 체크 팝업만 pop_myclass_chk 추가 - 230802 pny-->
+	<div class="pop_top">
+		<h2>출석체크</h2>
+	</div>
+	<div class="pop_cont pop_inner">
+		<div class="pop_list">
+			<div class="attd_area">
+				<p class="lec_tit">[토익 점수보장 환급반] 900+목표 90일 (출석 100% 환급)</p>
+				<p class="lec_period" style="padding-bottom:5px"><span>수강기간</span> 23.04.03~23.07.01 (90일)</p>
+				<p class="lec_period" id="myclockTimer"><span>현재시간</span> 23.05.16 14:55:46</p>
+				<p class="lec_period" style="padding-bottom:10px">
+					<span style="font-size:14px;font-weight:700">출석 적립금 현황
+					<a href="javascript:" class="btn_help">도움말</a></span>99,999원
+				</p>
+				<!-- 팝업 -->
+				<div class="pop_sale_info">
+					<p>수강기간 총 4주 중, 1주일 연속 출석 체크 시, <br />각 1만원씩 적립 (4주 연속 출석 시에는 5만원 적립)</p>
+					<a href="javascript:;" class="bt_ly_close">팝업 닫기</a>
+				</div>
+				<!-- <div class="lec_info">
+					<dl>
+						<dt>수강기간</dt>
+						<dd>20.04.13~20.07.11 (90일)</dd>
+						<dt>목표점수</dt>
+						<dd>700점</dd>
+						<dt>출석 적립금 현황 <a href="javascript:;" class="btn_help">도움말</a>
+							팝업
+							<div class="pop_sale_info">
+								<p>수강기간 총 4주 중, 1주일 연속 출석 체크 시, <br />각 1만원씩 적립 (4주 연속 출석 시에는 5만원 적립)</p>
+								<a href="javascript:;" class="bt_ly_close">팝업 닫기</a>
+							</div>
+							//
+						</dt>
+						<dd>00,000원</dd>
+					</dl>
+				</div> -->
+				<ul class="ul_attd">
+					<li>
+						<div class="tit_box">출석</div>
+						<span class="txt_num txt_g">0</span>
+					</li>
+					<li>
+						<div class="tit_box absence">결석</div>
+						<span class="txt_num txt_r">46</span>
+					</li>
+					<li>
+						<div class="tit_box total">총 수강기간</div>
+						<span class="txt_num">90</span>
+					</li>
+				</ul>
+			</div>
+			<!-- 230516 hyj 추가 -->
+			<div class="scholarship">
+				<div class="num">
+					<span>EE12345678님의<br>현재 총 누적 장학금</span>
+					<strong>000,000원</strong>
+				</div>
+				<p class="noti">* 해당 장학금은 출석 누적 장학금으로,과제까지 완주하면 해당 금액의 x2배가 환급됩니다.</p>
+			</div>
+			<!-- //230516 hyj 추가 -->
+			<div class="attd_calendar">
+				<div class="attd_top">
+					<a href="javascript:;" class="month_p"></a>
+					2020.05
+					<a href="javascript:;" class="month_n"></a>
+				</div>
+				<!--캘린더-->
+				<div class="cals_area">
+					<table>
+						<tr>
+							<th>SUN</th>
+							<th>MON</th>
+							<th>TUE</th>
+							<th>WED</th>
+							<th>THUR</th>
+							<th>FRI</th>
+							<th>SAT</th>
+						</tr>
+						<tr>
+							<td><div class="none"></div></td>
+							<td><div class="none"></div></td>
+							<td><div class="none"></div></td>
+							<td>
+								<div>1</div>
+							</td>
+							<td>
+								<div class="attend">2</div>
+							</td>
+							<td>
+								<div class="attend">3</div>
+							</td>
+							<td>
+								<div class="absence">4</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="absence">5</div>
+							</td>
+							<td>
+								<div class="attend">6</div>
+							</td>
+							<td>
+								<div class="absence">7</div>
+							</td>
+							<td>
+								<div>8</div>
+							</td>
+							<td>
+								<div>9</div>
+							</td>
+							<td>
+								<div class="attend">10</div>
+							</td>
+							<td>
+								<div>11</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>12</div>
+							</td>
+							<td>
+								<div>13</div>
+							</td>
+							<td>
+								<div>14</div>
+							</td>
+							<td>
+								<div>15</div>
+							</td>
+							<td>
+								<div>16</div>
+							</td>
+							<td>
+								<div>17</div>
+							</td>
+							<td>
+								<div>18</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>19</div>
+							</td>
+							<td>
+								<div>20</div>
+							</td>
+							<td>
+								<div>21</div>
+							</td>
+							<td>
+								<div>22</div>
+							</td>
+							<td>
+								<div>23</div>
+							</td>
+							<td>
+								<div>24</div>
+							</td>
+							<td>
+								<div>25</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>26</div>
+							</td>
+							<td>
+								<div>27</div>
+							</td>
+							<td>
+								<div>28</div>
+							</td>
+							<td>
+								<div>29</div>
+							</td>
+							<td>
+								<div>30</div>
+							</td>
+							<td>
+								<div>31</div>
+							</td>
+							<td><div></div></td>
+						</tr>
+					</table>
+				</div>
+				<!--//캘린더-->
+			</div>
+		</div>
+	</div>
+	<a href="javascript:;" class="btn_ly_close" onclick="$('#pop_attendance, .modal').hide();">레이어 닫기</a>
+</div>
+<!-- //출석 체크 팝업 -->
+
+<script type="text/javascript">
+
+	//리스트 열기/접기
+	$('.mylect_ttl_box .accordion').on('click', function () {
+		$(this).parents('.mylect_ttl_box').siblings('.mylect_list_box, .mylect_list_row').slideToggle('fast');
+		$(this).toggleClass('up');
+		if (!($(this).hasClass('up'))){
+			$(this).html("접기");
+		} else{
+			$(this).html("열기");
+		}
+	});
+
+	//팝업 캘린더 클릭시 활성화
+	$('.pop_myclass .cals_area td').on('click', function () {
+		$('.pop_myclass .cals_area td').removeClass('on');
+		$(this).addClass('on');
+	});
+
+	//예약 정책 팝업
+	$('.btn_admin_group .reserve01').on('click', function(e) {
+		$(".pop_myclass").css({
+			"top": (($(window).height()-$(".pop_myclass").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+		$('#pop_reserve01, .modal').show();
+	});
+
+	//예약 확인 팝업
+	$('.btn_admin_group .reserve02').on('click', function(e) {
+		$(".pop_myclass").css({
+			"top": (($(window).height()-$(".pop_myclass").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+		$('#pop_reserve02, .modal').show();
+	});
+
+	//예약 취소 팝업
+	$('.btn_admin_group .reserve03').on('click', function(e) {
+		$(".pop_myclass").css({
+			"top": (($(window).height()-$(".pop_myclass").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+		$('#pop_reserve03, .modal').show();
+	});
+
+	//예약 신청 팝업
+	$('.btn_study_group .reserve').on('click', function(e) {
+		$(".pop_myclass").css({
+			"top": (($(window).height()-$(".pop_myclass").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+		$('#pop_reserve04, .modal').show();
+	});
+
+	//시작일 설정 팝업
+	$('.btn_study_group .start_set a').on('click', function(e) {
+		$(".pop_myclass").css({
+			"top": (($(window).height()-$(".pop_myclass").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+		$('#pop_start, .modal').show();
+	});
+
+	//수강 연장 팝업
+	$('.btn_admin_group .extend a').on('click', function(e) {
+		$(".pop_myclass").css({
+			"top": (($(window).height()-$(".pop_myclass").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+		$('#pop_delay, .modal').show();
+	});
+
+	//일시 정지 팝업
+	$('.btn_admin_group .stop a').on('click', function(e) {
+		$(".pop_myclass").css({
+			"top": (($(window).height()-$(".pop_myclass").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+		$('#pop_pause, .modal').show();
+	});
+
+	//라이브 강의일정 보기 팝업
+	$('.btn_admin_group .schedule a').on('click', function(e) {
+		$(".pop_myclass").css({
+			"top": (($(window).height()-$(".pop_myclass").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+		$('#pop_live_schedule, .modal').show();
+	});
+
+	//일시 정지 해제 팝업
+	$('.btn_admin_group .stop_end').on('click', function(e) {
+		$(".pop_myclass").css({
+			"top": (($(window).height()-$(".pop_myclass").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+		$('#pop_stop_end, .modal').show();
+	});
+
+	//출석 체크 팝업
+	$('.btn_admin_group .attend').click(function(){
+		$('#pop_attendance, .modal').show();
+		$("#pop_attendance").css({
+			"top": (($(window).height()-$("#pop_attendance").outerHeight())/2+$(window).scrollTop())+"px"
+		});
+	});
+
+	//출석 체크 팝업 - 출석 적립금 도움말
+	$(".attd_area .btn_help").click(function() {
+		$('.pop_sale_info').show();
+	});
+
+	//강사이미지 슬라이드
+	var bx;
+	bx = {
+		slider : [],
+		item : [
+			$('.list_lect_group > ul'), //추천 강의
+		],
+		opt : [
+			{mode:'horizontal',auto:true,slideWidth:350,minSlides:3,maxSlides:3,slideMargin:0,pause:4000,speed:300,hideControlOnEnd : true, infiniteLoop:false, adaptiveHeight:true,/* 221115 pny 수정 */
+			controls: ($('.list_lect_group > ul > li').length <= 3) ? false : true,
+			pager: ($('.list_lect_group > ul > li').length <= 3) ? false : true},
+		],
+		set : function(){
+			$.each(bx.item, function(index){
+				bx.slider[index] = bx.item[index].bxSlider(bx.opt[index]);
+			});
+		}
+	}
+	$(window).load(function() {
+		if(bx.item.length > 0){
+			bx.set();
+		}
+	});
+</script>

@@ -6535,7 +6535,7 @@ var HelperRenderer = /** @class */ (function () {
         var classNames = 'fc-helper ' + (extraClassNames || '');
         var i;
         // assigns each seg's el and returns a subset of segs that were rendered
-        segs = this.eventRenderer.renderFgSegEls(segs);
+        segs = this.eventRenderer.renderFgSegEls(segs);
         for (i = 0; i < segs.length; i++) {
             segs[i].el.addClass(classNames);
         }

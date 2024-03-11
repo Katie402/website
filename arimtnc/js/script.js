@@ -161,12 +161,14 @@ window.onload = function(){
         }
     });
 
-
     $('.tab_ttl').on('click', function(){
-        $('.m_sub_tab ul').toggle();
-        $('.tab_ttl').toggleClass('on');
+        $('.tab_ttl').each(function(){
+            $(this).removeClass('on');
+            $(this).next('ul').removeClass('on');
+        });
+        $(this).addClass('on'); 
+        $(this).next('ul').addClass('on');
     });
-    
 
 
 };

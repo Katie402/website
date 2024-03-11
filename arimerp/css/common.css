@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap&subset=korean');
+/*나눔고딕웹폰트로드(폰트 사용할곳에font-family:'Nanum Gothic', '나눔고딕', '굴림', 'Gulim', 'sans-serif', 'Tahoma';추가)*/
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+/*나눔바른고딕웹폰트로드(폰트 사용할곳에font-family:'NanumBarunGothic';추가)*/
+/*@import url("../font/NanumBarunGothic.css");*/
+/* 본고딕 font-family: "Noto Sans KR"; */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+/* @import url(notosanskr.css);  */
+/*나눔스퀘어웹폰트로드(폰트 사용할곳에font-family: 'Nanum Square';추가)*/
+/* @import url("../font/NanumSquare.css"); */
+/* @import url(//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css); */
+/* @font-fact {font-family:"Nanum SquareB"; src("../fonts/NanumSquareB.ttf") } */
+/* @font-fact {font-family:"Nanum SquareEB"; src("../fonts/NanumSquareEB.ttf") } */
+/* @font-fact {font-family:"Nanum SquareL"; src("../fonts/NanumSquareL.ttf") } */
+/* @font-fact {font-family:"Nanum SquareR"; src("../fonts/NanumSquareR.ttf") } */
+
+/* 노토산스 (폰트 사용할곳에font-family: 'Noto Sans KR', serif;추가)*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* @font-fact {font-family:"Nato Sans DemiLight"; src("../fonts/NotoSansCJKkr-DemiLight.otf") }
+@font-fact {font-family:"Nato Sans Blod"; src("../fonts/NotoSansCJKkr-Blod.otf") }
+@font-fact {font-family:"Nato Sans Medium"; src("../fonts/NotoSansCJKkr-Medium.otf") }
+@font-fact {font-family:"Nato Sans Regular"; src("../fonts/NotoSansCJKkr-Regular.otf") }
+ */
+/* 배달의 민족 */
+@font-fact {font-family:"BMDOHYEON"; src("../fonts/BMDOHYEON.ttf") }
+
+/*나눔명조웹폰트로드(폰트 사용할곳에font-family: 'Nanum Myeongjo', serif;추가)*/
+/* @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css) */;
+/*코펍바탕체 font-family: 'KoPub Batang', 'Nanum Gothic', '나눔고딕', '굴림', 'Gulim', 'sans-serif', 'Tahoma';*/ 
+/* @import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css); */
+
+/* CSS Document */
+*{padding:0;margin:0;}
+html,body{width:100%;height:100%;}
+html{overflow-y:hidden;}
+body{line-height: 1; background-color: #f8f7fc; color:#424369;}
+body,b,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,tr,td,thead,tbody,form,fieldset,legend,input,textarea,button{margin:0;padding:0;
+font-family: 'Noto Sans KR', "Nanum Gothic", '돋움','dotum',tahoma,'NanumBarunGothic','MalgunGothic','Verdana','Arial','Helvetica','sans-serif';}
+ul,ol,li,dl,dt,dd {list-style:none;}
+i,em,address{font-style:normal;}
+label,button{cursor:pointer;-webkit-appearance: none;}
+button{border:none;background: none;-webkit-appearance: none;}
+select { -webkit-appearance: none; /* 네이티브 외형 감추기 */ -moz-appearance: none; appearance: none; -webkit-appearance: none; padding: 0 20px 0 10px; 
+background:url("../img/btn/btn_option_bar.png")no-repeat right 5px center;  vertical-align:middle; border: 1px solid #bbb; outline:none;}
+select::-ms-expand { display: none; }
+hr,legend {display:none;}
+img,fieldset,iframe{border:none;}
+img{vertical-align:top; max-width: 100%;}
+textarea{font-family:'Noto Sans KR','돋움','dotum',tahoma,'MalgunGothic','Verdana','Arial','Helvetica','sans-serif';padding:8px; border:solid 1px #c6c6c6;
+	-webkit-appearance: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+a {
+	text-decoration: none;
+    color: inherit;
+}
+caption {display:none;}
+input,select,button{vertical-align:middle; border-radius: 0;}
+table{border:none; border-collapse:collapse; padding:0; border-spacing:0; }
+fieldset{min-width:100%;}
+a:active,a:focus{
+    text-decoration:none;
+    color: inherit;
+}
+a:hover{text-decoration:none;}
+
+input[type=text]::-ms-clear{display:none;}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="button"],
+input[type="tel"]{border: 1px solid #dcdcdc;-webkit-appearance: none; -moz-appearance:none; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; padding: 0 15px;}
+input[type="text"]:hover,input[type="text"]:focus,
+input[type="password"]:hover,input[type="password"]:focus,
+input[type="email"]:hover,input[type="email"]:focus,
+input[type="number"]:hover,input[type="number"]:focus,
+input[type="tel"]:hover,input[type="tel"]:focus{border-color: #ccc;}
+/* float */
+
+.clearfix{*zoom: 1;}
+.clearfix:after{content:'';display:block;clear:both;}
+ul:after{content:'';display:block;clear:both;}
+/* Common */
+
+.blind{display:block;overflow:hidden;position:absolute;top:-1000em;left:0}
+legend{display: none;}
+.fl {float:left;}
+.fr {float:right;}
+/* .skip a{display:block;position:absolute;left:0;top:-9999em;width:100%;background-color:#272727;color:#aaa;font: bold 12px/3.4 arial,sans-serif;text-align:center;z-index: 99999;}
+.skip a:hover,.skip a:active,.skip a:focus{top:0}
+.text_out {
+    position: absolute;
+    top: -9999em;
+    text-indent: -9999em;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+} */
+.red {color:#ed5858}
+table {display:table; width:100%; table-layout: fixed;}
+
+*{-webkit-text-size-adjust:none}
+
+
+
+.layer_bg{position:absolute;left:0;right:0;top:246px;bottom:0;z-index:99;background:rgba(0, 0, 0, 0.8); display:none;text-indent:-9999em;
+/* 
+IE8이하는 rgba가 동작하지 않기 때문에 배경 투명도 적용을 위해 filter의 gradient을 대체 이용한다. 
+컬러값 60000000의 8자리 숫자의 의미: 앞 60 불투명도, 나머지 6자리 컬러값.
+startColorstr와 endColorstr의 색을 같게 하여 배경 투명도 처리를 하는것.
+하지만 원래는 그라데이션 처리하는 기법이기 때문에 같은 60% 투명도라고 해도 약간의 차이는 있다.
+*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+zoom: 1; /* 일반적이진 않지만 ie6, 7 에서 적용 안되는경우 선언. */}
+
+.mo_layer_bg{position:fixed;left:0;right:0;top:0;bottom:0;z-index:77;background:rgba(0, 0, 0, 0.5); display:none;text-indent:-9999em;
+/* 
+IE8이하는 rgba가 동작하지 않기 때문에 배경 투명도 적용을 위해 filter의 gradient을 대체 이용한다. 
+컬러값 60000000의 8자리 숫자의 의미: 앞 60 불투명도, 나머지 6자리 컬러값.
+startColorstr와 endColorstr의 색을 같게 하여 배경 투명도 처리를 하는것.
+하지만 원래는 그라데이션 처리하는 기법이기 때문에 같은 60% 투명도라고 해도 약간의 차이는 있다.
+*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+zoom: 1; /* 일반적이진 않지만 ie6, 7 에서 적용 안되는경우 선언. */}
+
+/* 탑 버튼 */
+
+/* moblie */
+
+
+/* scrollbar */
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color:#cbcbcb !important;
+    width:6px !important;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent !important;  
+}
+
+/* calender */
+/* 달력 */
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{ display:none; position:relative; margin-top:20px; margin-bottom:20px; border-radius:5px; }
+/* .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all:before {position:absolute; top:-1px; left:20px; content:""; width:8px; height:8px; border-top:solid 1px #ddd; border-radius:0px; border-left:solid 1px #ddd; background-color:#fff; transform:translate(-50%,-50%) rotate(45deg);} */
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table{background:#fff;}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table thead tr th{width:32px; line-height:24px; height:24px;
+text-align:center; padding-right:5px;}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table thead tr th span{font-size:10.1px; font-weight:300; color:#999999;}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table tbody tr td{text-align:center; color:#666666; font-size:12px; width:30px; line-height:28px; height:28px; padding-right:0px;  background:#ffffff; padding:2px 7.5px;}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table tbody tr td a{ display:block; margin:1px; border-radius:50%;  color:#252525; font-size:13px; font-weight:500;}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table tbody tr td a:hover { background-color:#4065e0; color:#fff;}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table tbody tr td a.ui-state-default.ui-state-active{ background-color: #4065e0;color: #fff; box-shadow: 0px 0.5px 5px 0px rgba(0, 0, 0, 0.3);}
+.ui-datepicker-title{
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #252525;
+    letter-spacing: -0.5px;
+}
+.ui-datepicker-title span{}
+.ui-datepicker-title .ui-datepicker-year {
+    float:left;
+    font-size: 16px;
+    font-weight: 500;
+    color: #252525;
+    margin-right: -3px;
+}
+.ui-datepicker-title .ui-datepicker-month {margin-left:10px; float: right; letter-spacing: -2px;}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all{position:relative;}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all a.ui-datepicker-prev{
+    text-indent: -9999px;
+    position: absolute;
+    background: url(../img/main/calender_left.png)no-repeat center;
+    width: 10px;
+    height: 16px;
+    left: 50px;
+    top: 0;
+    cursor: pointer;
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all a.ui-datepicker-next{
+    text-indent: -9999px;
+    position: absolute;
+    background: url(../img/main/calender_right.png)no-repeat center;
+    width: 10px;
+    height: 16px;
+    right: 50px;
+    top: 0;
+    cursor: pointer;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all table tbody tr td.ui-datepicker-unselectable.ui-state-disabled
+{background:#fff; color:#cecece;}
+input.date_form :-ms-input-placeholder { color: #333333; } 
+input.date_form::-webkit-input-placeholder { color: #333333; }
+input.date_form::-moz-placeholder { color: #333333; }
+button.ui-datepicker-trigger {display:none;}
+img.ui-datepicker-taigger { margin-left:10px; margin-top:1px;}
+.date_form { background:url("../img/ico/ico_calander.png") no-repeat; background-position:90px center;}
+.date_form.date_form3 { background:none;}
+.ui-datepicker-trigger {
+    margin-left: 10px;
+    width: 15px;
+    position: relative;
+    right: 40px;
+    top: 27.5px;
+    float: left;
+    font-size:16px;
+}
+
+/* index */
+.intro {
+    background:url('../img/main/index_bg.jpg') no-repeat 0 0 / cover;
+    width: 100%;
+    height: 100%;
+}
+.intro .int_popup {
+    display:block;
+    background-color:#fff;
+    width:480px;
+    height:652px;
+    border:1px solid #c5c2c0;
+    border-radius: 30px;
+
+}
+.intro .int_popup .intro_inner {
+    padding:95px 35px;
+}
+.intro .int_popup .intro_inner .intro_header  {
+    height:172px;
+}
+.intro .int_popup .intro_inner .intro_header img {
+    display: block;
+    margin:0 auto;
+}
+.intro .int_popup .intro_inner .intro_body {
+position:relative;
+}
+.intro .int_popup .intro_inner .intro_body select,
+.intro .int_popup .intro_inner .intro_body input {
+    width:100%;
+    height:48px;
+    border:1px solid #dbdbdb;
+    border-radius: 5px;
+}
+.intro .int_popup .intro_inner .intro_body select {
+    position:relative;
+    color:#252525;
+    font-size:15px;
+    font-weight:400;
+    padding-left: 38px;
+    font-family: 'Noto Sans KR'
+}
+.intro .int_popup .intro_inner .intro_body:before {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    display: block;
+    clear: both;
+    content: '';
+    background: url(../img/ico/intro_ico01.png) no-repeat center center;
+    width: 14px;
+    height: 16px;
+}
+.intro .int_popup .intro_inner .intro_body input {
+    margin-top:10px;
+    font-size:15px;
+    font-weight:400;
+    padding-left: 38px;
+}
+.intro .int_popup .intro_inner .intro_body input[type="text"] {
+    background: url(../img/ico/intro_ico02.png) no-repeat 10px center;
+}
+.intro .int_popup .intro_inner .intro_body input[type="password"] {
+    background: url(../img/ico/intro_ico03.png) no-repeat 10px center;
+}
+.intro .int_popup .intro_inner .intro_body input::placeholder {
+    color:#999;
+}
+.intro .int_popup .intro_btn {
+    display: block;
+    width: 380px;
+    height: 50px;
+    background-color: #157efb;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.intro .int_popup .remember {
+    height:75px;
+}
+.intro .remember span.checkbox {
+    line-height: 15px;
+    position: relative;
+    display: inline-block;
+    height: 15px;
+    padding-left: 15px;
+    vertical-align: baseline;
+    top:20px;
+}
+.intro .remember span.checkbox input {
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+.intro .remember span.checkbox label {
+    font-size:15px;
+    font-weight:400;
+    color:#454545;
+    margin-left:10px;
+}
+.intro .remember span.checkbox label::before {
+    display: block;
+    content: '';
+    cursor: pointer;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    background: #fff url(../img/btn/checkbox.png) no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intro .remember span.checkbox input:checked + label:before {
+    content: '';
+    cursor: pointer;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    background: #fff url(../img/btn/checkbox_chenc.png) no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

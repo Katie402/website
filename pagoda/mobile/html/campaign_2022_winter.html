@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>파고다딜리버리 브랜딩페이지</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>파고다 어학원 :: I can do it</title>
+<link rel="stylesheet" type="text/css" href="../css/wvFont.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/user.css">
+<link rel="stylesheet" type="text/css" href="../css/effect.css"> <!-- effect 효과 -->
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<script src="../js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="../js/jquery.bxslider.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/effect.js"></script> <!-- effect 효과 -->
+</head>
+
+<body>
+<!-- skipNavi -->
+<div id="skipnavigation">
+	<ul>
+		<li><a href="#contentBox">본문 바로가기</a></li>
+		<li><a href="#gnb">주 메뉴 바로가기</a></li>
+	</ul>
+</div>
+
+<!-- contentLayout -->
+<div class="contentLayout">
+	<!--contentBox-->
+	<div class="contentBox">
+	<!-- 221201 pny [2022 파고다딜리버리 브랜딩페이지] -->
+		<style type="text/css">
+			/* 공통 */
+			#campaign_2022_winter{position:relative;overflow:hidden;}
+			#campaign_2022_winter *{box-sizing:border-box;}
+			#campaign_2022_winter img{width:100%;}
+			#campaign_2022_winter h2, #campaign_2022_winter h3, #campaign_2022_winter h4, #campaign_2022_winter h5{margin:0;}
+			#campaign_2022_winter em{font-style:normal;}
+			#campaign_2022_winter .inner{position:relative;width:100%;margin:0 auto;}
+			#campaign_2022_winter .inner:after{content:'';display:block;clear:both;}
+			#campaign_2022_winter .sub_ttl{display:block;margin:0 auto;}
+
+			/* 딜리버리 비주얼 */
+			#campaign_2022_winter .sec_VisualWrap .inner {padding: 7% 0% 0%;}
+			#campaign_2022_winter .sec_VisualWrap .inner h1 {width: 18%;line-height:0;}
+			#campaign_2022_winter .ttl_topVisual {background:#cc1719;}
+			#campaign_2022_winter .ttl_topVisual .inner {padding: 5% 7% 27%;}
+			#campaign_2022_winter .ttl_topVisual .sub_ttl {width:75%;margin:6% auto 0;}
+
+			#campaign_2022_winter .map_wrap {position: absolute;z-index: 1;width:86%;top: 69%;left:7%;}
+			#campaign_2022_winter .score_box {position:relative;background:#fff;padding: 13% 5%;box-sizing: border-box;border-radius: 3.2vw;box-shadow:0 0 10px 5px rgba(0, 0, 0, 0.15);}
+			#campaign_2022_winter .score_box .score_bar {position:absolute;left: 5%;right: 5%;bottom: 35%;width: auto;background: url('../img/campaign_2022_winter/navi_bar.png') no-repeat center bottom  / contain;}
+			#campaign_2022_winter .score_box .txt_logo {position:relative;width: 50%;bottom: 0;margin-bottom:6%;-webkit-transition-delay:1.5s;transition-delay:1.5s;-webkit-transform:translate(0, 0);transform: translate(0, 0);margin-left: 25%;opacity: 1;}
+			#campaign_2022_winter .score_box .txt_logo.action{-webkit-transform:translate(-40%, 0);transform: translate(-40%, 0);}
+			#campaign_2022_winter .score_box .txt_score {width:18%;position: absolute;bottom:0;margin-bottom:4%;-webkit-transition-delay:2.2s;transition-delay:2.2s;-webkit-transform: translate(0, 0);transform: translate(0, 0);opacity: 1;}
+			#campaign_2022_winter .score_box .txt_score.action{-webkit-animation:scoreSpeedInRight 2.2s forwards ease;animation:scoreSpeedInRight 2.2s forwards ease;}
+
+			@-webkit-keyframes scoreSpeedInRight{
+				0%{-webkit-transform:translate3d(0,0,0);}
+				5%{-webkit-transform:skewX(2deg);transform:skewX(2deg);}
+				60%{-webkit-transform:skewX(10deg);transform:skewX(10deg)}
+				to{-webkit-transform:translateZ(0);transform:translate3d(310%,0,0)}
+			}
+			@keyframes scoreSpeedInRight{
+				0%{-webkit-transform:translate3d(0,0,0);}
+				5%{-webkit-transform:skewX(2deg);transform:skewX(2deg);}
+				60%{-webkit-transform:skewX(10deg);transform:skewX(10deg)}
+				to{-webkit-transform:translateZ(0);transform:translate3d(310%,0,0)}
+			}
+
+			#campaign_2022_winter .score_box .img_act {position:absolute;bottom: 14%;right: 0;width: 22%;}
+			#campaign_2022_winter .score_box .img_act li {position:absolute; bottom:0;right:0;}
+			#campaign_2022_winter .score_box .img_act li.img_start {width:120%;opacity: 1;animation: blink-1 1.8s step-end infinite;-webkit-animation: blink-1 1.8s step-end infinite}
+			#campaign_2022_winter .score_box .img_act li.img_arrive {opacity: 0;animation: blink-2 1.8s step-end infinite;-webkit-animation: blink-2 1.8s step-end infinite}
+			#campaign_2022_winter .score_box .score_desc li {position:absolute;bottom: 10%;left: 50%;width: 40%;transform: translateX(-50%);-webkit-transition-delay:1.8s; transition-delay:1.8s;}
+			#campaign_2022_winter .score_box .score_desc li.desc_start {opacity: 1 !important;}
+			#campaign_2022_winter .score_box .score_desc li.desc_arrive {opacity: 0;}
+			#campaign_2022_winter .score_box .score_desc li.desc_start.action {opacity: 0 !important;}
+			#campaign_2022_winter .score_box .score_desc li.desc_arrive.action {opacity: 1 !important;}
+
+			#campaign_2022_winter .sec_topVisual .subttl {width:55%;}
+			#campaign_2022_winter .sec_topVisual {height: 156vw;margin:38% 0 0;background: url('../img/campaign_2022_winter/visual_bg.jpg') no-repeat center top / 100% auto;}
+			#campaign_2022_winter .sec_topVisual .summary{opacity:0;text-align: left;line-height: 1;}
+			#campaign_2022_winter .sec_topVisual .tit{text-align:left;opacity:0;}
+			#campaign_2022_winter .sec_topVisual.action .summary{-webkit-animation:lightSpeedInRight 1.2s forwards ease;animation:lightSpeedInRight 1.2s forwards ease;}
+			#campaign_2022_winter .sec_topVisual.action .tit{-webkit-animation:lightSpeedInRight 1.2s forwards ease 0.3s;animation:lightSpeedInRight 1.2s forwards ease 0.3s;}
+
+			@-webkit-keyframes lightSpeedInRight{
+				0%{opacity:0;-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg)}
+				60%{opacity:1;-webkit-transform:skewX(20deg);transform:skewX(20deg)}
+				80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg)}
+				to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}
+			}
+			@keyframes lightSpeedInRight{
+				0%{opacity:0;-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg)}
+				60%{opacity:1;-webkit-transform:skewX(20deg);transform:skewX(20deg)}
+				80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg)}
+				to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}
+			}
+
+			#campaign_2022_winter .sec_topVisual .keyword{position: relative;opacity: 1;left: 0%;top: 32.5vw;}
+			#campaign_2022_winter .sec_topVisual .keyword span{opacity:0;position:absolute;left:0;top:0;-webkit-transition:all 0.3s;transition:all 0.3s;-webkit-transform:translate(-200px, 20px);transform:translate(-200px, 20px);z-index:1;}
+			#campaign_2022_winter .sec_topVisual .keyword span + span{top:-1px;-webkit-transition-delay:0.2s;transition-delay:0.25s;-webkit-transform:translate(200px, -20px);transform:translate(200px, -20px);z-index:0;}
+			#campaign_2022_winter .sec_topVisual .keyword.action span{opacity:1;-webkit-transform:translate(0, 0);transform:translate(0, 0);}
+
+			#campaign_2022_winter .txt_topVisual {padding:0 0 15%;}
+			#campaign_2022_winter .txt_topVisual .txt_anibox {width: 20%;margin: 0 auto 8%;}
+
+			/* 딜리버리 라인업 */
+			#campaign_2022_winter .sec_lineUp{position:relative;background:#ededed;padding: 12% 0 8%;z-index: 0;}
+			#campaign_2022_winter .sec_lineUp:before{display:block;content:'';position:absolute;bottom: 67%;left: -5%;width: 110%;height: 4.5%;background: #d3d3d3;background-color:#d3d3d3;transform: rotate(-15deg);}
+			#campaign_2022_winter .sec_lineUp:after{display:block;content:'';position:absolute;bottom: 28%;left: -5%;width: 110%;height: 4.5%;background: #d3d3d3;background-color:#d3d3d3;transform: rotate(-15deg);z-index: -1;}
+			#campaign_2022_winter .sec_lineUp .inner {padding:0 15%;}
+			#campaign_2022_winter .sec_lineUp .sub_ttl{width:66%;margin-bottom: 15px;}
+			#campaign_2022_winter .sec_lineUp .sec_cont ul{margin:0 auto;text-align: center;font-size: 0;}
+			#campaign_2022_winter .sec_lineUp .sec_cont ul li{display:inline-block;width: calc(50% - 5%/2);}
+			#campaign_2022_winter .sec_lineUp .sec_cont ul li:nth-child(2n){margin-left:5%;}
+			#campaign_2022_winter .sec_lineUp .sec_cont ul li + li{transition-delay:0.7s;}
+			#campaign_2022_winter .sec_lineUp .sec_cont ul li + li + li{transition-delay:0.9s;}
+			#campaign_2022_winter .sec_lineUp .sec_cont ul li + li + li + li{transition-delay:1.1s;}
+			#campaign_2022_winter .sec_lineUp .sec_cont ul li{position: relative;}
+			#campaign_2022_winter .sec_lineUp .sec_cont ul li a{display:block;position:absolute;width: 88%;height: 14%;bottom: 4%;left: 6%;}
+
+			/* 딜리버리 띠배너 */
+			#campaign_2022_winter .sec_banner{background:#000;padding: 6% 18%;}
+
+			/* 딜리버리 이벤트 */
+			#campaign_2022_winter .sec_event .inner{padding:10% 8%;}
+			#campaign_2022_winter .sec_event .sub_ttl{position:relative;left:-50%;transform:translateX(40%);}
+			#campaign_2022_winter .sec_event .event_box02 .sub_ttl{margin-bottom:10%;}
+			#campaign_2022_winter .sec_event .sec_cont {margin:0 auto;}
+
+			#campaign_2022_winter .event_box01 {background:#c31618;}
+			#campaign_2022_winter .event_box01 .inner {padding: 20% 8% 18.5%;background: #c31618 url('../img/campaign_2022_winter/event_bg.jpg') no-repeat right 10% top 2% / auto 5vw;}
+			#campaign_2022_winter .event_box01 .ev_sub_ttl{display:block;width:15%;margin:8% 0 6.5%;text-align: left;}
+			#campaign_2022_winter .event_box01 .bene01 ul {font-size: 0;}
+			#campaign_2022_winter .event_box01 .bene01 ul li{width:100%;display:inline-block;vertical-align: top;}
+			#campaign_2022_winter .event_box01 .bene01 .txt_notice{display:block;width:70%;margin:0 auto;}
+			#campaign_2022_winter .event_box01 .bene02 {margin: 20% 0 7%;}
+			#campaign_2022_winter .event_box02 {background:#a90002;}
+
+			#campaign_2022_winter .video_wrap{margin:0 auto;}
+			#campaign_2022_winter .video_wrap .quiz_ttl {width:80%;margin: 0 0 5% -5%;}
+			#campaign_2022_winter .video_box{position: relative;padding-bottom: 59%;height: 0;max-width: 100%;}
+			#campaign_2022_winter .video_box:after {display:block;content: '';box-shadow: 5px 5px rgba(0, 0, 0, 0.2);width: calc(100% + 5px);height: calc(95.2% + 5px);position: absolute;top:-5px;right: 0;bottom: 0;left: -5px;border-radius: 5px;z-index: -1;}
+			#campaign_2022_winter .video_box video {width:100%;background:#000;border-radius: 5px;}
+			#campaign_2022_winter .video_box02 {position: relative;padding-top: 56%;width: 100%;height: 0;margin-bottom: 2%;}
+			#campaign_2022_winter .video_box02 iframe {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+			#campaign_2022_winter .video_box02:after {display:block;content: '';box-shadow: 5px 5px rgba(0, 0, 0, 0.2);width: calc(100% + 5px);height: calc(100% + 5px);position: absolute;top:-5px;right: 0;bottom: 0;left: -5px;border-radius: 5px;z-index: -1;}
+
+			#campaign_2022_winter .quiz_box{position:relative;height: 12.5vw;}
+			#campaign_2022_winter .quiz_box:after{content: '';box-shadow: 5px 5px rgba(0, 0, 0, 0.2);width: calc(100% + 5px);height:calc(100% + 5px);position: absolute;top:-5px;right: 0;bottom: 0;left: -5px;border-radius: 5px;z-index: -1;}
+			#campaign_2022_winter .quiz_box .input_area{width:100%;position:absolute;left: 22.6vw;top: 1.2vw;}
+			#campaign_2022_winter .quiz_box .input_area input[type="text"]{width: 10.1vw;height: 10.1vw;line-height: 0;padding: 0;margin: 0;color: #000;font-size: 6vw;font-weight: 700;text-align: center;border-top: 3px solid #c6c5c6;border-left: 3px solid #c6c5c6;box-sizing: border-box;border-radius: 3px;}
+			#campaign_2022_winter .quiz_box .input_area input[type="text"] + input[type="text"]{margin-left: 1.3%;}
+			#campaign_2022_winter .quiz_box .btn_submit{position: absolute;right: 0;top: 1vw;width: 25%;height: 10vw;text-indent: -99999px;font-size: 0;}
+			#campaign_2022_winter .quiz_box .agree{line-height: 5.5vw;text-align: left;vertical-align: middle;margin-top: 3vw;}
+			#campaign_2022_winter .quiz_box .agree label img {display: inline-block;margin: 0 2.5vw 0 8vw;cursor: pointer;vertical-align: middle;width: 50vw;}
+			#campaign_2022_winter .quiz_box .agree input[type="checkbox"] {overflow:hidden; width:0px; height:0px; position:absolute; left:-99999px;}
+			#campaign_2022_winter .quiz_box .agree input[type="checkbox"] + label:before {content:"";     position: absolute;border: 1px solid #C0C0C0; width:5vw; height:5vw; border: 1px solid #C0C0C0; cursor: pointer;background-size:4vw;border-radius:3px;}
+			#campaign_2022_winter .quiz_box .agree input[type="checkbox"]:checked + label:before{width:5vw;height:5vw;background-size:4vw;background-color:#fff;}
+			#campaign_2022_winter .quiz_box .agree input[type="checkbox"] + label span{padding-left:6vw;color:#888;font-size:4vw;}
+			#campaign_2022_winter .quiz_box .agree a{position: relative;display: inline-block;width: 15vw;font-size: 22px;font-weight: 700;text-decoration: underline;vertical-align: middle;color: #ff0080;}
+
+			#campaign_2022 .cont3 .input_area{position:absolute;left:23.2vw;bottom:35.3vw;}
+			#campaign_2022 .cont3 .input_area input{width:10vw;height:10vw;line-height:0;padding:0;margin:0;color:#000;font-size:6vw;font-weight:700;text-align:center;}
+			#campaign_2022 .cont3 .input_area input + input{margin-left:1.1vw;}
+			#campaign_2022 .cont3 .input_area a.active{background:#ff0080;}
+			#campaign_2022 .cont3 .agree{position:absolute;left:0;right:0;bottom:22vw;margin-top:.2%;text-align:center;}
+
+			/************** 레이어팝업 ***************/
+			/* 개인정보 수집 */
+			#pop_privacy{display:none;padding: 12% 5% 10%;text-align:left;background:#fff;box-sizing:border-box;z-index:101;}
+			#pop_privacy .pop_head{position:relative;/* border-bottom:1px solid #d9d9d9; */}
+			#pop_privacy .pop_head h3{color: #545454;font-size: 15px;font-weight:700;text-align: center;}
+			#pop_privacy .pop_body{line-height: 1.8;padding:5% 0 0;color:#333;font-size: 13px;}
+			#pop_privacy .pop_close{position:absolute;top:0;right:0;width:60px;height:60px;font-size:0;text-indent:-9999px;background:url('../img/campaign_2022_winter/pop_close.png') center no-repeat;}
+			#pop_privacy_guide .pop_visual {padding:10% 17% 0;}
+
+			/* 레이어 팝업 */
+			.campaign_popup{width:86%;position:absolute;left:7%;right:7%;box-shadow:5px 5px 25px 1px rgba(0, 0, 0, 0.4);z-index:100;background:#fff;border-radius: 4px;overflow: hidden;}
+			.campaign_popup *{box-sizing:border-box;}
+			.campaign_dim{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.5);z-index:99;}
+			.pop_layer_close{position:absolute;top: 0;right: 0;width:45px;height:45px;font-size:0;text-indent:-9999px;background:url('../img/campaign_2022_winter/pop_closed.png') no-repeat center / 15px;}
+
+			.campaign_popup .pop_visual {padding: 8% 28% 0;}
+			.campaign_popup .pop_visual img {display:block;margin:0 auto;}
+			.campaign_popup .pop_desc {padding: 5% 0 8%;}
+			.campaign_popup .pop_desc * {letter-spacing: -.5px;}
+			.campaign_popup .pop_txtbox strong {display: inline-block;line-height: 1;width: 100%;color: #000;font-size: 22px;margin-bottom: 3%;font-weight: 700;text-align: center;}
+			.campaign_popup .pop_txtbox em {display: inline-block;width: 100%;color: #545454;font-size: 13px;line-height: 1.5;text-align: center;}
+			.campaign_popup .pop_txtbox span {color: #000;width: 100%;font-size: 18px;line-height:1.5;font-weight:700;text-align: center;display: inline-block;}
+
+			.campaign_popup .user_info_form{padding: 0 4%;}
+			.campaign_popup .user_info_form table{margin:5% 0 0;}
+			.campaign_popup .user_info_form th,
+			.campaign_popup .user_info_form td{color: #c1c1c1;font-size:26px;font-weight: 300;text-align:left;padding: 0 0 5% 3%;}
+			.campaign_popup .user_info_form th{position:relative;padding: 0 0 5% 0;color: #000;font-size: 15px;font-weight: 500;text-align: right;}
+			.campaign_popup .user_info_form td input[type="text"]{height: 35px;font-size: 15px;font-weight:700;color:#434343;text-indent:10px;border-radius: 7px;border: 1px solid #c1c1c1;}
+			.campaign_popup .user_info_form tr.txt_name input {width: 100%;margin: 0;background: #f2f2f2;}
+			.campaign_popup .user_info_form tr.txt_phone input {width: calc(33.333% - 51px/3);margin: 0;background: #f2f2f2;padding:0;}
+			.campaign_popup .user_info_form .summary{margin:10px 0 40px;color:#333;font-size:18px;text-align:center;}
+			.campaign_popup .user_info_form .pop_btnBox{width: 120px;height: 40px;background:#000;margin:0 auto 25px;}
+			.campaign_popup .pop_btnBox .btm_confirm{display:block;color:#fff;line-height: 40px;font-size: 16px;font-weight:bold;text-align: center;}
+			.campaign_popup .pop_notice {color: #545454;font-size: 13px;text-align: center;}
+
+			/* 레이어팝업 팝업 효과 */
+			.campaign_popup.type_answer{top:50%;opacity:0;-ms-transition:all 0.2s ease-out;-webkit-transition:opacity 0.2s ease-out, transform 0.2s ease-out;transition:opacity 0.2s ease-out, transform 0.2s ease-out;transform:translate(0, -50%) scale(0);-webkit-transform:translate(0, -50%) scale(0);transform:translate(0, -50%) scale(0);display:block;}
+			.campaign_popup.type_answer.show{opacity:1;transform:translate(0, -50%) scale(1);-webkit-transform:translate(0, -50%) scale(1);transform:translate(0, -50%) scale(1);}
+			/************** //레이어팝업 ***************/
+
+			#secGoods.sec_goods{background:#fff9f1;padding-bottom:49px;}
+			#secGoods.sec_goods p {margin:0;}
+			#secGoods .goods_prd{padding-bottom:18%;}
+			#secGoods .goods_prd ul:after{content:'';display:block;clear:both;}
+			#secGoods .goods_prd .txt_sticker{position:absolute;top:-3%;right:24%;width:15%;}
+			#secGoods .goods_info{background:url('../img/campaign_2022_winter/bg_line.png') 0 0 no-repeat;background-size:100% auto;padding-top:100px;}
+			#secGoods .goods_info{text-align:center;}
+			#secGoods .goods_info dt{padding-bottom:15px;}
+			#secGoods .goods_info dd{padding-bottom:30px;}
+
+			/* 딜리버리 수강생 */
+			#campaign_2022_winter .sec_class {overflow:hidden;background:#c31618;}
+			#campaign_2022_winter .sec_class .inner {margin:0 auto;}
+			#campaign_2022_winter .sec_class .bg_bottom{display: block;position: absolute;bottom: 0;}
+			#campaign_2022_winter .sec_class .btn_box {display:table;margin:0 auto;width: 60%;padding-bottom:40%;}
+			#campaign_2022_winter .sec_class .btn_box li + li{margin-top:3%;transition-delay:0.7s;}
+			#campaign_2022_winter .sec_class .btn_box li + li + li{transition-delay:0.9s;}
+			#campaign_2022_winter .sec_class .btn_box li a{display: block;width: 100%;height: 17vw;position: absolute;top: 0;left: 0;}
+			#campaign_2022_winter .sec_class .gift_box .bubble_box {width: 50%;position:absolute;top:56%;left: 0;animation: bubbleAni 1.1s infinite linear;}
+			@keyframes bubbleAni{50%{top:57%;} 100%{top:56%;}}
+			#campaign_2022_winter .sec_class .gift_box .img_action {height: 76vw;position: relative;bottom: 0;right: -34%;width: 100%;}
+			#campaign_2022_winter .sec_class .gift_box .img_action li {position: absolute;right:0;bottom: 0;left: 0;top:6%;}
+			#campaign_2022_winter .sec_class .gift_box .img_action li:nth-child(1) {animation: blink-1 1.5s step-end infinite;-webkit-animation: blink-1 1.5s step-end infinite;}
+			#campaign_2022_winter .sec_class .gift_box .img_action li:nth-child(2) {right:35%;left:auto;opacity:0;animation: blink-2 1.5s step-end infinite;-webkit-animation: blink-2 1.5s step-end infinite;}
+			#campaign_2022_winter .sec_class .gift_box .img_action img {width:auto;position: relative;top: 0;right: 0;bottom: 0;left: 0;width: auto;height: 100%;}
+			@keyframes blink-1 {
+				50% {opacity: 0;}
+			}
+			@-webkit-keyframes blink-1 {
+				50% {opacity: 0;}
+			}
+			@keyframes  blink-2 {
+				50% {opacity: 1;}
+			}
+			@-webkit-keyframes  blink-2 {
+				50% {opacity: 1;}
+			}
+
+			/* 유의사항 */
+			#campaign_2022_winter .cmm_notice .cmm_notice_cont {padding:10px 0 25px;}
+			#campaign_2022_winter .notice_cont li b {font-weight:700;}
+			#campaign_2022_winter .notice_cont{padding:5vw 0;}
+			#campaign_2022_winter .notice_cont li{padding:0 0 0 12px;font-weight:300;line-height:2;color:#ababab;text-indent:-12px;word-break:keep-all;text-align: left;}
+			#campaign_2022_winter .notice_cont p{margin:0;}
+			#campaign_2022_winter .notice_cont .type1{margin-bottom:35px;}
+			#campaign_2022_winter .notice_cont .type1 strong{display:block;font-family: anumBarunGothic2;line-height:2;color: #fff;word-break: keep-all;text-align: left;}
+			#campaign_2022_winter .notice_cont .type1 p{position:relative;padding:0 0 0 5vw;color:#ababab;}
+			#campaign_2022_winter .notice_cont .type1 p:before{content:'';position:absolute;left:5px;top:12px;width:5px;height:5px;background:#ababab;border-radius:5px;}
+			#campaign_2022_winter .notice_cont .type2{padding:0 0 0 15px;}
+			#campaign_2022_winter .notice_cont .type2 strong{display:block;margin: 5vw 0 5px;font-family: anumBarunGothic2;line-height:2;color: #fff;word-break: keep-all;text-align: left;text-indent: -10px;}
+			#campaign_2022_winter .notice_cont .type2 p{color:#ababab;margin:5vw 0 0 0;font-weight: 300;line-height:2;word-break: keep-all;text-align: left;}
+			#campaign_2022_winter .notice_cont .type2 > div{margin:5px 10px 5vw;}
+		</style>
+
+		<div id="campaign_2022_winter">
+
+			<!-- 딜리버리 비주얼 -->
+			<div class="sec_VisualWrap">
+				<!-- 비주얼 상단 -->
+				<div class="ttl_topVisual">
+					<div class="inner">
+						<h1 class="logo">
+							<a href="https://www.pagoda21.com/pagoda21/home/index.do" target="_blank">
+								<img src="../img/campaign_2022_winter/logo.png" alt="PAGODA">
+							</a>
+						</h1>
+						<div class="sub_ttl effect type-bottom"><img src="../img/campaign_2022_winter/ttl_visual.png" alt="클릭해서 들어온거 맞죠? 짝짝짝! 원하는 점수가 이미 당신에게 출발했어요."></div>
+
+						<!-- 비주얼 상단 맵박스 -->
+						<div class="map_wrap">
+							<div class="score_box">
+								<div class="score_bar">
+									<div class="txt_score effect"><img src="../img/campaign_2022_winter/txt_score.png" alt="850점"></div>
+									<div class="txt_logo effect"><img src="../img/campaign_2022_winter/navi_logo.png" alt="파고다 딜리버리"></div>
+									<ul class="img_act">
+										<li class="img_start effect"><img src="../img/campaign_2022_winter/navi_nadan_start.png" alt="출발 전 나단이"></li>
+										<li class="img_arrive effect"><img src="../img/campaign_2022_winter/navi_nadan_arrive.png" alt="도착 후 기분좋은 나단이"></li>
+									</ul>
+								</div>
+								<ul class="score_desc">
+									<li class="desc_start effect"><img src="../img/campaign_2022_winter/txt_navi_start.png" alt="고득점이 출발했습니다"></li>
+									<li class="desc_arrive effect"><img src="../img/campaign_2022_winter/txt_navi_arrive.png" alt="고득점이 도착했습니다"></li>
+								</ul>
+							</div>
+							<div class="map_box">
+								<div><img src="../img/campaign_2022_winter/pagoda_map.gif" alt="나단이 850점을 향해 출발!"></div>
+							</div>
+						</div>
+						<!-- //비주얼 상단 맵박스 -->
+
+					</div>
+				</div>
+
+				<!-- 비주얼 콘텐츠 -->
+				<div class="sec_topVisual effect">
+					<div class="inner">
+						<p class="summary"><img src="../img/campaign_2022_winter/sec_topVisual_txt.png" alt="올 겨울 집 안에서 라이브로 토익 끝"></p>
+						<h3 class="tit">
+							<img src="../img/campaign_2022_winter/sec_topVisual_tit.png" alt="파고다 딜리버리">
+						</h3>
+						<div class="keyword effect">
+							<span>
+								<img src="../img/campaign_2022_winter/keyword02.png" alt="최소한의 노력으로">
+							</span>
+							<span>
+								<img src="../img/campaign_2022_winter/keyword01.png" alt="최대한의 점수를!">
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- 하단 텍스트 -->
+				<div class="txt_topVisual">
+					<div class="txt_anibox"><img src="../img/campaign_2022_winter/sec_brand_hd.gif" alt="집이 멀어서. 날이 추워서. 일이 바빠서."></div>
+					<img src="../img/campaign_2022_winter/visual_txt.png" alt="다니기 힘들었던 어학 맛집, 파고다를 집에서 간편하게 배달 받으세요." class="effect type-bottom">
+				</div>
+			</div>
+
+			<!-- 딜리버리 라인업 -->
+			<div class="sec_lineUp">
+				<div class="inner">
+					<div class="sub_ttl effect type-bottom"><img src="../img/campaign_2022_winter/ttl_lineup.png" alt="파고다 딜리버리 LINE UP"></div>
+					<div class="sec_cont">
+						<ul>
+							<li class="effect type-left">
+								<img src="../img/campaign_2022_winter/lineup_box_01.png" alt="가지 않아도 맨 앞자리 학원도 딜리버리">
+								<a href="javascript:void(0);" target="_blank">자세히보기</a>
+							</li>
+							<li class="effect type-left">
+								<img src="../img/campaign_2022_winter/lineup_box_02.png" alt="원하는 시간에 실감나게 인강도 딜리버리">
+								<a href="javascript:void(0);" target="_blank">자세히보기</a>
+							</li>
+							<li class="effect type-left">
+								<img src="../img/campaign_2022_winter/lineup_box_03.png" alt="원어민쌤이 띵동~ 1:1 클래스도 딜리버리">
+								<a href="javascript:void(0);" target="_blank">자세히보기</a>
+							</li>
+							<li class="effect type-left">
+								<img src="../img/campaign_2022_winter/lineup_box_04.png" alt="새벽 6시부터 밤 12시까지 전화외국도 딜리버리">
+								<a href="javascript:void(0);" target="_blank">자세히보기</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- 딜리버리 띠배너 -->
+			<div class="sec_banner">
+				<div class="inner">
+					<img src="../img/campaign_2022_winter/banner_promotion.png" alt="사전 프로모션 기간 12/9 금 ~ 12/26 월" class="effect type-bottom">
+				</div>
+			</div>
+
+			<!-- 딜리버리 이벤트 -->
+			<div class="sec_event">
+
+				<!-- event 1 -->
+				<div class="event_box01">
+					<div class="inner">
+						<div class="sub_ttl effect type-left"><img src="../img/campaign_2022_winter/event_ttl01.png" alt="EVENT 2. 퀴즈 풀고 할인쿠폰과 커피 받자!"></div>
+						<div class="sec_cont">
+							<div class="bene01 effect type-left">
+							<img src="../img/campaign_2022_winter/event_ttl_sub01.png" alt="혜택01" class="ev_sub_ttl effect type-bottom">
+								<ul>
+									<li class="effect type-left"><img src="../img/campaign_2022_winter/event01_coupon01.png" alt="혜택 01. 파고다 어학원 전 과목 1만원 할인권 "></li>
+									<li class="effect type-left"><img src="../img/campaign_2022_winter/event01_coupon02.png" alt="파고다 인강 전 괌고 단과, 패키지, 환급반, 슈퍼패스 20% 할인 쿠폰"></li>
+									<li class="effect type-left"><img src="../img/campaign_2022_winter/event01_coupon03.png" alt="파고다원 1:1 무료 수업(25분) + 수강등록 할인 쿠폰"></li>
+									<li class="effect type-left"><img src="../img/campaign_2022_winter/event01_coupon04.png" alt="파고다 토쿨 전화/화상 영어 1만원 할인권"></li>
+								</ul>
+								<img src="../img/campaign_2022_winter/event_notice.png" alt="브랜드별 쿠폰 상세내용은 하단 유의사항을 확인해주세요." class="txt_notice">
+							</div>
+							<div class="bene02 effect type-bottom">
+								<img src="../img/campaign_2022_winter/event01_coffee.png" alt="혜택 02. 정답자 선착순 10,000명에게 빽다방 앗!메리카노 증정!">
+							</div>
+							<div class="video_wrap">
+								<div class="quiz_ttl effect type-bottom"><img src="../img/campaign_2022_winter/quiz_ttl.png" alt="QUIZ. 광고 속 조나단의 목표 점수는?"></div>
+
+								<!-- 두가지 옵션이 있습니다~  221209 pny 수정 -->
+								<!-- 1. 영상 삽입 : 유튜브 사이즈로 줄인 영상 -->
+								<!-- <div class="video_box effect">
+									<video controls poster="">
+										<source src="../img/campaign_2022_winter/m_cold_goods.mp4" type="video/mp4">
+									</video>
+								</div> -->
+
+								<!-- 2. 영상 삽입 : 유튜브 아이디 값 넣고 불러오기 -->
+								<div class="video_box02 effect">
+									<iframe src="https://www.youtube.com/embed/PplSyQz-Ybo" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+								</div>
+								<!-- // 221209 pny 수정 -->
+
+								<div class="quiz_box effect type-bottom">
+									<img src="../img/campaign_2022_winter/quiz_box.png" alt="정답은?">
+									<div class="input_area">
+										<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="1">
+										<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="1">
+										<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="1">
+									</div>
+									<a href="javascript:;" onclick="popAnswer.call('pop_answer1', true)" class="btn_submit">입력완료</a>
+									<div class="agree">
+										<input type="checkbox" id="agree_chk">
+										<label for="agree_chk"><img src="../img/campaign_2022_winter/quiz_txt_agree.png" alt="(필수)개인정보 수집 및 이용 동의"></label>
+										<a href="javascript:;" onclick="popComm.call('pop_privacy', true);"><img src="../img/campaign_2022_winter/quiz_txt_detail.png" alt="자세히보기"></a>
+									</div>
+								</div>
+
+								<!-- 검수용 : 서버 반영 시 삭제해주셔용 -->
+								<div class="sample_popup" style="width:100%;padding:20% 0 0;display:table;text-align:center;">
+									<a href="javascript:;" onclick="popAnswer.call('pop_answer1', true)" style="display:table-cell;width:33.333%;height:6vw;line-height:6vw;padding:2% 10px;color:#fff;font-size:3vw;font-weight:700;text-align:center;vertical-align:middle;background:#000;">검수용 (정답)</a>
+									<a href="javascript:;" class="active" onclick="popAnswer.call('pop_answer2', true)" style="display:table-cell;width:33.333%;height:6vw;line-height:6vw;padding:2% 10px;color:#000;font-size:3vw;font-weight:700;text-align:center;vertical-align:middle;background:#fff;">검수용(땡)</a>
+									<a href="javascript:;" class="active" onclick="popAnswer.call('pop_privacy_guide', true)" style="display:table-cell;width:33.333%;height:6vw;line-height:6vw;padding:2% 10px;color:#000;font-size:3vw;font-weight:700;text-align:center;vertical-align:middle;background:#999;">검수용(동의체크)</a>
+								</div>
+								<!-- //검수용 : 서버 반영 시 삭제해주셔용 -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- event 2 -->
+				<div class="event_box02">
+					<div class="inner">
+						<div class="sub_ttl effect type-left"><img src="../img/campaign_2022_winter/event_ttl02.png" alt="EVENT 2. 파고다 수업을 수강하면 다양한 선물이 딜리버리"></div>
+						<div class="sec_cont">
+							<img src="../img/campaign_2022_winter/event02_box.png" alt="탬버린즈 퍼퓸(50ml), 애플 에어팟 맥스, 신세계 상품권 5만원" class="effect type-bottom">
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <div class="sec_goods" id="secGoods">
+                <p><img src="../img/campaign_2022_winter/tit_sec_goods.jpg" alt="파고다 X 오롤리데이 " class="effect type-bottom"></p>
+                <p><img src="../img/campaign_2022_winter/goods_gift01.jpg" alt="굿즈" class="effect type-bottom"></p>
+                <div class="goods_prd">
+                    <ul>
+                        <li class="effect type-bottom">
+                            <img src="../img/campaign_2022_winter/goods_prd01.jpg" alt="굿즈 상품1">
+                        </li>
+                        <li class="effect type-bottom"><img src="../img/campaign_2022_winter/goods_prd02.jpg" alt="굿즈 상품2"></li>
+                        <li class="effect type-bottom"><img src="../img/campaign_2022_winter/goods_prd03.jpg" alt="굿즈 상품3"></li>
+                        <li class="effect type-bottom"><img src="../img/campaign_2022_winter/goods_prd04.jpg" alt="굿즈 상품4"></li>
+                        <li class="effect type-bottom"><img src="../img/campaign_2022_winter/goods_prd05.jpg" alt="굿즈 상품5"></li>
+                    </ul>
+                </div>
+                <div class="goods_info effect type-bottom">
+                    <dl>
+                        <dt><img src="../img/campaign_2022_winter/info_tit02.gif" alt="대상"></dt>
+                        <dd><img src="../img/campaign_2022_winter/info_con02.gif" alt="겨울 방학 중 인강 현금 환급반 수강신청 완료한 회원"></dd>
+                    </dl>
+					<dl>
+                        <dt><img src="../img/campaign_2022_winter/info_tit01.gif" alt="기간"></dt>
+                        <dd><img src="../img/campaign_2022_winter/info_con01.gif" alt="2022년 12월 9일(금) ~ 2023년 2월 28일(화) 소진 시 조기종료 자세한 사항은 유의사항을 확인해주세요"></dd>
+                    </dl>
+                </div>
+            </div>
+
+			<!-- 딜리버리 수강생 -->
+			<div class="sec_class">
+				<div class="inner">
+					<div class="sub_ttl effect type-bottom"><img src="../img/campaign_2022_winter/classmate_ttl.jpg" alt="이번 겨울방학, 과정은 즐겁게! 결과는 확실하게! 파고다 딜리버리 1기 수강생이 되어보자!"></div> <!-- 221220 pny 수정-->
+					<div class="sec_cont">
+						<!-- 221220 pny 추가 -->
+						<div class="bg_bottom effect type-bottom"><img src="../img/campaign_2022_winter/classmate_bg.png" alt=""></div>
+						<!-- //221220 pny 추가 -->
+						<ul class="btn_box">
+							<!-- url은 12/19이후 활성화한대요오-->
+							<li class="effect type-left">
+								<img src="../img/campaign_2022_winter/classmate_btn01.png" alt="파고다 딜리버리 토익 점수보장반 LIVE"><a href="javascript:void(0);"></a>
+							</li>
+							<li class="effect type-left">
+								<img src="../img/campaign_2022_winter/classmate_btn02.png" alt="파고다 딜리버리 토익 갓생반 LIVE"><a href="javascript:void(0);"></a>
+							</li>
+							<li class="effect type-left">
+								<img src="../img/campaign_2022_winter/classmate_btn03.png" alt="파고다 딜리버리 인강 토익 현금환급반"><a href="javascript:void(0);"></a>
+							</li>
+							<!--//-->
+						</ul>
+						<!-- 221220 pny 삭제 -->
+						<!-- <div class="gift_box">
+							<img src="../img/campaign_2022_winter/bubblebox.png" alt="딜러버리 1기 수강생에게는 갓생박스가 딜리버리" class="bubble_box effect type-scale">
+							<ul class="img_action">
+								<li><img src="../img/campaign_2022_winter/gift_nadan01.png" alt="선물 가리키는 나단이"></li>
+								<li><img src="../img/campaign_2022_winter/gift_nadan02.png" alt="선물들고 웃는 나단이"></li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<!-- 유의사항 -->
+			<div class="cmm_notice">
+				<div class="cmm_notice_inner">
+					<h3 class="cmm_notice_tit">갓생박스 상세 안내</h3>
+					<div class="cmm_notice_cont">
+						<ul>
+							<li>- <b>어학원의 경우 수강신청시 "강의유형"에 "딜리버리"라는 문구가 포함된 과정에 한하여 증정됩니다.</b></li>
+							<li>- <b>어학원의 경우 갓생박스 이벤트 기간 내 수강 신청한 수강생에게 1/16(월) 부터 순차 발송됩니다.</b></li>
+							<li>- <b> 파고다인강의 경우 파고다인강 홈페이지 내 파고다 딜리버리 토익 현금 환급반 페이지를 통해 확인 바랍니다. </b></li>
+							<li>- <b>파고다원/파고다 토쿨의 경우 12월 선착순 등록자 100명에게 증정되며, 1/16(월) 부터 순차 발송됩니다.</b></li>
+							<li>- 갓생박스 당첨자는 1/10(화)~1/13(금) 기간 내 개별 문자를 통해 발표 및 개인 정보 수집 예정입니다.</li>
+							<li>- 갓생박스 당첨자에게는 배송 목적으로 최소한의 개인 정보를 수집할 수 있습니다. 수집된 정보는 경품 배송 이외의 목적으로 사용되지 않으며, 이용 후 7일 후 폐기됩니다.</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;ㄴ개인 정보 수집항목: 이름, 연락처, 주소</li>
+							<li>- 1/10(화)~1/13(금) 기간 내 응답하지 않은 경우, 당첨이 취소됩니다.</li>
+							<li>- 잘못된 정보 기입으로 인한 책임은 본인에게 있으며, 경품은 재 발송되지 않습니다.</li>
+							<li>- 제작 공정 상 작은 점, 가벼운 찍힘, 미세한 색 번짐, 포장 시 미세한 구겨짐 등이 있을 수 있습니다.</li>
+							<li>- 인쇄에 따라 색감 차이가 5% 정도 발생할 수 있는 점 참고 부탁드립니다.</li>
+							<li>- 위와 같은 부분은 반품 또는 교환 사유가 되지 않으며, 오배송 및 훼손 제품에 대해서는 확인 후 교환을 진행해 드립니다.</li>
+							<li>- 교환은 제품 수령일로부터 7일 이내 가능하며, 동일제품에 한해 1회만 가능합니다.</li>
+							<li>- 문의사항이 있을 경우 파고다 홈페이지 > 고객센터로 문의 부탁드립니다.</li>
+						</ul>
+					</div>
+
+					<h3 class="cmm_notice_tit">이벤트 유의사항 및 경품 안내</h3>
+					<div class="notice_cont">
+						<div class="type1">
+							<strong>※ 이벤트 유의사항 및 경품 안내</strong>
+							<ul>
+								<li>- 개인정보 활용 (마케팅 활용 포함) 및 개인 정보 처리 위탁에 동의하는 경우에 한하여 이벤트 참여가 가능합니다. </li>
+								<li>- 이벤트에 참여하신 분들은 파고다어학원, 파고다인강, 파고다토쿨, 파고다원 마케팅 및 이벤트 정보 관련 문자 수신에 동의하는 것으로 간주됩니다.</li>
+								<li>- 이벤트 퀴즈 정답을 맞힌 대상자에 한해 선착순으로 빽다방 앗메리카노 모바일 상품권이 제공되며, 23년 1월 1주차에 순차적으로 발송될 예정입니다.</li>
+								<li>- 이벤트 쿠폰을 사용하여 1월 8일까지 수강 등록한 대상자에 한해 추첨을 통해 에어팟 맥스(2명), 탬버린즈 퍼퓸(3명), 신세계 상품권 5만 원(20명)이 제공되며, 23년 1월 4주차에 순차적으로 발송될 예정입니다.</li>
+								<li>- 추첨 경품 당첨자는 파고다 홈페이지 내 당첨자 발표 페이지와 개별 문자를 통해 1월 18일에 발표 예정입니다.</li>
+								<li>- 쿠폰 및 경품 발송은 이벤트 참여 시 기재된 내용 기준으로 진행되며, 상품에 따라 문자 또는 택배로 발송됩니다.</li>
+								<li>- 잘못된 정보 기입으로 인한 책임은 이벤트 참여자 본인에게 있으며, 경품은 재 발송되지 않습니다.</li>
+								<li>- 에어팟 맥스 / 탬버린즈 퍼퓸 이벤트 당첨자에게는 경품 배송 목적으로 최소한의 개인 정보를 수집할 수 있습니다. 수집된 정보는 경품 배송 이외의 목적으로 사용되지 않으며, 이용 후 7일 후 폐기됩니다.</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;ㄴ개인정보 수집항목 : 이름, 연락처, 주소</li>
+								<li>- 이벤트 혜택은 타인에게 양도 할 수 없으며 비정상적인 방법으로 참여할 경우 파고다 운영 정책에 따라 제재를 받을 수 있습니다.</li>
+								<li>- 경품의 옵션은 랜덤이며, 선택할 수 없습니다. </li>
+								<li>- 경품은 교환 및 환불이 불가하며, 사전 고지 없이 동등한 가치를 지닌 다른 상품으로 변경될 수 있습니다. </li>
+								<li>- 5만 원 초과의 경품에 대해서는 제세공과금 (경품 비용의 22%)이 발생되며, 제세공과금 미납 시 경품 제공은 불가합니다.</li>
+								<li>- 5만 원 초과의 경품 당첨자는 본인 명의의 신분증 사본 제출이 필요합니다. (기타소득 신고) </li>
+								<li>- 이벤트는 별도의 안내 없이 변경되거나 조기 종료될 수 있습니다. </li>
+								<li>- 추가 문의사항이 있을 경우 파고다 홈페이지 > 고객센터로 문의 부탁 드립니다.</li>
+								<li>- 갓생박스 관련 안내 사항은 별도 공지될 예정입니다. </li>
+							</ul>
+						</div>
+						<div class="type1">
+							<strong>※ 브랜드 별 쿠폰 상세 안내</strong>
+							<ul>
+								<li>- 당사 사정에 따라 쿠폰 혜택은 변동될 수 있습니다.</li>
+								<li>- 각 브랜드 별 수업 할인 쿠폰의 사용 기한, 적용가능 과목은 상이합니다.</li>
+								<li>- 미사용으로 만료된 쿠폰은 재발행 되지 않습니다.</li>
+								<li>- 브랜드 별 세부 혜택 및 일정은 하기 내용을 확인해주시길 바랍니다.</li>
+							</ul>
+						</div>
+						<div class="type2">
+							<strong>파고다어학원</strong>
+							<ul>
+								<li>- 전 과목 1만원 할인권 (전원 증정)</li>
+								<li>- 23년 1월~2월 수업 등록 시 사용 가능</li>
+								<li>- 1월 개강일 : 1월 2일(월) / 2월 개강일: 2월 1일(수)</li>
+								<li>- 제외과목 : 온라인 라이트클래스, 중국어강사양성과정</li>
+								<li>- 레드위크/방학집중반 혜택과 중복 할인 가능</li>
+								<li>- 온라인/오프라인 수강 등록 시 사용 가능</li>
+							</ul>
+							<p>[쿠폰 발송일]</p>
+							<ul>
+								<li>- 12/18(일) 이전 신청자: 12/19(월) 일괄 발송</li>
+								<li>- 12/19(월) 이후 신청자: 신청 익일 발송(주말 제외)</li>
+							</ul>
+							<strong>파고다인강</strong>
+							<ul>
+								<li>- 전 과목 단과, 패키지, 환급반, 슈퍼패스 20% 할인 쿠폰 (전원 증정)</li>
+								<li>- 쿠폰 사용기한 : 12/13(화)~12/31(일)  23시 59분까지</li>
+								<li>- 기존 인강 할인 쿠폰과 중복사용 불가</li>
+								<li>- 기기, LIVE, 코칭권, 챌린지 등 일부 강의 제외</li>
+							</ul>
+							<p>[쿠폰 발송일]</p>
+							<ul>
+								<li>- 신청 익일 발송(~12/26(월)까지 / 주말 제외)</li>
+							</ul>
+							<strong>파고다원</strong>
+							<ul>
+								<li>- 1:1 무료 수업(25분) + 수강 등록 할인쿠폰(전원 증정)</li>
+								<li>- 1:1 무료수업의 경우 방문 or 화상 TEST 선택 가능 </li>
+								<li>- 수강 등록 할인 온/오프라인 상품 상이 </li>
+							</ul>
+							<p>[1:1회화 대면수업]</p>
+							<ul>
+								<li>- 1개월 등록 20% 할인 제공</li>
+							</ul>
+							<p>[1:1회화 화상수업]</p>
+							<ul>
+								<li>- 1개월 등록 10% 할인 제공</li>
+								<li>- 25분 무료 수업 제공은 파고다원 수강 이력이 없는 최초 신규에 한함</li>
+								<li>- 수강 등록 할인쿠폰은 12/30(금)까지 사용 가능하며 미 사용 시 자동 소멸 + 기간 연장 불가</li>
+							</ul>
+							<p>[쿠폰 발송일]</p>
+							<ul>
+								<li>- 12/18(일) 이전 신청자: 12/19(월) LMS 안내 발송</li>
+								<li>- 12/25(일) 이전 신청자: 12/26(월) LMS 안내 발송</li>
+								<li>- 12/26(월) 신청자: 12/27(화) LMS 안내 발송</li>
+							</ul>
+							<strong>파고다토쿨</strong>
+							<ul>
+								<li>- 전화/화상영어 1만원 할인권 (전원 증정)</li>
+								<li>- 정규수강 수업 적용 가능 (자유수강/무제한수강 제외)</li>
+								<li>- 낮시간 할인 및 타 쿠폰 중복 불가</li>
+								<li>- 파고다토쿨 수강 이력 없는 평생 신규에 한함</li>
+								<li>- 할인쿠폰 유효기간: 12월 31일까지 사용 가능</li>
+								<li>- 무료수강권: 발급일로부터 1주일 이내 사용 가능</li>
+							</ul>
+							<p>[쿠폰 발송일]</p>
+							<ul>
+								<li>- ~12/18(일) 신청자: 12/19(월) 일괄 발송</li>
+								<li>- ~12/26(월) 신청자: 12/27(화) 일괄 발송</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //유의사항 -->
+
+			<!------------------ 레이어팝업 -------------------->
+			<!-- 팝업 공통 딤 -->
+			<div class="campaign_dim"></div>
+
+			<!-- 개인정보 수집 및 이용 동의 -->
+			<div id="pop_privacy" class="campaign_popup">
+				<div class="pop_head">
+					<h3>개인정보 수집 및 이용 동의</h3>
+				</div>
+				<div class="pop_body">
+					<div class="privacy_box">
+						1. 개인정보를 제공받는 자: ㈜파고다아카데미 및 ㈜파고다SCS와 이벤트 진행 위탁계약을 체결한 자 (㈜ 티사이언티픽)<br>
+						2. 개인정보 수집 및 이용 목적: 본인 확인, 이벤트 진행을 위한 정보 제공, 쿠폰 및 경품 발송<br>
+						3. 개인 정보 수집 항목: 이름, 휴대폰 번호<br>
+						4. 개인정보 보유 및 이용기간: 이용목적 달성 시까지 보유하며, 신청자의 삭제 요청 시 지체 없이 파기<br>
+						5. 개인정보 수집 및 이용에 관한 동의사항에는 [광고성 정보의 제공]에 대한 내용이 포함되어 있습니다.<br>
+						6. 개인정보 수집 활동 동의를 거부할 수 있으나, 거부 시에는 이벤트 참여가 제한될 수 있습니다.<br>
+						7. 개인정보 책임자: 김하두 (02-6907-2975)
+					</div>
+				</div>
+				<a href="javascript:;" class="pop_layer_close" onclick="popComm.call('pop_privacy', false);">닫기</a>
+			</div>
+
+			<!-- 개인정보 수집 및 이용 동의 체크 안내 -->
+			<div id="pop_privacy_guide" class="campaign_popup type_answer">
+				<div class="pop_body">
+					<div class="pop_visual">
+						<img src="../img/campaign_2022_winter/pop_img_privacy.png" alt="개인정보 동의 체크해주세요" />
+					</div>
+					<div class="pop_desc">
+						<div class="pop_txtbox">
+							<span>개인정보 수집 및 이용 동의를<br>
+								먼저 체크해주세요!</span>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="pop_layer_close" onclick="popAnswer.call('pop_privacy_guide', false);">닫기</a>
+			</div>
+
+			<!-- 정답 팝업 -->
+			<div id="pop_answer1" class="campaign_popup type_answer">
+				<div class="pop_body">
+					<div class="pop_visual">
+						<img src="../img/campaign_2022_winter/pop_img_right.png" alt="정답" />
+					</div>
+					<div class="pop_desc">
+						<div class="pop_txtbox">
+							<strong>짝짝짝! 정답!</strong>
+							<em>경품 수령을 위해 이름과 연락처를 남겨주세요!</em>
+						</div>
+						<div class="user_info_form">
+							<table>
+								<colgroup>
+									<col style="">
+									<col>
+								</colgroup>
+								<tr class="txt_name">
+									<th scope="row">이름</th>
+									<td><input type="text" name="" id="" style=""></td>
+								</tr>
+								<tr class="txt_phone">
+									<th scope="row">연락처</th>
+									<td>
+										<input type="text" name="" id="" style="">
+										-
+										<input type="text" name="" id="" style="">
+										-
+										<input type="text" name="" id="" style="">
+									</td>
+								</tr>
+							</table>
+							<div class="pop_btnBox">
+								<a href="javascript:;" class="btm_confirm">확인</a>
+							</div>
+							<ul class="pop_notice">
+								<li>쿠폰은 정해진 일정에 따라 LMS를 통해 안내됩니다.</li>
+								<li>자세한 혜택 안내는 페이지 하단 유의사항에서 확인 가능합니다</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="pop_layer_close" onclick="popAnswer.call('pop_answer1', false);">닫기</a>
+			</div>
+
+			<!-- 땡 팝업 -->
+			<div id="pop_answer2" class="campaign_popup type_answer">
+				<div class="pop_body">
+					<div class="pop_visual">
+						<img src="../img/campaign_2022_winter/pop_img_wrong.png" alt="땡" />
+					</div>
+					<div class="pop_desc">
+						<div class="pop_txtbox">
+							<strong>앗 정답아니쥬~</strong>
+							<em>다시 한 번 광고를 보고, 정답을 맞춰보세요!</em>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="pop_layer_close" onclick="popAnswer.call('pop_answer2', false);">닫기</a>
+			</div>
+
+			<!------------------ //레이어팝업 -------------------->
+		</div>
+		<script type="text/javascript">
+
+			//이벤트 정답박스
+			$(function() {
+				$(".quiz_box .input_area input").keyup (function () {
+					var charLimit = $(this).attr("maxlength");
+					if (this.value.length >= charLimit) {
+						$(this).next('input').focus();
+						return false;
+					}
+				});
+			});
+
+			popComm = {
+				$dim : $('.campaign_dim'),
+				speed : 200,
+				dim_call : function(state){
+					if(state){
+						popComm.$dim.fadeIn(popComm.speed);
+					}else{
+						popComm.$dim.fadeOut(popComm.speed);
+					}
+				},
+				call : function(id, state){
+					var layer, posY;
+
+					layer = $('#' + id);
+					if(state){
+						popComm.dim_call(true);
+						layer.fadeIn(popComm.speed);
+						posY = ($(window).scrollTop() + ($(window).outerHeight() / 2)) - (layer.outerHeight() / 2);
+
+						if (posY < $(window).scrollTop()) {
+							posY = $(window).scrollTop() + 10;
+						}
+						layer.css('top', posY + 'px');
+
+					}else{
+						popComm.dim_call(false);
+						layer.fadeOut(popComm.speed);
+					}
+				}
+			}
+
+			popAnswer = {
+				call : function(id, state){
+					var layer, posY;
+
+					layer = $('#' + id);
+					posY = $(window).scrollTop() + ($(window).outerHeight() / 2);
+					popComm.dim_call(state);
+					if(state){
+
+						if (posY - (layer.outerHeight() / 2) < $(window).scrollTop()) {
+							posY = $(window).scrollTop() + (layer.outerHeight() / 2) + 10;
+						}
+						layer.css({
+							'top' : posY + 'px',
+						}).addClass('show');
+					}else{
+						layer.removeClass('show');
+					}
+				}
+			}
+		</script>
+	</div>
+	<!-- //contentBox -->
+	<!-- //221201 pny [2022 파고다딜리버리 브랜딩페이지] -->
+
+</div>
+<!-- //contentLayout -->
+
+</body>
+
+</html>

@@ -1735,7 +1735,7 @@ table .txt_dark {
     box-sizing: border-box; */
 }
 .view_wrap .qna_view .writer {
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 16px;
     font-weight: 400;
     color: #999999;
@@ -1743,6 +1743,7 @@ table .txt_dark {
     height: 50px;
     text-align: left;
     padding-left:17.5px;
+    vertical-align: baseline;
 }
 .view_wrap .qna_view .date {
     text-align: right;
@@ -3732,6 +3733,13 @@ table .txt_dark {
     }
     .service .sub_con .img_box .fl {
         width:100%;
+    }
+    .service02 .sub_con .col_box .col4{
+        font-size:0;
+    }
+    .service02 .sub_con .col_box .col4 .col{
+        float:none;
+        display:inline-block;
     }
     .service02 .sub_con {
         padding: 0;

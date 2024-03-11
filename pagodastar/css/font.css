@@ -1,0 +1,40 @@
+/*
+######### mint/css/common2.css #########
+######### mint/mobile/css/common.css #########
+
+######### basil/css/common.css #########
+######### basil/css/common1.css #########
+######### basil/css/common2.css #########
+######### basil/css/lecture21.css #########
+######### basil/css/main_new.css #########
+######### basil/css/popup.css #########
+######### mbasil/css/common.css #########
+
+######### english/css/common.css #########
+######### english/css/dm_common.css #########
+######### english/css/survey_common.css #########
+######### html/0307/css/common.css  #########
+*/
+
+/*
+ * 180626 kmh
+ * 오래된 버전의 Nanumgothic 폰트(용량이 최신보다 큼)들로 사이트의 로딩시간 증가
+ * 최신버전의 Nanumgothic으로 변경
+ */
+@font-face {
+	font-family: "ng";
+	src:url(../font/NanumGothic.eot);
+	src:url(../font/NanumGothic.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumGothic.woff2) format('woff2'),
+		url(../font/NanumGothic.woff) format('woff'),
+		url(../font/NanumGothic.ttf) format('truetype');
+}
+@font-face {
+	font-family:"ngb";
+	src:url(../font/NanumGothicBold.eot);
+	src:url(../font/NanumGothicBold.eot?#iefix) format('embedded-opentype'),
+		url(../font/NanumGothicBold.woff2) format('woff2'),
+		url(../font/NanumGothicBold.woff) format('woff'),
+		url(../font/NanumGothicBold.ttf) format('truetype');
+}
+

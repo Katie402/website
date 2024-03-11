@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/* CSS Document */
+*{padding:0;margin:0;}
+html,body{width:100%;height:100%;}
+html{overflow-y:auto;}
+body{font-family:'Noto Sans KR','Nanum Gothic','나눔고딕','돋움','dotum',tahoma,'MalgunGothic','Verdana','Arial','Helvetica', sans-serif; vertical-align:middle; word-break:keep-all;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,tr,td,thead,tbody,form,fieldset,legend,input,textarea,button{margin:0;padding:0;line-height:inherit;}
+ul,ol,li,dl,dt,dd {list-style:none;}
+i,em,address{font-style:normal;}
+label,button{cursor:pointer;}
+button{position:relative;border:none;}
+hr,legend {display:none;}
+img,fieldset,iframe {border:none;}
+fieldset{min-width:100%;}
+img{vertical-align:middle; max-width:100%;}
+caption {display:none;}
+input,select,button{vertical-align:middle;-webkit-appearance:none; -moz-appearance:none; appearance:none; webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; outline:none;}
+button{margin:0;padding:0;cursor: pointer; background: transparent;}
+table{border:none; border-collapse:collapse; padding:0; border-spacing:0;}
+a{text-decoration:none; color:#000;}
+a:link,a:visited,a:active,a:focus{text-decoration:none;}
+a:hover{text-decoration:none;}
+.blind {display:block;overflow:hidden;top:-1000em;position:absolute;}
+
+/* float */
+.cf{*zoom: 1;}
+.cf:after{content:''; display:block; clear:both;}
+ul:after{content:''; display:block; clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+
+
+/* container */
+.inner{width:100%; max-width:1160px;margin:0 auto;height:auto;position:relative;box-sizing:border-box;}
+.inner:after{content:"";display:block;clear:both;}
+
+/*기본*/
+#wrap{width:100%;max-width:1920px;overflow:hidden;margin:0 auto;}
+#header{width:100%; position: fixed; z-index:2; left:0; right:0;}
+#container{position:relative;*zoom:1;}
+#container:after{display:block;clear:both;content:'';}
+#footer{position:relative;}
+
+/* 모바일 표시여부 */
+.only_web {display:block !important;}
+.only_mo {display:none !important;}
+.slider_web {display:block !important;}
+.slider_mo {display:none !important;}
+
+@media screen and (max-width: 1024px){
+    /* 모바일 표시여부 */
+    .only_web{display:none !important;}
+    .only_mo {display:block !important;}
+}
+
+@media screen and (max-width: 640px){
+    /* 모바일 표시여부 */
+    .slider_web{display:none !important;}
+    .slider_mo {display:block !important;}
+}

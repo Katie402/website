@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>아림티엔씨 erp</title>
+	   	<link rel="shortcut icon" href="../img/favicon.ico" />
+		<link rel="stylesheet" media="all" href="../css/common.css" />
+        <link rel="stylesheet" media="all" href="../css/main.css" />
+        <link rel="stylesheet" media="all" href="../css/sub.css" />
+        <link rel="stylesheet" media="all" href="../css/jquery.mCustomScrollbar.css" />
+		<meta name="description" content="아림티엔씨" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<!-- meta og 태그 -->
+	    <meta property="og:title" content="아림티엔씨" />
+	    <meta property="og:image" content="" />
+	    <meta property="og:description" content="아림티엔씨 erp" />	    
+	    <meta property="og:url" content="http://arim.uwal.co.kr/" />
+	    <meta property="og:type" content="website" />
+    	<meta property="og:site_name" content="아림티엔씨 erp" />
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- header -->
+        <header>
+            <div class="logo">
+                <a href="../main.html">
+                    <img src="../img/main/logo.png" alt="아림티엔씨">                    
+                </a>
+            </div>
+            <div class="header_top">
+                <nav>
+                    <ul>
+                        <li><a href="../mail/mail_list.html"><h2>메일<span>9</span></h2></a></li>
+                        <li><a href="approval_yet.html"><h2 class="on">결재<span>0</span></h2></a></li>
+                        <li><a href="#!"><h2>일정<span>0</span></h2></a></li>
+                        <li><a href="#!"><h2>게시판<span>0</span></h2></a></li>
+                        <li><a href="#!"><h2>문서관리<span>0</span></h2></a></li>
+                        <li><a href="#!"><h2>ERP<span>0</span></h2></a></li>
+                        <li><a href="#!"><h2>BI<span>0</span></h2></a></li>
+                        <li><a href="#!"><h2>대사우<span>0</span></h2></a></li>
+                        <li><a href="#!"><h2>업무관리<span>0</span></h2></a></li>
+                    </ul>
+                </nav>
+                <div class="user">
+                    <div class="user_id">
+                        <span>최재형(2020010001)</span>
+                    </div>
+                    <div class="user_info">
+                        <a href="#!">
+                            <div class="info_box">
+                                <img src="../img/main/ico_user.png" alt="사용자 이미지">
+                            </div>
+                            <div>
+                              <img  src="../img/main/ico_down_arrow.png" alt="메뉴열기">  
+                            </div>
+                        </a>
+                    </div>
+                    <div class="user_box">
+                        <ul>
+                            <li class="log_out"><a href="#!">로그아웃</a></li>
+                            <li class="setting"><a href="#!">상단메뉴설정</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>  
+        <!-- //header -->
+
+        <main class="sub approval laerfix">
+            <div class="inner clearfix">   
+                
+                <!-- nav_left -->
+                <div class="nav_left">
+                    <h3 class="nav_ttl">전자결재</h3>
+                    <div class="nav_left_scroll">
+                        <div class="nav_mail_top">
+                            <ul>
+                                <li class="width_full"><a href="">기안서 작성</a></li>
+                            </ul>                    
+                        </div>
+                        <div class="nav_mail_mid">
+                            <div class="mail_menu">
+                                <div class="mail_boxes">
+                                    <div class="box_ttl box_ttl02 clearfix">
+                                        <div>
+                                            <strong>결재</strong>    
+                                            <div class="fr mail_btn_box">
+                                                <a href="#!" class="down fl"><img src="../img/btn/btn_mail_arrow_down2.png" alt=""></a>                                            
+                                            </div>                                                                              
+                                        </div>
+                                    </div>
+                                    <ul class="box_menus down_box">
+                                        <li>
+                                            <div class="box">
+                                                <a class="fl" href="approval_yet.html">미결재문서함</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <a class="fl" href="">결제진행문서함</a>                                        
+                                            </div>
+                                        </li
+                                        >
+                                        <li>
+                                            <div class="box">
+                                                <a class="fl" href="">기결재문서함</a>                                        
+                                            </div>
+                                        </li
+                                        >
+                                        <li>
+                                            <div class="box">
+                                                <a class="fl" href="">결재반려문서함</a>                                        
+                                            </div>
+                                        </li
+                                        >
+                                        <li>
+                                            <div class="box">
+                                                <a class="fl" href="">받은결재문서함</a>                                        
+                                            </div>
+                                        </li
+                                        >
+                                        <li>
+                                            <div class="box">
+                                                <a class="fl" href="">보낸결재문서함</a>                                        
+                                            </div>
+                                        </li
+                                        >
+                                        <li>
+                                            <div class="box">
+                                                <a class="fl" href="">임시작성문서함</a>                                        
+                                            </div>
+                                        </li
+                                        >
+                                        <li>
+                                            <div class="box">
+                                                <a class="fl" href="">결재회수문서함</a>                                        
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <a class="fl" href="">미승인문서함</a>                                        
+                                            </div>
+                                        </li>                                            
+                                    </ul>
+                                </div>
+                                <div class="mail_boxes">
+                                    <div class="box_ttl box_ttl_nobot clearfix">
+                                        <div>
+                                            <strong>환경설정</strong>    
+                                            <div class="fr mail_btn_box">
+                                                <div class="mail_setting_box fl">
+                                                    <a href="" class="setting"><img src="../img/btn/btn_mail_setting.png" alt=""></a>
+                                                </div>                                       
+                                            </div>                                                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>    
+                </div>                
+                <!-- //nav_left -->
+
+                <div class="sub_contents">
+                    <div class="sub_inner">
+                        <div class="con_ttl_box">
+                            <h4>미결재문서함</h4> 
+                            <div class="con_sub_ttl_box">
+                                <strong>전체 
+                                    <span class="red">5</span>
+                                </strong>
+                            </div> 
+                        </div>
+                        <div class="con_box">
+                            <table class="email_list">
+                                <legend>미결재 문서함</legend>                                
+                                <colgroup>
+                                    <col width="4%">
+                                    <col width="3%;">
+                                    <col width="10%">
+                                    <col width="">
+                                    <col width="15%;">
+                                    <col width="6%;">
+                                </colgroup>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check01">
+                                        <label for="mail_check01"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check02">
+                                        <label for="mail_check02"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class=""> 
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class="on"> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check03">
+                                        <label for="mail_check03"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class="on"> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check04">
+                                        <label for="mail_check04"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="on">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check05">
+                                        <label for="mail_check05"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="on">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check06">
+                                        <label for="mail_check06"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check07">
+                                        <label for="mail_check07"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check08">
+                                        <label for="mail_check08"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check09">
+                                        <label for="mail_check09"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check10">
+                                        <label for="mail_check10"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check11">
+                                        <label for="mail_check11"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check12">
+                                        <label for="mail_check12"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check13">
+                                        <label for="mail_check13"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check14">
+                                        <label for="mail_check14"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>
+                                <tr onClick="location.href='approval_view.html'">
+                                    <td class="checkbox">
+                                        <input type="checkbox" id="mail_check15">
+                                        <label for="mail_check15"></label>
+                                    </td>
+                                    <td class="attachment">
+                                        <a href="">
+                                            <img src="../img/btn/btn_attached.png" alt="파일첨부" class="on">
+                                            <img src="../img/btn/btn_unattached.png" alt="파일미첨부"   class="">                                                                                 
+                                        </a>
+                                    </td>
+                                    <td class="writer">
+                                        <img src="../img/btn/btn_mail_read.png" alt="메일않음" class="on">
+                                        <img src="../img/btn/btn_mail_unread.png" alt="메일읽지않음" class=""> 알앤딥테스트                                        
+                                    </td>
+                                    <td class="title">프로젝트 관리 관련 문의사항</td>
+                                    <td class="date">2020-06-08 14:42:19</td>
+                                    <td class="data">13.59KB</td>
+                                </tr>                                                         
+                            </table>
+                            <div class="pager">
+                                <ul>
+                                    <li class="prev"><a href=""><img src="../img/btn/pager_left.png" alt="이전"></a></li>
+                                    <li class="on"><a href="#!" class="num">1</a></li>
+                                    <li class=""><a href="#!" class="num">2</a></li>
+                                    <li class=""><a href="#!" class="num">3</a></li>
+                                    <li class=""><a href="#!" class="num">4</a></li>
+                                    <li class=""><a href="#!" class="num">5</a></li>
+                                    <li class="next"><a href=""><img src="../img/btn/pager_right.png" alt="다음"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- user setting popup -->
+    <div class="popup">
+        <div class="popup_inner">
+            <div class="popup_header">
+                <h3 class="col_ttl">상단메뉴설정</h3>
+            </div>
+            <div class="popup_body">
+                <ul>
+                    <li><strong>메일<em></em></strong></li>
+                    <li><strong>결제<em></em></strong></li>
+                    <li><strong>일정<em></em></strong></li>
+                    <li><strong class="on">문서관리<em></em></strong></li>
+                    <li><strong class="on">ERP<em></em></strong></li>
+                    <li><strong class="on">BI<em></em></strong></li>
+                    <li><strong class="on">대사우<em></em></strong></li>
+                    <li><strong class="on">업무관리<em></em></strong></li>
+                </ul>
+            </div>
+            <div class="popup_footer">
+                <a class="btn" href="#!">확인</a>
+            </div>            
+        </div>
+    </div>
+    
+    <div class="dim"></div>
+
+    <!-- //user setting popup -->
+
+<script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+<script src="../js/ui.js" type="text/javascript"></script>
+<script>
+
+(function($){
+
+
+    $('.box a.fr').on('click', function(){
+        
+        var _this = $(this).next('.box_sub_menu'); 
+        
+        if ( $(_this).hasClass('on') ) {
+            $('.box_sub_menu').removeClass('on');
+        } else {
+            $('.box_sub_menu').not(_this).removeClass('on');
+            $(_this).addClass('on');
+        }
+    });
+
+})(jQuery);
+
+</script>
+</body>
+
+</html>

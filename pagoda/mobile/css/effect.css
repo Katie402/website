@@ -1,0 +1,90 @@
+@charset "utf-8";
+/********************************************************************
+Publishing : Kim min hyeok
+Beginning : 2019-11-01
+Final :
+*********************************************************************/
+
+.effect{opacity:0;}
+.effect.action{opacity:1;
+	-ms-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+
+	-ms-transform:translate(0, 0);
+	-webkit-transform:translate(0, 0);
+	transform:translate(0, 0);
+}
+.effect.action.type-scale{
+	-ms-transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+.type-left{
+	-ms-transform:translate(-100px, 0);
+	-webkit-transform:translate(-100px, 0);
+	transform:translate(-100px, 0);
+}
+.type-right{
+	-ms-transform:translate(100px, 0);
+	-webkit-transform:translate(100px, 0);
+	transform:translate(100px, 0);
+}
+.type-right{
+	-ms-transform:translate(100px, 0);
+	-webkit-transform:translate(100px, 0);
+	transform:translate(100px, 0);
+}
+.type-top{
+	-ms-transform:translate(0, -100px);
+	-webkit-transform:translate(0, -100px);
+	transform:translate(0, -100px);
+}
+.type-bottom,
+.type-elastic{
+	-ms-transform:translate(0, 100px);
+	-webkit-transform:translate(0, 100px);
+	transform:translate(0, 100px);
+}
+.type-scale{
+	-ms-transform:scale(3);
+	-webkit-transform:scale(3);
+	transform:scale(3);
+}
+.type-scale-out{
+	-ms-transform:scale(.3);
+	-webkit-transform:scale(.3);
+	transform:scale(.3);
+}
+.action.type-scale,
+.action.type-scale-out{
+	-ms-transform:scale(1);
+	-webkit-transform:scale(1);
+	transform:scale(1);
+}
+.type-elastic.action{
+	-moz-animation: elastic 1s;
+	-webkit-animation: elastic 1s;
+	animation: elastic 1s;
+}
+@-webkit-keyframes elastic {
+	75% {
+		-webkit-transform:translate(0, -100px);
+				transform:translate(0, -100px);
+	}
+	100% {
+		-webkit-transform:translate(0, 0);
+				transform:translate(0, 0);
+	}
+}
+
+@keyframes elastic {
+	45% {
+		-webkit-transform:translate(0, -30px);
+				transform:translate(0, -30px);
+	}
+	100% {
+		-webkit-transform:translate(0, 0);
+				transform:translate(0, 0);
+	}
+}
