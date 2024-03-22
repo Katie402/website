@@ -11,13 +11,13 @@ html {
 	overflow-y: scroll;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
-	
+
 }
 html::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
 }
 body {
-	font:normal 13px 'Ubuntu', 'Do Hyeon', "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif;
+	font:normal 14px 'Do Hyeon', "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif;
 	line-height:1.3;
 	-webkit-column-rule: #666;
 	-moz-column-rule: #666;

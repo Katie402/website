@@ -111,6 +111,7 @@ section {
 	margin-bottom:20px;
 	text-align: center;
 	font-weight: 400;
+	font-family: 'Ubuntu';
 }
 .col_sub_ttl {
 	display: inline-block;
@@ -312,11 +313,11 @@ section {
     position: absolute;
     align-items: center;
     background: url(../img/index/ico_lights.png) repeat-x 0 0 / 28% auto;
-    -webkit-animation: fadeIn 2s 1s infinite linear alternate;
-    -moz-animation: fadeIn 2s 1s infinite linear alternate;
-    -ms-animation: fadeIn 2s 1s infinite linear alternate;
-    -o-animation: fadeIn 2s 1s infinite linear alternate;
-    animation: fadeIn 2s 1s infinite linear alternate;
+    -webkit-animation: fadeIn infinite 4s .8s linear alternate;
+    -moz-animation: fadeIn infinite 4s .8s linear alternate;
+    -ms-animation: fadeIn infinite 4s .8s linear alternate;
+    -o-animation: fadeIn infinite 4s .8s linear alternate;
+    animation: fadeIn infinite 4s .8s linear alternate;
 }
 @keyframes fadeIn {
   0% {opacity: 1;}
@@ -431,12 +432,15 @@ section {
 	position: relative;
 	box-shadow: 4px 4px 10px rgba(250, 250, 250, .3);
 }
+.bounce-top{animation:bounce-top .9s both}
+ @keyframes bounce-top{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
 .intro .mob_content {
 	width: 100%;
 	box-sizing: border-box;
 }
 .intro .ttl_box {
 	margin-top:15%;
+	font-family: 'Ubuntu';
 }
 .intro .ttl_box .pre_ttl {
 	display: block;
@@ -455,6 +459,7 @@ section {
 	text-align: center;
 	margin-bottom:50px;
 }
+
 .intro .ttl_box .index_imgbox  {
 	display:block;
 	width:100%;
@@ -473,6 +478,9 @@ section {
 	background-position: center center;
 	background-size:contain;
 }
+.jello-horizontal{-webkit-animation:jello-horizontal .9s both;animation:jello-horizontal .9s both}
+ @-webkit-keyframes jello-horizontal{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes jello-horizontal{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+
 .intro .ttl_box .index_imgbox .first .col:nth-child(1) {
 	background-image:url('../img/index/cube01.png');
 }
@@ -519,13 +527,15 @@ section {
 	margin-left:25px;
 }
 .intro .ttl_box .copyright {
-	padding: 40px 20px 20px;
+	padding: 40px 20px 10px;
 	text-align: center;
 	color: #bbb;
 }
 .intro .ttl_box .txt {
 	text-align: center;
 	color: #bbb;
+	font-family: 'Ubuntu';
+	font-size:12px;
 }
 .intro .menu_box {
 
@@ -638,7 +648,7 @@ section {
 	bottom: 0;
 }
 .intro .menu_box .menus .tab_box .in_tab_box {
-	height: 245px;
+	min-height: 245px;
 	position: relative;
 	padding: 35px 30px;
 	box-sizing: border-box;
@@ -657,6 +667,7 @@ section {
 	font-size:26px;
 	margin-bottom:30px;
 	letter-spacing: 3px;
+    font-family: 'Ubuntu';
 }
 .intro .menu_box .menus .tab_box span {
 	display:block;
@@ -667,21 +678,23 @@ section {
 	word-break: keep-all;
 }
 .intro .menu_box .menus .tab_box .intro_btn {
-	display: inline-block;
-	position: absolute;
-	bottom: 0;
-	font-size: 20px;
+	display: block;
+	min-width:220px;
+	font-size: 18px;
 	border-radius: 25px;
 	padding: 10px 25px;
+	margin-top:20px;
 	text-decoration: none;
 	border:2px solid #222;
 	color: #222;
-	font-size: 16px;
 	font-family: 'Do Hyeon', "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif;
 	letter-spacing: 5px;
 	background: transparent;
 	cursor: pointer;
 	transition: all .8s ease;
+}
+.intro .menu_box .menus .tab_box .intro_btn + .intro_btn {
+	margin-top:10px;
 }
 .intro .menu_box .menus.second .tab_box .intro_btn {
 	border:2px solid #fff;
@@ -727,6 +740,7 @@ section {
 	margin: -30px 0 0 45px;
 	transform: rotate( -5deg );
 	font-weight: 500;
+	font-family: 'Ubuntu';
 }
 /***** //홈버튼 *****/
 
@@ -767,11 +781,9 @@ section .inner {
 }
 .col_box .col .info span.txt {
 	display:block;
-	font-size:15px;
+	font-size:18px;
 	line-height:1.55;
 	margin-bottom:8px;
-	font-weight:700;
-	font-family: 'ubuntu';
 	color: #fff;
 	word-break: keep-all;
 }
@@ -787,7 +799,7 @@ section .inner {
 .col_box .col .info small {
 	display:inline-block;
 	position:relative;
-	top:-2px;
+	top:0;
 	font-size:12px;
 	vertical-align:middle;
 	padding:0 5px;
@@ -795,7 +807,6 @@ section .inner {
 .col_box .col .info em {
 	font-weight: 400;
 	font-style: normal;
-	font-family: 'ubuntu';
 }
 .col_box .col .info em+em{
 	display:inline-block;
@@ -836,6 +847,7 @@ section .inner {
 	font-weight: 700;
 	font-size: 16px;
 	transition: all .8s ease;
+	font-family: 'Ubuntu';
 }
 .col_box .btn_box .btn:hover {
 	border: 2px solid #e597a3;
@@ -1006,6 +1018,7 @@ section .inner {
 	font-size: 10vmin;
 	font-weight: 700;
 	letter-spacing: 4px;
+	font-family: 'Ubuntu';
 }
 #sec01 .txt_box .main_ttl .bold_box strong {
 	font-weight: 400;
@@ -1241,7 +1254,7 @@ section .inner {
 	position:absolute;
 	top:50%;
 	transform: translateY(-50%);
-	font-size:16px;
+	font-size:18px;
 	text-align: center;
 }
 #sec02 .controls {
