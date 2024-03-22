@@ -703,7 +703,6 @@ section {
 .intro .menu_box .menus.third .tab_box .intro_btn {
 	border:2px solid #2e84a0;
 	color:#2e84a0;
-	width: 50%;
 	letter-spacing: 3px;
 }
 .intro .menu_box .menus.third .tab_box .intro_btn_study {
@@ -1828,9 +1827,6 @@ transform: rotateX(-90deg);
 	.intro .menu_box .menus .tab_box strong {
 		font-size:24px;
 	}
-	.intro .menu_box .menus.third .tab_box .intro_btn {
-		min-width: 200px;
-	}
 	/***** //intro *****/
 
 	/***** fog *****/
@@ -2178,7 +2174,7 @@ transform: rotateX(-90deg);
 	}
 	.intro .mobile {
 		width: 100%;
-		height: 100%;
+		height: 80%;
 	}
 	.intro .ttl_box .index_imgbox {
 		max-width:500px;
@@ -2195,7 +2191,7 @@ transform: rotateX(-90deg);
 		margin-left:0.5%;
 	}
 	.intro .menu_box {
-		width: calc(100% - 8%);
+		width:100%;
 		position: fixed;
 		bottom: 0;
 		box-sizing: border-box;
@@ -2267,6 +2263,9 @@ transform: rotateX(-90deg);
 	}
 	.intro .mobile {
 
+	}
+	.intro .menu_box .menus .tab_box .intro_btn {
+		width:100%;
 	}
 	/***** //intro *****/
 
