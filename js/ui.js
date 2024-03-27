@@ -81,7 +81,7 @@ $(function(){
 			var sInit = skrollr.init({
 				render: function(data) {
 					//Log the current scroll position.
-					$('#info').text(data.curTop);
+					$('#scroll-info').text(data.curTop);
 				},
 				easing: {
 					WTF: Math.random,
@@ -120,7 +120,7 @@ $(function(){
 			var $sec01 = $('#sec01');
 			var $sec02 = $('#sec02');
 			var $sec01Ttl = $('#sec01 .sec_ttl');
-			var $info = $('#info');
+			var $info = $('#scroll-num');
 			var $progress = $('#progress');
 			var $skrollrBody = $('#skrollr-body');
 
@@ -133,13 +133,8 @@ $(function(){
 				$info.removeAttr('id');
 				$progress.removeAttr('id');
 				$skrollrBody.removeAttr('id');
-				$('section').removeAttr('data-start');
-				$('div').removeAttr('data-0');
-				$('section').removeAttr('data-500');
-				$('section').removeAttr('data-750');
-				$('section').removeAttr('data-2000');
-				$('section').removeAttr('data-3000');
-				$('div').removeAttr('data-end');
+				$('section').removeAttr('data-start data-500 data-750 data-2000 data-3000');
+				$('.progress').remove();
 
 			} else {
 				// 모바일이 아니면 실행될 코드 들어가는 곳
@@ -172,21 +167,13 @@ $(function(){
 						e.preventDefault();
 						if( $(window).width() ){
 							if( $(window).scrollTop() > 0 ){
-								$bgCloud.stop().animate({
-									top: '-100%',
-								}, 300, 'easeInOutCubic' );
-								$sec01Ttl.stop().animate({
-									opacity: '0',
-								}, 300, 'easeInOutCubic' );
+								$bgCloud.stop().animate({top: '-100%',}, 300, 'easeInOutCubic' );
+								$sec01Ttl.stop().animate({opacity: '0',}, 300, 'easeInOutCubic' );
 								$sky.addClass('hidden');
 								$fog.addClass('hidden');
 							} else {
-								$bgCloud.stop().animate({
-									top: '0',
-								}, 300, 'easeInOutCubic' );
-								$sec01Ttl.stop().animate({
-									opacity: '1',
-								}, 300, 'easeInOutCubic' );
+								$bgCloud.stop().animate({top: '0',}, 300, 'easeInOutCubic' );
+								$sec01Ttl.stop().animate({opacity: '1',}, 300, 'easeInOutCubic' );
 								$sky.removeClass('hidden');
 								$fog.removeClass('hidden');
 								$sec02.addClass('cloud');
