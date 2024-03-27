@@ -126,11 +126,9 @@ $(function(){
 
 
 			// 모바일 기기 체크하기
-			function isMobile() {
-				return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-			}
+			var isMobile = /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)
 
-			if (isMobile()) {
+			if (isMobile) {
 				// 모바일이면 실행될 코드 들어가는 곳
 				$info.removeAttr('id');
 				$progress.removeAttr('id');
