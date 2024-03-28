@@ -37,7 +37,7 @@ section { position: fixed; width: 100%; height: 100%; padding: 9vmin 0 20vmin; b
 /***** //sky *****/
 
 /***** fog *****/
-#fog { width: 100%; height: 100%; position: relative; top: 0; left: 0; background: url('../img/main/bg_star.png') repeat center center / contain; overflow: hidden; opacity: 1; transition: opacity 1s ease; }
+#fog { width: 100%; height: 100%; position: relative; top: 0; left: 0; /*background: url('../img/main/bg_star.png') repeat center center / contain;*/ overflow: hidden; opacity: 1; transition: opacity 1s ease; }
 #fog.hidden {}
 #fog:before, #fog:after { content: ""; width: 300%; height: 40%; position: absolute; left: 0; bottom: 0; background-size: contain; background-position: center; background-repeat: repeat-x; }
 #fog:before { width: 100%; height: 100%; top: 10%; background-image: url('../img/main/bg_fog.png'); z-index: 0; }
@@ -49,6 +49,7 @@ section { position: fixed; width: 100%; height: 100%; padding: 9vmin 0 20vmin; b
 /***** //fog *****/
 
 /***** firefly *****/
+.firefly_box{display: block;width: 100%;height: 100%;position: absolute;top: 0;right: 0;bottom: 0;left: 0;border: 1px solid red;}
 .firefly { width: 5px; height: 5px; position: absolute; background-color: #ecc45e; box-shadow: 0px 0px 17px 2px wheat; border-radius: 50%; }
 /***** //firefly *****/
 

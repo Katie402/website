@@ -1,7 +1,7 @@
 
 $(function(){
 
-	//randomly emotional imgs in Intro
+	//인트로 아이콘들 표정 랜덤으로 나타나기
 	$(document).ready(function () {
 		var $children = $(".intro .col");
 		var interval = setInterval(function () {
@@ -16,33 +16,29 @@ $(function(){
 	});
 
 
-	//intro
+	//인트로 탭 클릭
 	var tabElements = $('.intro .tab, .intro .tab_box');
 
-	//clicking tabs in mobile
 	tabElements.each(function(idx, item){
 		$(item).on('click', function(e){
 
 			if ($(this).hasClass('on')) {
 				tabElements.removeClass('on');
-
 			} else {
 				tabElements.removeClass('on');
 
 				tabElements.eq(idx).addClass('on');
 				$(this).next().addClass('on');
 
-				// changing z-index
+				// index 우선순위 변경
 				tabElements.parents('.menus').css('z-index','2');
 				$(this).parents('.menus').css('z-index','1');
 			}
 		})
 	});
 
-	//hidden Intro, shown sections
+	//인트로 숨기기, 섹션들 보이기
 	$(function(){
-
-		AllWork();
 
 		// skrollr.js
 		function skrollrWork(){
@@ -77,7 +73,8 @@ $(function(){
 
 			$('.intro .intro_btn').on('click', function() {
 				$('.intro').addClass('fade');
-				skrollrWork();
+				skrollrWork(); //skrollr.js
+				fireFlies(); //반딧불이 효과
 			});
 		});
 
@@ -86,274 +83,195 @@ $(function(){
 		});
 
 
+
 		/* All section */
-		function AllWork() {
-			var $wrapper = $('.wrapper');
-			var $intro = $('.intro');
-			var $mobile = $('.mobile');
-			var $introBtn = $('.intro .intro_btn_go');
-			var $sky = $('#sky');
-			var $fog= $('#fog');
-			var $bgCloud = $('.bg_cloud');
-			var $mainVisual = $('.main_visual');
-			var $sec02 = $('#sec02');
-			var $sec01Ttl = $('#sec01 .sec_ttl');
+		var $wrapper = $('.wrapper'),
+			$intro = $('.intro'),
+			$mobile = $('.mobile'),
+			$introBtn = $('.intro .intro_btn_go'),
+			$sky = $('#sky'),
+			$fog= $('#fog'),
+			$bgCloud = $('.bg_cloud'),
+			$mainVisual = $('.main_visual'),
+			$sec02 = $('#sec02'),
+			$sec01Ttl = $('#sec01 .sec_ttl');
 
-			// 모바일 기기 체크하기
-			var isMobile = /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)
+		// 모바일 기기 체크하기
+		var isMobile = /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent);
 
-			if (isMobile) { // 모바일일때
-				// 모바일이면 실행될 코드 들어가는 곳
-				// skrollr.init 함수 호출 시 mobileCheck 콜백 함수를 정의
-				skrollr.init({
-					mobileCheck: function() {
-						if ((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-							return false;
-						}
-						return true; // 모바일 장치가 아닌 경우에는 스크롤링을 활성화
-					},
-					forceHeight: false // 모바일 장치에서 스크롤링을 비활성화
-				});
-
-			} else { //모바일 아닐때
-				fireFlies(); //fireFlies effect
-			}
-
-			//when click the button of mobile,
-			$introBtn.on('click', function(e){
-				sec01Work(); //section01
-				// sec02Work(); //section02
-
-				setTimeout(function(){
-					$bgCloud.stop().animate({top: '0',}, 1500, 'easeInOutCubic' );
-					$intro.stop().animate({top: '-100%',}, 1000, 'easeInExpo' );
-					$mainVisual.addClass('shown');
-				}, 200);
-
-				// $wrapper.addClass('unfixed');
-				$mobile.slideUp(500); //hidden mobile
-				$wrapper.show(1000);//shown wrapper
-
-				//section01
-				function sec01Work(){
-					$(window).scroll(function(e){
-						//imgs effects in main visual
-						e.preventDefault();
-						if( $(window).width() ){
-							if( $(window).scrollTop() > 0 ){
-								$bgCloud.stop().animate({top: '-100%',}, 300, 'easeInOutCubic' );
-								$sec01Ttl.stop().animate({opacity: '0',}, 300, 'easeInOutCubic' );
-								$sky.addClass('hidden');
-								$fog.addClass('hidden');
-							} else {
-								$bgCloud.stop().animate({top: '0',}, 300, 'easeInOutCubic' );
-								$sec01Ttl.stop().animate({opacity: '1',}, 300, 'easeInOutCubic' );
-								$sky.removeClass('hidden');
-								$fog.removeClass('hidden');
-								$sec02.addClass('cloud');
-							};
-						}
-					});
-				};
-
-				//section02
-				// function sec02Work() {
-				//     $(window).on('scroll touchmove', function(){
-				//         if ($('#sec02').hasClass('skrollable-after')){
-				//             $("#sec02 .col_img").addClass('on');
-				//         }
-				//     });
-				// };
-
-				//slick section02
-				$(function() {
-					$(document).ready(function(){
-						colSlider();
-					});
-					$(window).on('resize', function(){
-						colSlider();
-					});
-
-					//col_slider
-					function colSlider(){
-						var $colSlider = $('#sec02 .col_slider');
-						var slideCount = null;
-
-						if($(window).width() > 1280){
-
-							//랜덤 resize 시 슬라이더가 재생성되기 때문에 각 미디어쿼리마다 unslick을 넣어줌
-							if ($colSlider.hasClass('slick-initialized')) {
-								$colSlider.slick('unslick');
-							}
-
-							$( document ).ready(function() {
-								$colSlider.slick({
-									arrows: true,
-									speed: 0,
-									dots: false,
-									infinite: true,
-									slidesToShow: 3,
-									slidesToScroll: 1,
-									cssEase: 'linear',
-									centerMode: true,
-									prevArrow:'.slick-prev',
-									nextArrow:'.slick-next',
-								});
-							});
-
-						} else if ( ($(window).width() <= 1280 ) && ($(window).width() > 980) ) {
-							if($colSlider.hasClass('slick-initialized')) {
-								$colSlider.slick('unslick');
-							}
-
-							$( document ).ready(function() {
-								$colSlider.slick({
-									arrows: true,
-									speed: 0,
-									dots: false,
-									infinite: true,
-									slidesToShow: 2,
-									slidesToScroll: 1,
-									cssEase: 'linear',
-									centerMode: true,
-									prevArrow:'.slick-prev',
-									nextArrow:'.slick-next',
-								});
-							});
-
-						} else if ($(window).width() <= 980 ){
-
-							if($colSlider.hasClass('slick-initialized')) {
-								$colSlider.slick('unslick');
-							}
-
-						};
-
-						//slidecount
-						$colSlider.on('init', function(event, slick){
-							slideCount = slick.slideCount;
-							setSlideCount();
-							setCurrentSlideNumber(slick.currentSlide);
-						});
-
-						$colSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-							setCurrentSlideNumber(nextSlide);
-						});
-
-						function setSlideCount() {
-							var $el = $('.visual_count').find('.total');
-							$el.text(slideCount);
-						}
-
-						function setCurrentSlideNumber(currentSlide) {
-							var $el = $('.visual_count').find('.current');
-							$el.text(currentSlide + 1);
-						}
-
-					};
-
-				});
-
-				//slick section04
-
-				var $imgSlider = $('#sec04 .img_slider');
-				var $txtSlider = $('#sec04 .me_desc');
-
-				$( document ).ready(function() {
-					$imgSlider.slick({
-						autoplay: true,
-						autoplaySpeed: 5000,
-						speed: 1000,
-						arrows: false,
-						fade: true,
-						cssEase: 'linear',
-						infinite: true,
-					});
-
-					$txtSlider.slick({
-						autoplay: true,
-						// autoplaySpeed: 4000,
-						// speed: 400,
-						arrows: false,
-						vertical: true,
-						// verticalScrolling: true,
-						cssEase: 'linear',
-						infinite: true,
-					});
-
-				});
-
-
-				// var words = document.getElementsByClassName('word');
-				// var wordArray = [];
-				// var currentWord = 0;
-
-				// words[currentWord].style.opacity = 1;
-				// for (var i = 0; i < words.length; i++) {
-				// splitLetters(words[i]);
-				// }
-
-				// function changeWord() {
-				// var cw = wordArray[currentWord];
-				// var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
-				// for (var i = 0; i < cw.length; i++) {
-				//     animateLetterOut(cw, i);
-				// }
-
-				// for (var i = 0; i < nw.length; i++) {
-				//     nw[i].className = 'letter behind';
-				//     nw[0].parentElement.style.opacity = 1;
-				//     animateLetterIn(nw, i);
-				// }
-
-				// currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
-				// }
-
-				// function animateLetterOut(cw, i) {
-				// setTimeout(function() {
-				//         cw[i].className = 'letter out';
-				// }, i*80);
-				// }
-
-				// function animateLetterIn(nw, i) {
-				// setTimeout(function() {
-				//         nw[i].className = 'letter in';
-				// }, 340+(i*80));
-				// }
-
-				// function splitLetters(word) {
-				// var content = word.innerHTML;
-				// word.innerHTML = '';
-				// var letters = [];
-				// for (var i = 0; i < content.length; i++) {
-				//     var letter = document.createElement('span');
-				//     letter.className = 'letter';
-				//     letter.innerHTML = content.charAt(i);
-				//     word.appendChild(letter);
-				//     letters.push(letter);
-				// }
-
-				// wordArray.push(letters);
-				// }
-
-				// changeWord();
-				// setInterval(changeWord, 4000);
-
+		if (isMobile) { // 모바일일때
+			// skrollr.init 함수 호출 시 mobileCheck 콜백 함수를 정의
+			skrollr.init({
+				mobileCheck: function() {
+					if ((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+						return false;
+					}
+					return true; // 모바일 장치가 아닌 경우에는 스크롤링을 활성화
+				},
+				forceHeight: false // 모바일 장치에서 스크롤링을 비활성화
 			});
 
-		};
+		} else { //모바일 아닐때
+
+		}
+
+		//인트로 버튼 클릭 후 - section 별 기능
+		$introBtn.on('click', function(e){
+
+			setTimeout(function(){
+				$bgCloud.stop().animate({top: '0',}, 1200, 'easeInOutCubic' );
+				$intro.stop().animate({top: '-100%',}, 600, 'easeInExpo' );
+				$mainVisual.addClass('shown');
+			}, 200);
+
+			$mobile.slideUp(500); //인트로 숨기기
+			$wrapper.show(1000);//wrapper 보여주기
+
+
+			//section01 - 메인 비주얼 효과
+			$(window).scroll(function(e){
+				e.preventDefault();
+				if( $(window).width() ){
+					if( $(window).scrollTop() > 0 ){
+						$bgCloud.stop().animate({top: '-100%',}, 300, 'easeInOutCubic' );
+						$sec01Ttl.stop().animate({opacity: '0',}, 300, 'easeInOutCubic' );
+						$sky.add($fog).addClass('hidden');
+					} else {
+						$bgCloud.stop().animate({top: '0',}, 300, 'easeInOutCubic' );
+						$sec01Ttl.stop().animate({opacity: '1',}, 300, 'easeInOutCubic' );
+						$sky.add($fog).removeClass('hidden');
+						$sec02.addClass('cloud');
+					};
+				}
+			});
+
+
+			//section02
+			$(document).ready(function(){
+				colSlider();
+			});
+			$(window).on('resize', function(){
+				colSlider();
+			});
+
+			function colSlider(){
+				var $colSlider = $('#sec02 .col_slider');
+				var slideCount = null;
+
+				if($(window).width() > 1280){
+
+					//랜덤 resize 시 슬라이더가 재 생성되기 때문에 각 미디어쿼리마다 unslick을 넣어줌
+					if ($colSlider.hasClass('slick-initialized')) {
+						$colSlider.slick('unslick');
+					}
+
+					$( document ).ready(function() {
+						$colSlider.slick({
+							arrows: true,
+							speed: 0,
+							dots: false,
+							infinite: true,
+							slidesToShow: 3,
+							slidesToScroll: 1,
+							cssEase: 'linear',
+							centerMode: true,
+							prevArrow:'.slick-prev',
+							nextArrow:'.slick-next',
+						});
+					});
+
+				} else if ( ($(window).width() <= 1280 ) && ($(window).width() > 980) ) {
+					if($colSlider.hasClass('slick-initialized')) {
+						$colSlider.slick('unslick');
+					}
+
+					$( document ).ready(function() {
+						$colSlider.slick({
+							arrows: true,
+							speed: 0,
+							dots: false,
+							infinite: true,
+							slidesToShow: 2,
+							slidesToScroll: 1,
+							cssEase: 'linear',
+							centerMode: true,
+							prevArrow:'.slick-prev',
+							nextArrow:'.slick-next',
+						});
+					});
+
+				} else if ($(window).width() <= 980 ){
+
+					if($colSlider.hasClass('slick-initialized')) {
+						$colSlider.slick('unslick');
+					}
+
+				};
+
+				//슬라이더 slidecount
+				$colSlider.on('init', function(event, slick){
+					slideCount = slick.slideCount;
+					setSlideCount();
+					setCurrentSlideNumber(slick.currentSlide);
+				});
+
+				$colSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+					setCurrentSlideNumber(nextSlide);
+				});
+
+				function setSlideCount() {
+					var $el = $('.visual_count').find('.total');
+					$el.text(slideCount);
+				}
+
+				function setCurrentSlideNumber(currentSlide) {
+					var $el = $('.visual_count').find('.current');
+					$el.text(currentSlide + 1);
+				}
+
+			};
+
+
+			//section04
+			var $imgSlider = $('#sec04 .img_slider');
+			var $txtSlider = $('#sec04 .me_desc');
+
+			$( document ).ready(function() {
+				$imgSlider.slick({
+					autoplay: true,
+					autoplaySpeed: 5000,
+					speed: 1000,
+					arrows: false,
+					fade: true,
+					cssEase: 'linear',
+					infinite: true,
+				});
+
+				$txtSlider.slick({
+					autoplay: true,
+					// autoplaySpeed: 4000,
+					// speed: 400,
+					arrows: false,
+					vertical: true,
+					// verticalScrolling: true,
+					cssEase: 'linear',
+					infinite: true,
+				});
+			});
+
+		});
+
 
 	});
 
 
-	//fireFlies effect
+	//반딧불이 효과 - fireFlies effect
 	function fireFlies(){
 
-		var fireflies = 25;
+		var fireflies = 10;
 		var $container = $(".firefly_box");
 		var $containerWidth = $container.width();
 		var $containerHeight = $container.height();
-		// var master = new TimelineMax();
 
 		for (var i = 0; i < fireflies; i++) {
 		var firefly = $('<div class="firefly"></div>');
@@ -401,8 +319,7 @@ $(function(){
 		};
 	};
 
-
-	// top button
+	// 위로가기 버튼
 	$(function(){
 		$( '.top_btn' ).click( function() {
 			$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
