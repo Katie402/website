@@ -1,8 +1,6 @@
 
 $(function(){
 
-	introWork();
-
 	//randomly emotional imgs in Intro
 	$(document).ready(function () {
 		var $children = $(".intro .col");
@@ -19,57 +17,27 @@ $(function(){
 
 
 	//intro
-	function introWork(){
-		var tab = $('.intro .tab');
-		var tabBox = $('.intro .tab_box');
+	var tabElements = $('.intro .tab, .intro .tab_box');
 
-		//clicking tabs in mobile
-		tab.each(function(idx, item){
-			$(item).on('click', function(e){
+	//clicking tabs in mobile
+	tabElements.each(function(idx, item){
+		$(item).on('click', function(e){
 
-				if ($(this).hasClass('on')) {
-					tab.removeClass('on');
-					tabBox.removeClass('on');
+			if ($(this).hasClass('on')) {
+				tabElements.removeClass('on');
 
-				} else {
-					tab.removeClass('on');
-					tabBox.removeClass('on');
+			} else {
+				tabElements.removeClass('on');
 
-					tab.eq(idx).addClass('on');
-					$(this).next().addClass('on');
+				tabElements.eq(idx).addClass('on');
+				$(this).next().addClass('on');
 
-					// changing z-index
-					tab.parents('.menus').css('z-index','2');
-					$(this).parents('.menus').css('z-index','1');
-				}
-			})
-		});
-
-		//clicking tab_boxes,
-		tabBox.each(function(idx, item){
-			$(item).on('click', function(e){
-				e.preventDefault();
-
-				if ($(this).hasClass('on')) {
-					tab.removeClass('on');
-					tabBox.removeClass('on');
-
-				} else {
-					tab.removeClass('on');
-					tabBox.removeClass('on');
-
-					tabBox.eq(idx).addClass('on');
-					$(this).prev().addClass('on');
-
-					// change z-index
-					tabBox.parents('.menus').css('z-index','2');
-					$(this).parents('.menus').css('z-index','1');
-				}
-			})
-		});
-
-	};
-
+				// changing z-index
+				tabElements.parents('.menus').css('z-index','2');
+				$(this).parents('.menus').css('z-index','1');
+			}
+		})
+	});
 
 	//hidden Intro, shown sections
 	$(function(){
@@ -78,34 +46,45 @@ $(function(){
 
 		// skrollr.js
 		function skrollrWork(){
-			var sInit = skrollr.init({
-				render: function(data) {
-					//Log the current scroll position.
-					$('#scroll-info').text(data.curTop);
-				},
-				easing: {
-					WTF: Math.random,
-					inverted: function(p) {
-						return 1-p;
-					}
+			var sInit;
+			if($('.intro').hasClass('fade') && $(window).width() > 980) {
+				if(typeof skrollr.get() === 'undefined') { // skrollr 인스턴스가 없는 경우에만 초기화(플러그인이 존재할 경우)
+					sInit = skrollr.init({
+						render: function(data) {
+							//현재 스크롤 높이
+							$('#scroll-num').text(data.curTop);
+						},
+						easing: {
+							WTF: Math.random,
+							inverted: function(p) {
+								return 1-p;
+							}
+						},
+					});
+					// $('body').css('height', 'auto');
 				}
-
-			});
-
-			if($(window).width() > 980) {
-				sInit;
-			} else if($(window).width() <= 980) { //960부터 destroy 되지만 body의 scroll width가 8px이라서 브라우저 별 $(window).width() 크기가 모두 달라짐. 각 width 값을 잡기가 불가능하여 스크롤 width:0 줌
-				sInit.destroy();
+			} else {
+				if(typeof skrollr.get() !== 'undefined') { // skrollr 인스턴스가 있는 경우에만 제거(플러그인이 초기화된 경우)
+					skrollr.get().destroy();
+					// body 태그 높이를 기본값으로 변경
+					$('body').css('height', 'auto');
+				}
 			}
-		};
+		}
 
 		$(document).ready(function(){
 			skrollrWork();
+
+			$('.intro .intro_btn').on('click', function() {
+				$('.intro').addClass('fade');
+				skrollrWork();
+			});
 		});
 
 		$(window).on('resize', function(){
 			skrollrWork();
 		});
+
 
 		/* All section */
 		function AllWork() {
@@ -117,27 +96,26 @@ $(function(){
 			var $fog= $('#fog');
 			var $bgCloud = $('.bg_cloud');
 			var $mainVisual = $('.main_visual');
-			var $sec01 = $('#sec01');
 			var $sec02 = $('#sec02');
 			var $sec01Ttl = $('#sec01 .sec_ttl');
-			var $info = $('#scroll-num');
-			var $progress = $('#progress');
-			var $skrollrBody = $('#skrollr-body');
-
 
 			// 모바일 기기 체크하기
 			var isMobile = /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)
 
-			if (isMobile) {
+			if (isMobile) { // 모바일일때
 				// 모바일이면 실행될 코드 들어가는 곳
-				$info.removeAttr('id');
-				$progress.removeAttr('id');
-				$skrollrBody.removeAttr('id');
-				$('section').removeAttr('data-start data-500 data-750 data-2000 data-3000');
-				$('.progress').remove();
+				// skrollr.init 함수 호출 시 mobileCheck 콜백 함수를 정의
+				skrollr.init({
+					mobileCheck: function() {
+						if ((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+							return false;
+						}
+						return true; // 모바일 장치가 아닌 경우에는 스크롤링을 활성화
+					},
+					forceHeight: false // 모바일 장치에서 스크롤링을 비활성화
+				});
 
-			} else {
-				// 모바일이 아니면 실행될 코드 들어가는 곳
+			} else { //모바일 아닐때
 				fireFlies(); //fireFlies effect
 			}
 
@@ -147,12 +125,8 @@ $(function(){
 				// sec02Work(); //section02
 
 				setTimeout(function(){
-					$bgCloud.stop().animate({
-						top: '0',
-					}, 1500, 'easeInOutCubic' );
-					$intro.stop().animate({
-						top: '-105%',
-					}, 1000, 'easeInExpo' );
+					$bgCloud.stop().animate({top: '0',}, 1500, 'easeInOutCubic' );
+					$intro.stop().animate({top: '-100%',}, 1000, 'easeInExpo' );
 					$mainVisual.addClass('shown');
 				}, 200);
 

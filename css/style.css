@@ -11,11 +11,11 @@
 .clearfix:after { display: block; clear: both; content: ''; }
 
 /***** top *****/
-.top_btn { display: none; display: block; position: fixed; right: 30px; bottom: 4%; box-sizing: border-box; z-index: 999; border: 2px solid #ffc045; border-radius: 50%; }
-.gg-smile { box-sizing: border-box; position: relative; display: inline-block; transform: scale(var(--ggs, 1)); width: 40px; height: 40px; border: none; border-radius: 100px; }
-.gg-smile::after, .gg-smile::before { content: ""; display: block; box-sizing: border-box; position: absolute; left: 4px}
-.gg-smile::before { background: #ffc045; box-shadow: 6px 0 0 #ffc045; width: 2px; height: 8px; top: 12px; left: 15px; }
-.gg-smile::after { width: 15px; height: 8px; border-radius: 150px; border-top-left-radius: 0; border-top-right-radius: 0; border: 2px solid #ffc045; border-top-color: transparent; top: 22px; margin-left: 8px; }
+.top_btn { display: none;position: fixed; right: 30px; bottom: 4%; box-sizing: border-box; z-index: 999; border: 4px dashed #ffc045; border-radius: 50%; }
+.top_btn .gg-smile { box-sizing: border-box; position: relative; display: inline-block; transform: scale(var(--ggs, 1)); width: 40px; height: 40px; border: none; border-radius: 100px; }
+.top_btn .gg-smile::after, .top_btn .gg-smile::before { content: ""; display: block; box-sizing: border-box; position: absolute; left: 4px}
+.top_btn .gg-smile::before { background: #ffc045; box-shadow: 6px 0 0 #ffc045; width: 2px; height: 8px; top: 12px; left: 15px; }
+.top_btn .gg-smile::after { width: 15px; height: 8px; border-radius: 150px; border-top-left-radius: 0; border-top-right-radius: 0; border: 2px solid #ffc045; border-top-color: transparent; top: 22px; margin-left: 8px; }
 /***** //top *****/
 
 /***** scrollbar *****/
@@ -32,8 +32,7 @@ section { position: fixed; width: 100%; height: 100%; padding: 9vmin 0 20vmin; b
 .col_box {}
 
 /***** sky *****/
-#sky { width: 100%; height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; pointer-events: none; /* background: url(../img/main/bg_sky.png) repeat center center;*/
-	transition: opacity 1s ease; }
+#sky { width: 100%; height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; pointer-events: none; background: url(../img/main/bg_sky.png) repeat center center / cover;transition: opacity 1s ease; }
 #sky.hidden { opacity: 0; }
 /***** //sky *****/
 
@@ -135,7 +134,7 @@ section { position: fixed; width: 100%; height: 100%; padding: 9vmin 0 20vmin; b
 	100% { opacity: 0; }
 }
 .intro .obj_square_group { width: 100%; height: 100%; position: fixed; }
-.intro .obj_square_group span { display: block; width: 2vw; height: 2vw; position: absolute; -moz-animation: rotate01 3s infinite ease 1s; -webkit-animation: rotate01 3s infinite ease 1s; -o-animation: rotate01 3s infinite ease 1s; -ms-animation: rotate01 3s infinite ease 1s; animation: rotate01 3s infinite ease 1s}
+.intro .obj_square_group span { display: block; width:1vw; height:1vw; position: absolute; -moz-animation: rotate01 3s infinite ease 1s; -webkit-animation: rotate01 3s infinite ease 1s; -o-animation: rotate01 3s infinite ease 1s; -ms-animation: rotate01 3s infinite ease 1s; animation: rotate01 3s infinite ease 1s}
 .intro .obj_square_group span:nth-of-type(1) { top: 35%; left: -.3%; }
 .intro .obj_square_group span:nth-of-type(2) { top: -.3%; left: 35%; -moz-animation: rotate02 3s infinite linear; -webkit-animation: rotate02 3s infinite linear; -o-animation: rotate02 3s infinite linear; -ms-animation: rotate02 3s infinite linear; animation: rotate02 3s infinite linear; }
 .intro .obj_square_group span:nth-of-type(3) { top: 30%; left: 79%; }
@@ -569,7 +568,9 @@ section .inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 15px
 	.sec_ttl { font-size: 24px; }
 	/***** intro *****/
 	.intro { height: 100%; background: #001A29; padding: 4% 4% 0 4%; box-sizing: border-box; }
-	.intro .mobile { width: 100%; height: 80%; }
+	.intro:before{display:none;}
+	.intro .mobile { width: 100%; max-width:500px;height: 80%; }
+	.intro .obj_square_group{display:none;}
 	.intro .ttl_box .index_imgbox { max-width: 500px; padding: 0 5%; box-sizing: border-box; }
 	.intro .ttl_box .index_imgbox .first { margin-bottom: 5%; }
 	.intro .ttl_box .index_imgbox .col { width: calc(33.333% - 1%/3); }
