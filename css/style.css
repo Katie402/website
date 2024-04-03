@@ -526,8 +526,9 @@ section .inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 15px
 	#sec02 .col_sub_ttl:after { border-bottom: 2px solid #ffc045; margin-top: 16px; position: absolute; left: 15px; width: calc(35% - 45px); }
 	#sec02 .col_box { padding: 0 15px; overflow: hidden; }
 	#sec02 .inner { height: auto; position: static; }
-	#sec02 .note { max-width: 100%; padding: 0 0 0 15px; font-size:18px;}
-	#sec02 .col_box .col_slider{margin:0 auto;border-radius:15px;}
+	#sec02 .note { max-width: 100%; padding: 0 0 20px 15px; font-size:18px;}
+	#sec02 .col_box .col_slider{margin:0 auto;border-radius:15px;border: 2px solid #222;}
+	#sec02 .col_box .col_slider:before{display:none;}
 	#sec02 .col_box .col { width:50%;margin: 0 0 30px; }
 	#sec02 .col_box .col .dim_box .col_img { padding-top: 70%; background-size: 100% auto; border-top-right-radius: 15px; }
 	#sec02 .col_box .col .dim_box .info:before { border-bottom-left-radius: 15px; border-bottom: 46px solid #eee; border-right: 46px solid transparent }
