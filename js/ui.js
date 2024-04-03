@@ -18,7 +18,7 @@ $(function(){
 	//반딧불이 효과 - fireFlies effect
 	function fireFlies(){
 
-		var fireflies = 10;
+		var fireflies = 8;
 		var $container = $(".firefly_box");
 		var $containerWidth = $container.width();
 		var $containerHeight = $container.height();
