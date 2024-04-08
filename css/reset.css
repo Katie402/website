@@ -108,3 +108,6 @@ button{
 	overflow:visible;
 	cursor:pointer;
 }
+em{
+	font-style:normal;
+}

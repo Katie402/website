@@ -98,6 +98,7 @@ $(function(){
 			$mobile = $('.mobile'),
 			$introBtn = $('.intro .intro_btn'),
 			$introBtnGo = $('.intro .intro_btn_go'),
+			$btnHome = $('.btn_home'),
 			$sky = $('#sky'),
 			$fog= $('#fog'),
 			$bgCloud = $('.bg_cloud'),
@@ -185,10 +186,12 @@ $(function(){
 				if( $(window).width() ){
 					if( $(window).scrollTop() > 0 ){
 						$bgCloud.stop().animate({top: '-100%',}, 300, 'easeInOutCubic' );
+						$btnHome.stop().animate({top: '-100%',}, 300, 'easeInOutCubic' );
 						$sec01Ttl.stop().animate({opacity: '0',}, 300, 'easeInOutCubic' );
 						$sky.add($fog).addClass('hidden');
 					} else {
 						$bgCloud.stop().animate({top: '0',}, 300, 'easeInOutCubic' );
+						$btnHome.stop().animate({top: '25px',}, 300, 'easeInOutCubic' );
 						$sec01Ttl.stop().animate({opacity: '1',}, 300, 'easeInOutCubic' );
 						$sky.add($fog).removeClass('hidden');
 						$sec02.addClass('cloud');
