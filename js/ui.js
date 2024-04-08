@@ -108,7 +108,7 @@ $(function(){
 		// skrollr.js
 		function skrollrWork(){
 			var sInit;
-			if($intro.hasClass('fade') && $(window).width() > 980) {
+			if($intro.hasClass('fade') && $(window).width() > 1024) {
 				if(typeof skrollr.get() === 'undefined') { // skrollr 인스턴스가 없는 경우에만 초기화(플러그인이 존재할 경우)
 					sInit = skrollr.init({
 						render: function(data) {
@@ -209,7 +209,7 @@ $(function(){
 				var $colSlider = $('#sec02 .col_slider');
 				var slideCount = null;
 
-				if($(window).width() > 1600){
+				if($(window).width() > 1366){
 
 					//랜덤 resize 시 슬라이더가 재 생성되기 때문에 각 미디어쿼리마다 unslick을 넣어줌
 					if ($colSlider.hasClass('slick-initialized')) {
@@ -231,7 +231,7 @@ $(function(){
 						});
 					});
 
-				} else if ( ($(window).width() <= 1600 ) && ($(window).width() > 980) ) {
+				} else if ( ($(window).width() <= 1366 ) && ($(window).width() > 1024) ) {
 					if($colSlider.hasClass('slick-initialized')) {
 						$colSlider.slick('unslick');
 					}
@@ -251,7 +251,7 @@ $(function(){
 						});
 					});
 
-				} else { //980이하부터 unslick
+				} else { //1024이하부터 unslick
 
 					if($colSlider.hasClass('slick-initialized')) {
 						$colSlider.slick('unslick');
