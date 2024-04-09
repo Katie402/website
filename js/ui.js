@@ -3,7 +3,7 @@ $(function(){
 
 	//인트로 아이콘들 표정 랜덤으로 나타나기
 	$(document).ready(function () {
-		var $children = $(".intro .col");
+		var $children = $(".intro .cols");
 		var interval = setInterval(function () {
 			var $d = $children.not(".change");
 			var $el = $d.eq(Math.floor(Math.random() * $d.length));
@@ -212,6 +212,11 @@ $(function(){
 				var $colSlider = $('#sec02 .col_slider');
 				var slideCount = null;
 
+				//slider number 구하기
+				var $index = $('#sec02 .col_slider .cols').length;
+				// console.log($index);
+				$('#sec02 .ttl_desc > i').text($index);
+
 				if($(window).width() > 1366){
 
 					//랜덤 resize 시 슬라이더가 재 생성되기 때문에 각 미디어쿼리마다 unslick을 넣어줌
@@ -316,7 +321,7 @@ $(function(){
 	// 위로가기 버튼
 	$(function(){
 		$( '.top_btn' ).click( function() {
-			$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+			$( 'html, body' ).animate( { scrollTop : 0 }, 200 );
 			return false;
 		} );
 	});
