@@ -508,7 +508,7 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 	#sec03 .col_box .btn_box{margin: 0 15px 10px;}
 
 	/***** section04 *****/
-	#sec04 .col_box .img_slider { background:none;width:100%;height:auto;}
+	#sec04 .col_box .img_slider { background:none;width:100%;height:100%;}
 	#sec04 .col_box .img_slider div img{position:relative;}
 
 }
