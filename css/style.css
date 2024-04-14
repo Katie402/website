@@ -23,6 +23,9 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 .col_ttl { display: inline-block; position: relative;font-size: 36px; color: #fff; letter-spacing: 4px; margin-bottom: 10px; text-align: center; font-weight: 700; font-family: 'Ubuntu';background-image: linear-gradient(to top, #fff 50%, #81689D 50%);background-clip: text;-webkit-background-clip: text;color: transparent;}
 .col_ttl:after{display:inline-block;content: '';clear: both;position: absolute;left: -10px;bottom: 0;height: 1.8vmin;width: calc(100% + 15px);background: #81689D;z-index: -1;opacity:.5;}
 .col_sub_ttl {display: block;text-align: center;font-size: 30px;z-index: 1;font-weight: 600;letter-spacing: -.5px;font-family:'GmarketSansLight';}
+.ttl_desc { display: block; width: 100%; font-size: 20px;color: #fff; text-align: left; margin: 0 auto;padding: 0 4.5%; box-sizing: border-box;font-family:'Pretendard';font-weight:400;word-break: keep-all;}
+.ttl_desc i { font-size: 32px; font-family: 'Do Hyeon';font-style:normal;}
+.ttl_desc small{padding-left:10px;font-size:14px;}
 
 #sky { width: 100%; height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; pointer-events: none; background: url(../img/main/bg_sky.png) repeat center center / cover;transition: opacity 1s ease; }
 #sky.hidden { opacity: 0; }
@@ -122,6 +125,7 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 .intro .menus:nth-child(1) .tab_box { background-color: #f98284; }
 .intro .menus:nth-child(2) .tab_box { background-color: #cd5c5c; }
 .intro .menus:nth-child(3) .tab_box { background-color: #253655; }
+.intro .menus:nth-child(3) .tab_box .in_tab_box * {color:#2e84a0;}
 .intro .menus .tab_box .in_tab_box { min-height: 245px; position: relative; padding: 35px 30px; box-sizing: border-box; }
 .intro .menus:nth-child(1) .tab_box .intro_btn { border: 2px solid #fff; color: #fff; }
 .intro .menus:nth-child(2) .tab_box .intro_btn { border: 2px solid #fff; color: #fff; }
@@ -177,8 +181,6 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 #sec02 .sec_con {margin-bottom:15px;}
 #sec02 .col_ttl {background-image:linear-gradient(to top, #fff 50%, #e27082 50%);}
 #sec02 .col_ttl:after{background:#e27082;}
-#sec02 .ttl_desc { display: block; width: 100%; font-size: 20px; max-width: 1920px; color: #fff; text-align: left; margin: 0 auto;padding: 0 4.5%; box-sizing: border-box;font-family:'Pretendard';font-weight:400;}
-#sec02 .ttl_desc i { font-size: 32px; font-family: 'Do Hyeon';font-style:normal;}
 #sec02 .col_box { max-width: 100%;position: relative; margin:0 auto;-webkit-overflow-scrolling: touch; }
 #sec02 .slider_wrap{position:relative;overflow:hidden;z-index:2;background-image: url(../img/main/bg_sky02.png);background-repeat:repeat;background-position:-60px -10px;background-attachment: fixed;}
 #sec02 .col_box .col_slider { display: flex;flex-wrap:wrap;justify-content: space-around;}
@@ -194,7 +196,7 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 #sec02 .col_box .dim_box:hover .info:after { display: block;}
 #sec02 .col_box .dim_box:hover .info .info_txt {display: flex;width: 100%;height: 100%;flex-direction: column;justify-content: space-around;}
 #sec02 .col_box .dim_box .info .info_txt { display: none; z-index: 1; padding: 5%; box-sizing: border-box; }
-#sec02 .col_box .dim_box .info .info_txt .info_desc {width:100%;padding:5% 0;border-radius: 10px; border:1px dashed #fff;background-color:#1F2544;box-sizing: border-box;}
+#sec02 .col_box .dim_box .info .info_txt .info_desc {display: flex;align-items: center;width:100%;min-height:115px;padding:2% 0;border-radius: 10px; border:1px dashed #fff;background-color:#1F2544;box-sizing: border-box;}
 #sec02 .col_box .dim_box .info .info_txt .info_desc .txt { width: 100%;display:flex;flex-direction:column;align-items: center; margin-bottom:0;font-size: 18px;color:#fff;font-weight:600;}
 #sec02 .col_box .btn_box .btn:hover {background-color:#e27082;}
 #sec02 .col_box .btn_box .btn + .btn { margin-left: 10px; }
@@ -296,6 +298,7 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 	section{padding: 8vmin 0 0;}
 	.col_ttl { font-size: 24px;margin-bottom:20px;}
 	.col_sub_ttl{font-size:26px;}
+	.ttl_desc { padding: 10px 0 0 5%; }
 
 	/***** section01 *****/
 	#sec01 .bg_cloud03 { max-width: 300px; }
@@ -307,7 +310,6 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 	#sec02 .col_box .slick-slide { opacity: 1; }
 	#sec02 .col_box .info span.txt { font-size: 16px; }
 	#sec02 .col_box .dim_box .info .info_txt .info_desc .txt{font-size:16px;}
-	#sec02 .ttl_desc { max-width: 1600px; padding: 0 6.5%; }
 	#sec02 .drifting .floating_balloon{width:70px;}
 	#sec02 .obj span:nth-of-type(1){width:25px;}
 	#sec02 .obj span:nth-of-type(2){width:20px;}
@@ -332,6 +334,7 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 	.col_sub_ttl{font-size:24px;}
 	.col_box .info i.dots { width: 3px; height: 3px; }
 	.col_box .btn_box .btn {font-size: 14px; }
+	.ttl_desc{font-size:18px;}
 
 	/***** intro *****/
 	.intro .menus .tab_box strong { font-size: 24px; }
@@ -348,7 +351,6 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 	#sec01 .cloud:before { height: 50px; width: 50px; bottom: 12.5px; left: 40px }
 	#sec01 .cloud:after { height: 40px; width: 40px; bottom: 12.5px; left: 12.5px; }
 	#sec01 .balloon { height: 250px;right:0; }
-	#sec02 .ttl_desc{font-size:18px;}
 	#sec01 .txt_box { width:80%; transform: translate(-50%, -50%); }
 
 	/***** seciton02 *****/
@@ -366,6 +368,9 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 	.col_ttl{margin-bottom:10px;font-size:26px;}
 	.col_ttl:after{display:none;}
 	.col_sub_ttl{margin-bottom:30px;font-size:22px;}
+	.ttl_desc {max-width: 100%;padding: 0 0 5px 5px;font-size: 16px;}
+	.ttl_desc i{font-size:22px;}
+	.ttl_desc small{display:block;padding-left:0;margin-top:10px;font-size:12px;}
 	.col_box .desc .ttl{font-size:16px;}
 	.col_box .desc .type{font-size:14px;}
 	.firefly_box{display:none;}
@@ -386,8 +391,6 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 	#sec02:after{display:none;}
 	#sec02 .col_box { overflow: hidden; }
 	#sec02 .inner { height: auto; position: static; padding: 0 2vmax;}
-	#sec02 .ttl_desc {max-width: 100%;padding: 0 0 5px 5px;font-size: 16px;}
-	#sec02 .ttl_desc i{font-size:22px;}
 	#sec02 .slider_wrap{padding:0;margin:0 auto;border-radius:15px;border:none;}
 	#sec02 .slider_wrap:after,
 	#sec02 #fog,
@@ -440,7 +443,6 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 	#sec04 .txt_box .work_ex .ttl:after {}
 	#sec04 .txt_box .work_ex .scroll_box { overflow: auto; height: auto; padding: 0; }
 	#sec04 .txt_box .txt{font-size:14px;text-align: center;}
-	#sec04 .txt_box .txt em{font-size:14px;}
 	#sec04 .txt_box .work_ex .scroll_box .txt{text-align:left;}
 	#sec04:after { left: 50%; width:70%;transform: translateX(-50%); }
 	#sec04 .palm01 { width: 100%; background-size: auto 50%; background-position: 0 center; z-index: -1; }
@@ -450,6 +452,7 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 @media screen and (max-width:768px) {
 	/***** component *****/
 	.sec_ttl { font-size: 24px; }
+	.ttl_desc{padding:0;letter-spacing:-.4px;}
 
 	/***** intro *****/
 	.intro { height: 100%; background: #001A29; padding: 4% 4% 0 4%; box-sizing: border-box; }
@@ -517,7 +520,6 @@ section .inner { position:relative;width: 100%; max-width: 1200px; margin: 0 aut
 	#sec04 .txt_effect p.me_desc { font-size: 20px; }
 	#sec04 .txt_box .work_ex .ttl { font-size: 20px; }
 	#sec04 .txt_box .work_ex .ttl:after { width: 160px; }
-	#sec04 .txt_box .txt { font-size: 14px; }
 }
 
 /* keyframe */
